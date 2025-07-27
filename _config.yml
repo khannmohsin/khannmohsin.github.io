@@ -18,7 +18,7 @@ lang: en
 icon: "🛡️"
 
 url: "https://khannmohsin.github.io"
-baseurl: ""
+baseurl: "/khannmohsin"
 last_updated: true
 back_to_top: true
 
