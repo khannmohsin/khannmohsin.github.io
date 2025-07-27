@@ -2,16 +2,18 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='https://uit.no/ansatte/mohsin.khan'>UiT The Arctic University of Norway</a>. Tromsø, Norway. Cybersecurity. Blockchain. Trust. Research.
+subtitle: <a href='https://uit.no/ansatte/mohsin.khan'>UiT The Arctic University of Norway</a>. 
+Tromsø, Norway. 
+Cybersecurity. Blockchain. Trust. Research.
 
 profile:
   align: right
   image: mohsin_khan.png
   image_circular: false
-  more_info: >
-    <p>Department of Computer Science</p>
-    <p>UiT The Arctic University of Norway</p>
-    <p>Skolegata 41, 9006 Tromsø, Norway</p>
+  # more_info: >
+  #   <p>Department of Computer Science</p>
+  #   <p>UiT The Arctic University of Norway</p>
+  #   <p>Skolegata 41, 9006 Tromsø, Norway</p>
 
 selected_papers: false
 social: true
