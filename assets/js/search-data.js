@@ -46,7 +46,7 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
+          description: "Academic teaching, mentorship, and supervision roles undertaken during PhD at UiT.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
