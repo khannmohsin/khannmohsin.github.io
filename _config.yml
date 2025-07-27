@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: "Mohsin Khan" # override default title if needed
+# title: "Mohsin Khan" # override default title if needed
 title_separator: "|"
 first_name: Mohsin
 middle_name:
