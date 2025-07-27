@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: "Mohsin Khan"  # override default title if needed
+title: "Mohsin Khan" # override default title if needed
 title_separator: "|"
 first_name: Mohsin
-middle_name: 
+middle_name:
 last_name: Khan
 contact_note: >
   Reach me via email or LinkedIn for research collaboration or consulting.
