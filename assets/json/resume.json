@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Mohsin Khan",
-    "label": "Cybersecurity Researcher",
+    "label": "PhD Researcher in Cybersecurity",
     "image": "",
     "email": "khann.mohsin@icloud.com",
     "phone": "",
@@ -37,64 +37,131 @@
       "name": "Blackbuck Insight",
       "position": "Data Engineer",
       "url": "",
-      "startDate": "2019-09-01",
-      "endDate": "2020-07-01",
-      "summary": "Built and maintained scalable data pipelines and analytics infrastructure for logistics and transport systems. Migrated systems to AWS and optimized performance and security.",
+      "startDate": "2021-01-01",
+      "endDate": "2021-11-01",
+      "summary": "Migrated and processed big datasets from on-premises infrastructure to AWS cloud for TransUnion, improving data accessibility and reducing query latency by 40%.",
       "highlights": [
-        "Developed and deployed ETL workflows.",
-        "Worked with AWS EC2, Lambda, and S3.",
-        "Led efforts in secure infrastructure migration."
+        "Worked with MapReduce, HDFS, PySpark, Apache, Python, and Linux.",
+        "Used AWS services including S3, EC2, EMR, and Lambda.",
+        "Improved data pipeline performance and security during migration."
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "Cybersecurity Awareness Workshops",
-      "location": "UiT The Arctic University of Norway",
-      "position": "Speaker & Organizer",
-      "url": "https://uit.no",
-      "startDate": "2022-06-01",
-      "endDate": "2023-12-01",
-      "summary": "Organized workshops and guest lectures on embedded security and blockchain systems.",
+      "organization": "IEEE CCGRID Conference 2025",
+      "location": "Tromsø, Norway",
+      "position": "Volunteer",
+      "startDate": "2025-05-01",
+      "endDate": "2025-05-31",
+      "summary": "Assisted in the organization and coordination of the IEEE CCGRID 2025 Conference hosted at UiT.",
       "highlights": [
-        "Delivered technical sessions on ChipWhisperer and access control.",
-        "Guided master's students on secure microcontroller programming."
+        "Supported session management and technical logistics.",
+        "Engaged with participants and managed venue arrangements."
+      ]
+    },
+    {
+      "organization": "PhD Seminars at UiT",
+      "location": "UiT The Arctic University of Norway",
+      "position": "Organizer",
+      "startDate": "2023-01-01",
+      "endDate": "2024-12-01",
+      "summary": "Organized internal PhD seminars to facilitate knowledge exchange among doctoral researchers.",
+      "highlights": [
+        "Coordinated scheduling and speaker lineup.",
+        "Managed announcements and follow-ups with participants."
       ]
     }
   ],
   "education": [
     {
       "institution": "UiT The Arctic University of Norway",
-      "location": "Troms\u00f8, Norway",
+      "location": "Tromsø, Norway",
       "url": "https://uit.no",
       "area": "Cybersecurity",
       "studyType": "PhD",
-      "startDate": "2021-01-01",
-      "endDate": "",
-      "score": "",
-      "courses": []
+      "startDate": "2021-11-01",
+      "endDate": "2025-11-01",
+      "courses": [
+        "Information Flow Control (IFC)",
+        "Advanced Distributed Systems",
+        "Philosophy of Science and Ethics",
+        "Science, Technology and Society (Digital Life Norway)",
+        "Research Communication"
+      ]
     },
     {
-      "institution": "Central University of Punjab",
-      "location": "Bathinda, India",
-      "area": "Computer Science and Technology",
-      "studyType": "Master of Science",
-      "startDate": "2017-01-01",
-      "endDate": "2019-01-01",
-      "courses": []
-    },
-    {
-      "institution": "Lovely Professional University",
-      "location": "India",
+      "institution": "Indira Gandhi National Open University",
+      "location": "New Delhi, India",
       "area": "Operations Management",
       "studyType": "MBA",
-      "startDate": "2015-01-01",
-      "endDate": "2017-01-01",
-      "courses": []
+      "startDate": "2019-01-01",
+      "endDate": "2022-07-01",
+      "title": "Impact of Management Information Systems (MIS) on Banking Efficiency"
+    },
+    {
+      "institution": "Central University of Jammu",
+      "location": "Jammu and Kashmir, India",
+      "area": "Computer Science and Technology",
+      "studyType": "M.Tech",
+      "startDate": "2018-08-01",
+      "endDate": "2020-11-01",
+      "title": "Traffic Jam Minimization and Accident Avoidance System using IoT"
+    },
+    {
+      "institution": "Baba Ghulam Shah Badshah University",
+      "location": "Jammu and Kashmir, India",
+      "area": "IT and Telecommunication Engineering",
+      "studyType": "B.Tech",
+      "startDate": "2014-08-01",
+      "endDate": "2018-07-01",
+      "title": "Smart and Secure Home"
     }
   ],
-  "awards": [],
-  "certificates": [],
+  "awards": [
+    {
+      "title": "Best Paper Award",
+      "date": "2018-10-01",
+      "awarder": "National Conference on Recent Advances in Computer Science and IT (NCRACIT)",
+      "summary": "Awarded for the paper 'Smart n Secure Home using IoT' presented at NCRACIT, recognizing innovation in embedded and IoT systems for home automation."
+    },
+    {
+      "title": "Certificate of Appreciation",
+      "date": "2016-04-01",
+      "awarder": "Baba Ghulam Shah Badshah University",
+      "summary": "Received for exemplary performance in university-level drawing competition."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Amazon Web Services Certified Developer – Associate",
+      "date": "2021-02-01",
+      "issuer": "AWS",
+      "url": "https://www.credly.com/badges/06e675a8-933e-4f79-8c01-b633dda9f4cf?source=linked_in_profile",
+      "icon": "fa-brands fa-aws"
+    },
+    {
+      "name": "Certified Associate Developer for Apache Spark 3.0 – Python",
+      "date": "2021-04-01",
+      "issuer": "Databricks",
+      "url": "https://credentials.databricks.com/d5a97746-81d7-42d9-af2f-4fffc622a28f#acc.rJ8mTULI",
+      "icon": "fa-solid fa-bolt"
+    },
+    {
+      "name": "Real-Time Power System Analysis and Smart Grid",
+      "date": "2019-03-01",
+      "issuer": "AICTE",
+      "url": "",
+      "icon": "fa-solid fa-plug"
+    },
+    {
+      "name": "Educational Administration, Management and Leadership in School Education",
+      "date": "2019-05-01",
+      "issuer": "NCERT",
+      "url": "",
+      "icon": "fa-solid fa-school"
+    }
+  ], 
   "publications": [
     {
       "name": "A Comparative Analysis of Lightweight Hash Functions Using AVR ATXMega128 and ChipWhisperer",
@@ -120,43 +187,98 @@
   ],
   "skills": [
     {
-      "name": "Cybersecurity",
+      "name": "Cybersecurity & Cryptography",
       "level": "Advanced",
       "keywords": [
-        "Blockchain",
+        "Blockchain Security",
+        "Access Control Models",
+        "Information Flow Control (IFC)",
         "Lightweight Cryptography",
-        "IoT Security",
-        "Access Control",
-        "Threat Modeling"
+        "Smart Contract Security",
+        "STRIDE Threat Modeling",
+        "Distributed Trust",
+        "Hash Functions"
       ]
     },
     {
-      "name": "Embedded Systems",
+      "name": "Embedded Systems & IoT",
       "level": "Advanced",
       "keywords": [
-        "AVR/ARM",
-        "ChipWhisperer",
-        "Real-time Profiling",
-        "Secure Microcontrollers"
+        "AVR/ARM Microcontrollers",
+        "ChipWhisperer (AVR ATxmega128, STM32F3)",
+        "Power/Timing Side-Channel Analysis",
+        "Real-Time Profiling",
+        "IoT Security Architectures",
+        "Hardware/Software Benchmarking",
+        "Raspberry Pi",
+        "Arduino",
+        "Jetson"
       ]
     },
     {
-      "name": "Languages & Tools",
+      "name": "Programming & Tooling",
+      "level": "Advanced",
       "keywords": [
-        "Python",
         "C",
         "C++",
-        "Flask",
-        "Solidity",
+        "C#",
+        "Python",
         "JavaScript",
+        "Solidity",
+        "SQL",
+        "MATLAB",
+        "Flask",
+        "Bash",
+        "Make",
+        "Git",
+        "Visual Studio Code",
+        "Simulink",
+        "Pandas",
+        "Numpy",
+        "Matplotlib",
+        "AVR/Microchip Toolchains",
+        "Truffle",
+        "Hyperledger"
+      ]
+    },
+    {
+      "name": "DevOps & Monitoring",
+      "level": "Intermediate",
+      "keywords": [
+        "AWS (EC2, S3, Lambda)",
+        "Docker",
+        "Kubernetes",
+        "Apache",
+        "Nginx",
+        "Linux",
         "Prometheus",
         "Grafana",
-        "AWS",
-        "Git"
+        "MapReduce",
+        "HDFS",
+        "PySpark",
+        "Shell Scripting"
+      ]
+    },
+    {
+      "name": "Academic & Research Skills",
+      "level": "Expert",
+      "keywords": [
+        "Systematic Literature Reviews",
+        "Quantitative Analysis",
+        "Technical Writing",
+        "LaTeX",
+        "BibTeX",
+        "Peer Review",
+        "Paper Reviewing",
+        "Conference Presentations"
       ]
     }
   ],
   "languages": [
+    {
+      "language": "Kashmiri",
+      "fluency": "Native speaker"
+    },
     {
       "language": "English",
       "fluency": "Fluent"
@@ -164,26 +286,66 @@
     {
       "language": "Hindi",
       "fluency": "Fluent"
+    },
+    {
+      "language": "Urdu",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Norwegian",
+      "fluency": "Beginner (actively learning)"
     }
   ],
   "interests": [
     {
       "name": "Security Research",
       "keywords": [
-        "Quantum Cryptography",
-        "Distributed Systems",
-        "Secure Protocol Design"
+        "Lightweight Cryptography",
+        "Blockchain Security",
+        "Access Control Models",
+        "Information Flow Control",
+        "Cloud Security",
+        "Secure Protocol Design",
+        "Distributed Trust Architectures",
+        "Quantum-Resilient Algorithms"
+      ]
+    },
+    {
+      "name": "Embedded & IoT Systems",
+      "keywords": [
+        "Microcontroller Security",
+        "Side-Channel Analysis",
+        "Real-Time Embedded Monitoring",
+        "Secure IoT Architectures"
+      ]
+    },
+    {
+      "name": "Performance Benchmarking",
+      "keywords": [
+        "Energy and Timing Metrics",
+        "Hardware/Software Evaluation",
+        "Security-Cost Tradeoffs"
       ]
     }
   ],
   "references": [
     {
-      "name": "Prof. H\u00e5vard Dagenborg",
-      "reference": "Supervisor at UiT. Oversaw cryptographic benchmarking and secure access control research."
+      "name": "Prof. Håvard Johansen",
+      "reference": "Professor, Department of Computer Science, UiT The Arctic University of Norway. Supervisor for PhD research in cybersecurity, cryptographic benchmarking, and blockchain-based access control.",
+      "email": "havard.johansen@uit.no",
+      "url": "https://app.cristin.no/persons/show.jsf?id=58842"
     },
     {
       "name": "Prof. Dag Johansen",
-      "reference": "Advisor on PhD committee. Collaborated on distributed trust frameworks and security architecture research."
+      "reference": "Professor, Department of Computer Science, UiT The Arctic University of Norway. Co-advisor and collaborator on distributed trust frameworks and secure IoT architectures.",
+      "email": "dag.johansen@uit.no",
+      "url": "https://app.cristin.no/persons/show.jsf?id=58877"
+    },
+    {
+      "name": "Dr. Elisavet Kozyri",
+      "reference": "Associate Professor, Department of Computer Science, UiT The Arctic University of Norway. Co-supervisor on PhD project with focus on lightweight cryptography and system security.",
+      "email": "elisavet.kozyri@uit.no",
+      "url": "https://ekozyri.com/"
     }
   ],
   "projects": [
