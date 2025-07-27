@@ -12,10 +12,10 @@ contact_note: >
 description: >
   Cybersecurity researcher specializing in distributed trust architectures, blockchain-based access control, IoT security, and lightweight cryptography.
 footer_text: >
-  © 2025 Mohsin Khan · Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>. Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  © 2025 Mohsin Khan
 keywords: cybersecurity, blockchain, IoT, cryptography, research, academic portfolio
 lang: en
-icon: "🛡️"
+icon: "Ⓜ"
 
 url: "https://khannmohsin.github.io"
 # baseurl: ""

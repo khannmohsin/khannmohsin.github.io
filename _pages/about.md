@@ -1,38 +1,47 @@
 ---
-layout: about
-title: about
+layout: About
+title: About
 permalink: /
 subtitle: <a href='https://uit.no/'>UiT The Arctic University of Norway</a>. Tromsø, Norway. Cybersecurity. Blockchain. Trust. Research.
 
 profile:
   align: right
   image: mohsin_khan.jpg
-  image_circular: true
+  image_circular: false
   more_info: >
-    <p>Office 3.201, Department of Computer Science</p>
+    <p>Department of Computer Science</p>
     <p>UiT The Arctic University of Norway</p>
     <p>Skolegata 41, 9006 Tromsø, Norway</p>
-    <p><a href="mailto:khann.mohsin@icloud.com">khann.mohsin@icloud.com</a></p>
-    <p><a href="https://www.linkedin.com/in/khannmohsin/">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=GyjgNdIAAAAJ&hl=en">Google Scholar</a> | <a href="https://github.com/khannmohsin">GitHub</a></p>
 
-selected_papers: true
+selected_papers: false
 social: true
 
 announcements:
-  enabled: true
-  scrollable: true
+  enabled: false
+  scrollable: false
   limit: 5
 
 latest_posts:
-  enabled: true
-  scrollable: true
+  enabled: false
+  scrollable: false
   limit: 3
 ---
 
-I am a cybersecurity researcher at UiT The Arctic University of Norway, focused on building secure, distributed, and intelligent systems for the future of IoT. My doctoral work explores Information Flow Control models and lightweight cryptographic enforcement for IoT trust infrastructure. I architected **DTEA**, a novel blockchain-based access control framework that brings Proof-of-Authority and capability-token logic into distributed deployments.
+I am a cybersecurity researcher at [UiT The Arctic University of Norway](https://uit.no/ansatte/mohsin.khan), where I focus on building secure, distributed, and intelligent systems for the Internet of Things (IoT) and cyber-physical infrastructures.
 
-My work blends theoretical models with practical implementations, using tools like **ChipWhisperer**, **AVR/ARM platforms**, **Prometheus/Grafana**, and **smart contracts on Besu**. I’m equally passionate about academic excellence and security research that has industrial impact — including performance benchmarking, cryptographic evaluation, and real-world trust enforcement for embedded systems.
+My research centers around trust enforcement in decentralized systems. I architected **DTEA: Distributed Trust Enforcement Architecture**, a dynamic access control framework combining blockchain, smart contracts, and capability-based tokens under Proof-of-Authority consensus. It enables secure, policy-aware communication across constrained edge, fog, and cloud nodes — aligned with NIST and OpenFog standards.
 
-I enjoy mentoring, speaking, and working across domains like cryptography, edge/fog architectures, and policy-based enforcement. I welcome collaborations, consulting, and contributions to research and open-source security tooling.
+I have also led extensive benchmarking of lightweight cryptographic primitives for embedded environments. Using **AVR/ARM microcontrollers**, **ChipWhisperer**, and energy profiling techniques, I analyzed 20+ lightweight hash functions and ciphers across speed, memory, and power trade-offs. I introduced composite metrics to evaluate and rank these primitives under real-world constraints. 
 
-🚀 Motto: **Build Systems People Can Trust. Securely. At Scale.**
+I have conducted a comprehensive survey of 116 lightweight cryptographic ciphers, covering 57 block ciphers, 33 stream ciphers, 5 hybrid constructions, and 21 elliptic curve implementations. The survey systematically examines each algorithm’s architecture, year of publication, known vulnerabilities, and implementation trade-offs across both software and hardware contexts. By analyzing performance, security margins, and resource utilization, the study highlights strengths, weaknesses, and gaps across the lightweight cryptography landscape — serving as a decision-making guide for constrained and high-assurance environments.
+
+My technical toolkit includes **Python**, **C/C++**, **embedded Linux**, **Prometheus/Grafana**, and **Solidity-based smart contracts on Besu**. I blend formal threat modeling (STRIDE) with hands-on system implementation, and contribute to open-source efforts in secure IoT design.
+
+Alongside my doctoral work, I bring a multidisciplinary background from my Master’s in Computer Science and Technology and MBA in Operations, which enriched my understanding of both technical systems and organizational strategy. During my Master’s, I developed intelligent systems using IoT, CAV-VANET models, and real-time traffic optimization, while publishing in peer-reviewed venues. My MBA training complemented this by grounding me in operations research, risk analysis, project management, and strategic decision-making — essential skills for designing scalable, mission-driven security solutions in complex environments. Together, these foundations fuel my ability to build systems that are not only secure, but also aligned with operational priorities and real-world constraints.
+
+Before transitioning into research, I worked as a Data Engineer at Blackbuck Insight, where I migrated critical data pipelines to AWS cloud infrastructure, reducing query latency and improving scalability. There, I developed expertise in MapReduce, PySpark, HDFS, and cloud-native data workflows—skills I now integrate into secure IoT infrastructures.
+
+Currently, I am expanding my research toward quantum-safe cryptography, attending workshops and delivering talks on post-quantum fundamentals to prepare for next-generation threats.
+
+---
+
