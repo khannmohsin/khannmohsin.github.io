@@ -6,7 +6,7 @@ subtitle: <a href='https://uit.no/'>UiT The Arctic University of Norway</a>. Tro
 
 profile:
   align: right
-  image: mohsin_khan.jpg
+  image: mohsin_khan.png
   image_circular: false
   more_info: >
     <p>Department of Computer Science</p>
