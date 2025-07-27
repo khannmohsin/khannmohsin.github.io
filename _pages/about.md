@@ -29,7 +29,8 @@ latest_posts:
 <div class="justify-text">
 I am a cybersecurity researcher, where I focus on building secure, distributed, and intelligent systems for the Internet of Things (IoT) and cyber-physical infrastructures.
 
-My research centers around trust enforcement in decentralized systems. I architected **DTEA: Distributed Trust Enforcement Architecture**, a dynamic access control framework combining blockchain, smart contracts, and capability-based tokens under Proof-of-Authority consensus. It enables secure, policy-aware communication across constrained edge, fog, and cloud nodes — aligned with NIST and OpenFog standards.
+My research centers around trust enforcement in decentralized systems. I architected <strong>DTEA: Distributed Trust Enforcement Architecture</strong>, a dynamic access control framework combining blockchain, smart contracts, and capability-based tokens under Proof-of-Authority consensus. It enables secure, policy-aware communication across constrained edge, fog, and cloud nodes — aligned with NIST and OpenFog standards.
+</div>
 
 I have also led extensive benchmarking of lightweight cryptographic primitives for embedded environments. Using **AVR/ARM microcontrollers**, **ChipWhisperer**, and energy profiling techniques, I analyzed 20+ lightweight hash functions and ciphers across speed, memory, and power trade-offs. I introduced composite metrics to evaluate and rank these primitives under real-world constraints. 
 
@@ -42,8 +43,6 @@ Alongside my doctoral work, I bring a multidisciplinary background from my Maste
 Before transitioning into research, I worked as a Data Engineer at Blackbuck Insight, where I migrated critical data pipelines to AWS cloud infrastructure, reducing query latency and improving scalability. There, I developed expertise in MapReduce, PySpark, HDFS, and cloud-native data workflows—skills I now integrate into secure IoT infrastructures.
 
 Currently, I am expanding my research toward quantum-safe cryptography, attending workshops and delivering talks on post-quantum fundamentals to prepare for next-generation threats.
-
-</div>
 
 ---
 
