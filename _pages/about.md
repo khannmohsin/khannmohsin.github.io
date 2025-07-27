@@ -26,8 +26,7 @@ latest_posts:
   limit: 3
 ---
 
-
-
+<div class="justify-text">
 I am a cybersecurity researcher, where I focus on building secure, distributed, and intelligent systems for the Internet of Things (IoT) and cyber-physical infrastructures.
 
 My research centers around trust enforcement in decentralized systems. I architected **DTEA: Distributed Trust Enforcement Architecture**, a dynamic access control framework combining blockchain, smart contracts, and capability-based tokens under Proof-of-Authority consensus. It enables secure, policy-aware communication across constrained edge, fog, and cloud nodes — aligned with NIST and OpenFog standards.
@@ -43,6 +42,8 @@ Alongside my doctoral work, I bring a multidisciplinary background from my Maste
 Before transitioning into research, I worked as a Data Engineer at Blackbuck Insight, where I migrated critical data pipelines to AWS cloud infrastructure, reducing query latency and improving scalability. There, I developed expertise in MapReduce, PySpark, HDFS, and cloud-native data workflows—skills I now integrate into secure IoT infrastructures.
 
 Currently, I am expanding my research toward quantum-safe cryptography, attending workshops and delivering talks on post-quantum fundamentals to prepare for next-generation threats.
+
+</div>
 
 ---
 

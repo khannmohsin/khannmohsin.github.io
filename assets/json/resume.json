@@ -36,6 +36,7 @@
     {
       "name": "Blackbuck Insight",
       "position": "Data Engineer",
+      "location": "Bangalore, India",
       "url": "",
       "startDate": "2021-01-01",
       "endDate": "2021-11-01",
@@ -62,7 +63,7 @@
     },
     {
       "organization": "PhD Seminars at UiT",
-      "location": "UiT The Arctic University of Norway",
+      "location": "Tromsø, Norway",
       "position": "Organizer",
       "startDate": "2023-01-01",
       "endDate": "2024-12-01",
@@ -101,7 +102,7 @@
     },
     {
       "institution": "Central University of Jammu",
-      "location": "Jammu and Kashmir, India",
+      "location": "J & K, India",
       "area": "Computer Science and Technology",
       "studyType": "M.Tech",
       "startDate": "2018-08-01",
@@ -110,7 +111,7 @@
     },
     {
       "institution": "Baba Ghulam Shah Badshah University",
-      "location": "Jammu and Kashmir, India",
+      "location": "J & K, India",
       "area": "IT and Telecommunication Engineering",
       "studyType": "B.Tech",
       "startDate": "2014-08-01",
