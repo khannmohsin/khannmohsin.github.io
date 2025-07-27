@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='https://uit.no/'>UiT The Arctic University of Norway</a>. Tromsø, Norway. Cybersecurity. Blockchain. Trust. Research.
+subtitle: <a href='https://uit.no/ansatte/mohsin.khan'>UiT The Arctic University of Norway</a>. Tromsø, Norway. Cybersecurity. Blockchain. Trust. Research.
 
 profile:
   align: right
@@ -27,7 +27,9 @@ latest_posts:
   limit: 3
 ---
 
-I am a cybersecurity researcher at [UiT The Arctic University of Norway](https://uit.no/ansatte/mohsin.khan), where I focus on building secure, distributed, and intelligent systems for the Internet of Things (IoT) and cyber-physical infrastructures.
+
+
+I am a cybersecurity researcher, where I focus on building secure, distributed, and intelligent systems for the Internet of Things (IoT) and cyber-physical infrastructures.
 
 My research centers around trust enforcement in decentralized systems. I architected **DTEA: Distributed Trust Enforcement Architecture**, a dynamic access control framework combining blockchain, smart contracts, and capability-based tokens under Proof-of-Authority consensus. It enables secure, policy-aware communication across constrained edge, fog, and cloud nodes — aligned with NIST and OpenFog standards.
 
