@@ -1,200 +1,203 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Mohsin Khan",
+    "label": "Cybersecurity Researcher",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "khann.mohsin@icloud.com",
+    "phone": "",
+    "url": "https://khannmohsin.github.io",
+    "summary": "Cybersecurity researcher specializing in lightweight cryptography, blockchain-based access control, and secure embedded systems. Experienced in academic and industrial security projects with a focus on IoT and distributed trust architectures.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Department of Computer Science, UiT The Arctic University of Norway",
+      "postalCode": "9006",
+      "city": "Troms\u00f8",
+      "countryCode": "NO",
+      "region": "Troms og Finnmark"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "khannmohsin",
+        "url": "https://www.linkedin.com/in/khannmohsin/"
+      },
+      {
+        "network": "GitHub",
+        "username": "khannmohsin",
+        "url": "https://github.com/khannmohsin"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "GyjgNdIAAAAJ",
+        "url": "https://scholar.google.com/citations?user=GyjgNdIAAAAJ&hl=en"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "Blackbuck Insight",
+      "position": "Data Engineer",
+      "url": "",
+      "startDate": "2019-09-01",
+      "endDate": "2020-07-01",
+      "summary": "Built and maintained scalable data pipelines and analytics infrastructure for logistics and transport systems. Migrated systems to AWS and optimized performance and security.",
+      "highlights": [
+        "Developed and deployed ETL workflows.",
+        "Worked with AWS EC2, Lambda, and S3.",
+        "Led efforts in secure infrastructure migration."
+      ]
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "organization": "Cybersecurity Awareness Workshops",
+      "location": "UiT The Arctic University of Norway",
+      "position": "Speaker & Organizer",
+      "url": "https://uit.no",
+      "startDate": "2022-06-01",
+      "endDate": "2023-12-01",
+      "summary": "Organized workshops and guest lectures on embedded security and blockchain systems.",
+      "highlights": [
+        "Delivered technical sessions on ChipWhisperer and access control.",
+        "Guided master's students on secure microcontroller programming."
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "UiT The Arctic University of Norway",
+      "location": "Troms\u00f8, Norway",
+      "url": "https://uit.no",
+      "area": "Cybersecurity",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "startDate": "2021-01-01",
+      "endDate": "",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Central University of Punjab",
+      "location": "Bathinda, India",
+      "area": "Computer Science and Technology",
+      "studyType": "Master of Science",
+      "startDate": "2017-01-01",
+      "endDate": "2019-01-01",
+      "courses": []
+    },
+    {
+      "institution": "Lovely Professional University",
+      "location": "India",
+      "area": "Operations Management",
+      "studyType": "MBA",
+      "startDate": "2015-01-01",
+      "endDate": "2017-01-01",
+      "courses": []
     }
   ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
+  "awards": [],
+  "certificates": [],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "A Comparative Analysis of Lightweight Hash Functions Using AVR ATXMega128 and ChipWhisperer",
+      "publisher": "LIGHTSEC",
+      "releaseDate": "2025-01-01",
+      "url": "",
+      "summary": "Benchmarked lightweight hash functions using ChipWhisperer and custom E-RANK metric for performance, memory, and energy evaluation on constrained devices."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Software Benchmarking of NIST Lightweight Hash Function Finalists on Resource-Constrained AVR Platform via ChipWhisperer",
+      "publisher": "SECRYPT",
+      "releaseDate": "2025-01-01",
+      "url": "https://www.scitepress.org/Papers/2025/135607/135607.pdf",
+      "summary": "Analyzed NIST finalists for lightweight hashing on AVR devices, evaluated using ChipWhisperer and E-RANK composite metric."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Traffic Congestion Reduction and Accident Circumvention System via Incorporation of CAV and VANET",
+      "publisher": "IGI Global",
+      "releaseDate": "2021-01-01",
+      "url": "https://www.igi-global.com/article/traffic-congestion-reduction-and-accident-circumvention-system-via-incorporation-of-cav-and-vanet/272039",
+      "summary": "Designed an intelligent transportation model combining CAV and VANET systems for real-time accident avoidance and congestion detection."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Cybersecurity",
+      "level": "Advanced",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Blockchain",
+        "Lightweight Cryptography",
+        "IoT Security",
+        "Access Control",
+        "Threat Modeling"
+      ]
+    },
+    {
+      "name": "Embedded Systems",
+      "level": "Advanced",
+      "keywords": [
+        "AVR/ARM",
+        "ChipWhisperer",
+        "Real-time Profiling",
+        "Secure Microcontrollers"
+      ]
+    },
+    {
+      "name": "Languages & Tools",
+      "keywords": [
+        "Python",
+        "C",
+        "C++",
+        "Flask",
+        "Solidity",
+        "JavaScript",
+        "Prometheus",
+        "Grafana",
+        "AWS",
+        "Git"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
+      "language": "English",
+      "fluency": "Fluent"
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "language": "Hindi",
+      "fluency": "Fluent"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "name": "Security Research",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
         "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Distributed Systems",
+        "Secure Protocol Design"
       ]
     }
   ],
   "references": [
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Prof. H\u00e5vard Dagenborg",
+      "reference": "Supervisor at UiT. Oversaw cryptographic benchmarking and secure access control research."
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Prof. Dag Johansen",
+      "reference": "Advisor on PhD committee. Collaborated on distributed trust frameworks and security architecture research."
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Distributed Trust Enforcement Architecture (DTEA)",
+      "summary": "A blockchain-based access control framework for IoT security using PoA and capability tokens.",
+      "startDate": "2022-01-01",
+      "endDate": "",
+      "url": "https://github.com/khannmohsin/DTEA"
+    },
+    {
+      "name": "CryptoBench-RPi-Arduino_LWC",
+      "summary": "Benchmarking lightweight cryptographic primitives on embedded RPi/Arduino systems.",
+      "url": "https://github.com/khannmohsin/CryptoBench-RPi-Arduino_LWC"
     }
   ]
 }
