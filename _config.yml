@@ -11,8 +11,8 @@ contact_note: >
   Reach me via email or LinkedIn for research collaboration or consulting.
 description: >
   Cybersecurity researcher specializing in distributed trust architectures, blockchain-based access control, IoT security, and lightweight cryptography.
-footer_text: >
-  © 2025 Mohsin Khan
+# footer_text: >
+#   © 2025 Mohsin Khan
 keywords: cybersecurity, blockchain, IoT, cryptography, research, academic portfolio
 lang: en
 icon: "Ⓜ"
