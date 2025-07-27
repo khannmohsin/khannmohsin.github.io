@@ -1,5 +1,5 @@
 ---
-layout: About
+layout: about
 title: About
 permalink: /
 subtitle: <a href='https://uit.no/'>UiT The Arctic University of Norway</a>. Tromsø, Norway. Cybersecurity. Blockchain. Trust. Research.
