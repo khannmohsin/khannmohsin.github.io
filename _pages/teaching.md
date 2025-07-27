@@ -2,32 +2,56 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Academic teaching, mentorship, and supervision roles undertaken during PhD at UiT.
 nav: true
 nav_order: 6
 ---
 
-I have actively contributed to academic teaching and mentorship as part of my role at UiT The Arctic University of Norway. Below are highlights of the courses and academic duties I have been involved in:
+I actively contribute to teaching and mentorship at **UiT The Arctic University of Norway**, as part of my PhD in Cybersecurity. My responsibilities span course instruction, exam evaluation, and student research supervision.
 
-## Teaching Assistant — UiT The Arctic University of Norway
+---
 
-**INF-3200: Distributed Systems**  
-*Level: Master's | Term: Spring 2023, Spring 2024*  
-Assisted in lab instruction and mentoring, coordinated student group activities, provided feedback on assignments, and supported exam evaluations.
+## Teaching Assistant – UiT The Arctic University of Norway
 
-**INF-2201: Computer Security**  
-*Level: Bachelor's | Term: Fall 2022, Fall 2023*  
-Helped deliver lab sessions, conducted practical demonstrations, and guided students on secure protocol design and analysis.
+### INF-3200: Advanced Distributed Systems  
+**Level:** Master's • **Terms:** Spring 2023, Spring 2024  
+- Guided students through lab work and assignments  
+- Supervised group activities and project submissions  
+- Assisted in exam preparation and grading  
 
-## Examiner and Internal Assessor
+### INF-2201: Computer Security  
+**Level:** Bachelor's • **Terms:** Fall 2022, Fall 2023  
+- Conducted lab sessions and demonstrations  
+- Introduced core concepts of secure protocol design  
+- Mentored students on practical security implementations  
 
-Reviewed and evaluated Bachelor's and Master's theses on topics such as IoT security, cryptographic implementations, and blockchain-based access control models.
+### INF-1100: Computer Communication  
+**Level:** Bachelor's • **Terms:** Fall 2022, Fall 2023, Fall 2024  
+- Led programming labs and helped students apply network protocols  
+- Provided continuous assessment feedback and technical support  
 
-## Student Mentorship
+---
 
-Supervised and mentored several students working on projects related to:  
-- Lightweight cryptography benchmarking  
-- Secure bootstrapping for embedded IoT systems  
-- Blockchain-based distributed identity management
+## Examiner & Internal Assessor
 
-Feel free to reach out for collaboration or student supervision opportunities.
+### Master's Theses  
+- Henrik Monsen — Spring 2024  
+- Hauk Storjord — Spring 2025  
+
+**Topics included:**  
+- Blockchain-based access control  
+- IoT device security  
+- Cryptographic software profiling  
+
+---
+
+## Student Supervision
+
+Supervised multiple students in cybersecurity-focused projects, including:
+- Benchmarking lightweight cryptographic primitives on embedded devices  
+- Building secure bootstrapping frameworks for distributed IoT  
+- Designing blockchain-integrated identity management systems  
+
+---
+
+If you're interested in working together on a thesis or project in **cybersecurity, cryptographic benchmarking, or distributed IoT**, feel free to [reach out](mailto:khann.mohsin@icloud.com).
