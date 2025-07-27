@@ -1,14 +1,13 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - khannmohsin
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - khannmohsin/DTEA
+  - khannmohsin/CryptoBench-RPi-Arduino_LWC
+  - khannmohsin/CryptoBench-RPi-Arduino_LWSC_Video
+  - khannmohsin/CrytoBench-ChipWhisperer-AVR_LWHF
+  - khannmohsin/blockchain-course-assignment
+  - khannmohsin/multi-paxos-simulation
+  - khannmohsin/prime-multiprocessor
