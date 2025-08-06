@@ -4,6 +4,7 @@ collection: projects
 permalink: /projects/dtea
 date: 2024-05-01
 category: work
+img: assets/img/DTEA.png
 excerpt: "Blockchain-based access control with dynamic enforcement for secure IoT deployments."
 type: "Research"
 importance: 1

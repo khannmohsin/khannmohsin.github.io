@@ -5,6 +5,7 @@ date: 2025-08-06 18:00:00
 description: A critical look at the intersection of quantum threats and lightweight cryptography for resource-constrained IoT devices.
 tags: post-quantum-cryptography iot-security lightweight-crypto
 categories: research
+thumbnail: assets/img/PQC_LWC.png
 ---
 
 Quantum computers are no longer a distant threat. With significant advances by companies like IBM, Google, and others, the cryptographic foundations of current systems are under increasing scrutiny. While post-quantum cryptography (PQC) has been a hot topic in academia, its implications for Internet of Things (IoT) security are often misunderstood or underestimated.
