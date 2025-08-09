@@ -107,9 +107,9 @@ ninja.data = [{
               window.location.href = "/projects/2_project/";
             },},{id: "projects-dtea-distributed-trust-enforcement-architecture",
           title: 'DTEA: Distributed Trust Enforcement Architecture',
-          description: "",
+          description: "Blockchain-based access control with dynamic enforcement for secure IoT deployments.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/dtea";
+              window.location.href = "/projects/dtea/";
             },},{id: "projects-prime-multiprocessor",
           title: 'Prime Multiprocessor',
           description: "Parallel prime number calculation with forward/reverse execution and automatic archiving.",
