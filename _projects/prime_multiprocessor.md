@@ -2,8 +2,7 @@
 layout: page
 title: Prime Multiprocessor
 description: Parallel prime number calculation with forward/reverse execution and automatic archiving.
-img: /assets/img/prime-project.jpg
-img: assets/img/prime_mp.png
+img: assets/img/prime-project.png
 importance: 1
 category: work
 related_publications: false
@@ -47,9 +46,6 @@ This design allows cross-platform execution (tested on Windows and macOS), produ
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/PM_result_2.jpeg" title="Data & Results – Forward & Reverse Process 1" class="img-fluid rounded z-depth-1" %}
     </div>
-</div>
-<div class="caption">
-Extracted from the report: tabulated CSV-like outputs showing serial number, time taken, and prime numbers generated during forward and reverse execution for each process.
 </div>
 <div class="caption">
 Extracted from the report: Tabulated CSV-like outputs showing serial number, time taken, and prime numbers generated during forward and reverse execution for each process.
