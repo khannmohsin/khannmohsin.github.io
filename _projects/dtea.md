@@ -2,7 +2,7 @@
 layout: page
 title: "DTEA: Distributed Trust Enforcement Architecture"
 category: Research
-img: assets/img/DTEA.png
+img: assets/img/projects/cover.png
 description: "Blockchain-based access control with dynamic enforcement for secure IoT deployments."
 importance: 1
 tags: ["blockchain", "access control", "iot"]
@@ -25,7 +25,7 @@ The architecture has been implemented and deployed on a real-world heterogeneous
 ---
 
 ## System Architecture
-{% include figure.liquid path="assets/img/dtea-architecture.png" title="Smart contract and blockchain-assisted distributed trust enforcement architecture" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/projects/paxos/dtea-architecture.png" title="Smart contract and blockchain-assisted distributed trust enforcement architecture" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
 DTEA architecture spanning cloud, fog, edge, and endpoint layers, with capability-based token enforcement via smart contracts and PoA-QBFT consensus.
 </div>
@@ -33,7 +33,7 @@ DTEA architecture spanning cloud, fog, edge, and endpoint layers, with capabilit
 ---
 
 ## Layered Trust Enforcement
-{% include figure.liquid path="assets/img/dtea-layers.png" title="Layered Trust-Enforcement Architecture of DTEA" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/projects/paxos/dtea-layers.png" title="Layered Trust-Enforcement Architecture of DTEA" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
 Functional layering of DTEA: Application, Communication, Trust Enforcement, Blockchain, and Device layers with modular services for registration, access control, validator governance, and capability token management.
 </div>

@@ -2,7 +2,7 @@
 layout: page
 title: "ARM-Based Benchmarking of Lightweight Cryptographic Ciphers for IoT"
 category: Research
-img: assets/img/lwcc-arm-benchmark.png
+img: assets/img/projects/benchmarking_rp_Arduino/cover.png
 description: "Unified benchmarking framework for evaluating lightweight block and stream ciphers on ARM IoT devices with performance, energy, and resource metrics."
 importance: 1
 tags: ["iot", "lightweight cryptography", "benchmarking", "arm", "performance", "energy"]
@@ -36,7 +36,7 @@ The project addresses a critical IoT security challenge: <strong>how to choose c
   - *Lightweight Block Ciphers*: PRESENT, XTEA, CLEFIA, SIMON, SPECK, AES (baseline).
   - *Lightweight Stream Ciphers*: Grain-v1, Grain-128a (optimized), Trivium, Mickey, Salsa, Sosemanuk.
 
-{% include figure.liquid path="assets/img/lwcc-arm-setup.png" title="Hardware setup with Raspberry Pi Zero W and Arduino UNO for benchmarking" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/projects/benchmarking_rp_Arduino/lwcc-arm-setup.png" title="Hardware setup with Raspberry Pi Zero W and Arduino UNO for benchmarking" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
 Custom benchmarking setup with GPIO-triggered power measurement to ensure precise per-cipher energy readings.
 </div>

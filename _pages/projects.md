@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: This is what I have been working on 
+description: This is what I have worked on 
 nav: true
 nav_order: 3
 display_categories: [Research, Courses]

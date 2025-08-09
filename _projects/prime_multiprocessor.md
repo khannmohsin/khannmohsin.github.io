@@ -2,7 +2,7 @@
 layout: page
 title: Prime Multiprocessor
 description: Parallel prime number calculation with forward/reverse execution and automatic archiving.
-img: assets/img/prime-project.png
+img: assets/img/projects/prime_multiprocessor/cover.png
 importance: 1
 category: Courses
 related_publications: false
@@ -41,10 +41,10 @@ This design allows cross-platform execution (tested on Windows and macOS), produ
 ## Execution Snapshot
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/PM_result_1.jpeg" title="Data & Results – Forward & Reverse Process 0" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/prime_multiprocessor/PM_result_1.jpeg" title="Data & Results – Forward & Reverse Process 0" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/PM_result_2.jpeg" title="Data & Results – Forward & Reverse Process 1" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/prime_multiprocessor/PM_result_2.jpeg" title="Data & Results – Forward & Reverse Process 1" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

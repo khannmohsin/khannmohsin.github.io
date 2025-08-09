@@ -2,7 +2,7 @@
 layout: page
 title: "Blockchain Implementation & Consensus Mechanisms"
 category: Courses
-img: assets/img/blockchain_img.png
+img: assets/img/projects/blockchain_mining/cover.png
 description: "Implementation of blockchain in Python with Merkle Tree, Proof of Work mining, and comparative analysis of PoW, PoS, BFT, and PoStorage."
 importance: 1
 tags: ["blockchain", "consensus", "PoW", "PoS", "BFT", "PoStorage", "distributed-systems"]
@@ -30,7 +30,7 @@ Additionally, the project investigates:
 ---
 
 ## Merkle Tree Construction
-{% include figure.liquid path="assets/img/blockchain_merkle-tree.png" title="Merkle Tree for Transaction Verification" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/projects/blockchain_mining/blockchain_merkle-tree.png" title="Merkle Tree for Transaction Verification" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
 Merkle Tree structure showing iterative hashing of transaction pairs until the root hash is obtained, ensuring transaction integrity.
 </div>
@@ -38,7 +38,7 @@ Merkle Tree structure showing iterative hashing of transaction pairs until the r
 ---
 
 ## Proof of Work Mining
-{% include figure.liquid path="assets/img/blockchain-pow.png" title="Proof of Work Mining Process" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/projects/blockchain_mining/blockchain-pow.png" title="Proof of Work Mining Process" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
 PoW process: miners repeatedly hash the block header (previous block hash, Merkle root, timestamp, nonce) until the hash meets the difficulty target.
 </div>

@@ -2,7 +2,7 @@
 layout: page
 title: "PAXOS Consensus Algorithm Implementation"
 category: Courses
-img: assets/img/paxos_project.png
+img: assets/img/projects/paxos/cover.png
 description: "Python-based simulation of the PAXOS consensus protocol with fault tolerance testing and performance evaluation."
 importance: 1
 tags: ["distributed systems", "consensus", "paxos", "fault tolerance", "python"]
@@ -39,10 +39,10 @@ Flowchart representation of the PAXOS consensus process, illustrating the intera
 ## Experimentation Results
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/paxos_result_1.png" title="Consensus Time – No Acceptor Crashes" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/paxos/paxos_result_1.png" title="Consensus Time – No Acceptor Crashes" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/paxos_result_2.png" title="Consensus Time – Two Acceptor Crashes" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/projects/paxos/paxos_result_2.png" title="Consensus Time – Two Acceptor Crashes" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
