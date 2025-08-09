@@ -100,12 +100,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
+          section: "News",},{id: "projects-project-2",
           title: 'project 2',
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
@@ -115,6 +110,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dtea";
+            },},{id: "projects-prime-multiprocessor",
+          title: 'Prime Multiprocessor',
+          description: "Parallel prime number calculation with forward/reverse execution and automatic archiving.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/prime_multiprocessor/";
             },},{
         id: 'social-email',
         title: 'email',
