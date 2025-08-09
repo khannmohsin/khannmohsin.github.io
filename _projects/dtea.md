@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "DTEA: Distributed Trust Enforcement Architecture"
-category: work
-img: assets/img/DTEA.png
-description: "Blockchain-based access control with dynamic enforcement for secure IoT deployments."
+title: "PAXOS Consensus Algorithm Implementation"
+category: courses
+img: assets/img/paxos_project.png
+description: "Python-based simulation of the PAXOS consensus protocol with fault tolerance testing and performance evaluation."
 importance: 1
-tags: ["blockchain", "access control", "iot"]
-related_publications: true
+tags: ["distributed systems", "consensus", "paxos", "fault tolerance", "python"]
+related_publications: false
 ---
 
 <div class="justify-text">
