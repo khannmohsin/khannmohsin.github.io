@@ -100,9 +100,9 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-paxos-consensus-algorithm-implementation",
-          title: 'PAXOS Consensus Algorithm Implementation',
-          description: "Python-based simulation of the PAXOS consensus protocol with fault tolerance testing and performance evaluation.",
+          section: "News",},{id: "projects-dtea-distributed-trust-enforcement-architecture",
+          title: 'DTEA: Distributed Trust Enforcement Architecture',
+          description: "Blockchain-based access control with dynamic enforcement for secure IoT deployments.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dtea/";
             },},{id: "projects-paxos-consensus-algorithm-implementation",
