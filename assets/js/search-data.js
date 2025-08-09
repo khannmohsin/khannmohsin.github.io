@@ -100,16 +100,16 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-dtea-distributed-trust-enforcement-architecture",
-          title: 'DTEA: Distributed Trust Enforcement Architecture',
-          description: "Blockchain-based access control with dynamic enforcement for secure IoT deployments.",
+          section: "News",},{id: "projects-paxos-consensus-algorithm-implementation",
+          title: 'PAXOS Consensus Algorithm Implementation',
+          description: "Python-based simulation of the PAXOS consensus protocol with fault tolerance testing and performance evaluation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dtea/";
+            },},{id: "projects-paxos-consensus-algorithm-implementation",
+          title: 'PAXOS Consensus Algorithm Implementation',
+          description: "Python-based simulation of the PAXOS consensus protocol with fault tolerance testing and performance evaluation.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/paxos/";
             },},{id: "projects-prime-multiprocessor",
           title: 'Prime Multiprocessor',
           description: "Parallel prime number calculation with forward/reverse execution and automatic archiving.",
