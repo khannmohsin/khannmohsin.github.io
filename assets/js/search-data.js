@@ -100,7 +100,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-dtea-distributed-trust-enforcement-architecture",
+          section: "News",},{id: "projects-blockchain-implementation-amp-consensus-mechanisms",
+          title: 'Blockchain Implementation &amp;amp; Consensus Mechanisms',
+          description: "Implementation of blockchain in Python with Merkle Tree, Proof of Work mining, and comparative analysis of PoW, PoS, BFT, and PoStorage.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/blockchain/";
+            },},{id: "projects-dtea-distributed-trust-enforcement-architecture",
           title: 'DTEA: Distributed Trust Enforcement Architecture',
           description: "Blockchain-based access control with dynamic enforcement for secure IoT deployments.",
           section: "Projects",handler: () => {
