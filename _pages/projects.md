@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 description: This is what I have worked on 
 nav: true
-nav_order: 2
+nav_order: 1
 display_categories: [Research, Courses, Management]
 horizontal: true
 ---
