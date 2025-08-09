@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "This is what I have been working on",
+          description: "This is what I have worked on",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -100,7 +100,17 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-arm-based-benchmarking-of-lightweight-cryptographic-ciphers-for-iot",
+          section: "News",},{id: "projects-cav-and-vanet-enabled-traffic-congestion-reduction-and-accident-circumvention",
+          title: 'CAV- and VANET-Enabled Traffic Congestion Reduction and Accident Circumvention',
+          description: "Integrating Connected Autonomous Vehicles and VANETs for safe-distance maintenance, overtaking, and lane-shifting to reduce congestion and accidents.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/CAV_VANET/";
+            },},{id: "projects-performance-benchmarking-of-lightweight-hash-functions-for-embedded-iot",
+          title: 'Performance Benchmarking of Lightweight Hash Functions for Embedded IoT',
+          description: "Systematic evaluation of NIST-submitted, ISO-standardized, and other lightweight hash functions on AVR ATxmega128 microcontrollers using ChipWhisperer.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/benchmarking_lwhf_chipwhisperer/";
+            },},{id: "projects-arm-based-benchmarking-of-lightweight-cryptographic-ciphers-for-iot",
           title: 'ARM-Based Benchmarking of Lightweight Cryptographic Ciphers for IoT',
           description: "Unified benchmarking framework for evaluating lightweight block and stream ciphers on ARM IoT devices with performance, energy, and resource metrics.",
           section: "Projects",handler: () => {
@@ -109,7 +119,7 @@ ninja.data = [{
           title: 'Blockchain Implementation &amp;amp; Consensus Mechanisms',
           description: "Implementation of blockchain in Python with Merkle Tree, Proof of Work mining, and comparative analysis of PoW, PoS, BFT, and PoStorage.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/blockchain/";
+              window.location.href = "/projects/blockchain_mining/";
             },},{id: "projects-dtea-distributed-trust-enforcement-architecture",
           title: 'DTEA: Distributed Trust Enforcement Architecture',
           description: "Blockchain-based access control with dynamic enforcement for secure IoT deployments.",
@@ -125,6 +135,11 @@ ninja.data = [{
           description: "Parallel prime number calculation with forward/reverse execution and automatic archiving.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/prime_multiprocessor/";
+            },},{id: "projects-",
+          title: '',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/smart_home/";
             },},{
         id: 'social-email',
         title: 'email',
