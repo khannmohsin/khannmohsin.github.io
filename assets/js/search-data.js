@@ -9,12 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "Blog",
-          description: "",
+  },{id: "nav-projects",
+          title: "Projects",
+          description: "This is what I have worked on",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/blog/";
+            window.location.href = "/projects/";
           },
         },{id: "nav-publications",
           title: "Publications",
@@ -23,16 +23,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "This is what I have worked on",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
         },{id: "nav-repositories",
           title: "Repositories",
-          description: "",
+          description: "A collection of my open-source projects, research code, and collaborative development work hosted on GitHub.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -50,6 +43,13 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
+          },
+        },{id: "nav-blog",
+          title: "Blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
           },
         },{id: "post-",
         
@@ -105,6 +105,11 @@ ninja.data = [{
           description: "Integrating Connected Autonomous Vehicles and VANETs for safe-distance maintenance, overtaking, and lane-shifting to reduce congestion and accidents.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/CAV_VANET/";
+            },},{id: "projects-impact-of-management-information-system-mis-on-banking-efficiency-a-study-of-j-amp-k-bank",
+          title: 'Impact of Management Information System (MIS) on Banking Efficiency – A Study of...',
+          description: "An empirical study on how MIS implementation influences operational efficiency, decision-making, and service quality in the banking sector, with a focus on J&amp;K Bank.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/MIS_JK_bank/";
             },},{id: "projects-performance-benchmarking-of-lightweight-hash-functions-for-embedded-iot",
           title: 'Performance Benchmarking of Lightweight Hash Functions for Embedded IoT',
           description: "Systematic evaluation of NIST-submitted, ISO-standardized, and other lightweight hash functions on AVR ATxmega128 microcontrollers using ChipWhisperer.",
