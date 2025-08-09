@@ -5,7 +5,7 @@ permalink: /projects/
 description: This is what I have been working on 
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [work, research, fun]
 horizontal: false
 ---
 
