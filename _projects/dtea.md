@@ -14,10 +14,10 @@ The <strong>Distributed Trust Enforcement Architecture (DTEA)</strong> is a laye
 It addresses the limitations of centralized access control and heavy blockchain frameworks by introducing a smart-contract–based capability access model that enforces bidirectional, least-privilege permissions between subject and object nodes across cloud, fog, edge, and endpoint layers.  
 
 DTEA integrates:
-- **Flow-based CapBAC tokens** with full lifecycle management (issuance, expiry, revocation).
-- **Resource-aware policy enforcement** for constrained nodes, offloading consensus and blockchain-heavy operations to validator-capable fog/cloud nodes.
-- **PoA-QBFT consensus** for scalable validator governance and secure on-chain traceability.
-- **Layered architecture** (Device, Blockchain, Trust Enforcement, Communication, Application) aligned with NIST SP 800-183 and the OpenFog Reference Architecture.
+- Flow-based CapBAC tokens with full lifecycle management (issuance, expiry, revocation).
+- Resource-aware policy enforcement for constrained nodes, offloading consensus and blockchain-heavy operations to validator-capable fog/cloud nodes.
+- PoA-QBFT consensus for scalable validator governance and secure on-chain traceability.
+- Layered architecture (Device, Blockchain, Trust Enforcement, Communication, Application) aligned with NIST SP 800-183 and the OpenFog Reference Architecture.
 
 The architecture has been implemented and deployed on a real-world heterogeneous IoT testbed (Mac M1, NVIDIA Jetson Xavier NX, Raspberry Pi 4B), evaluated for latency, CPU/memory usage, RPC performance, and blockchain synchronization, with security guarantees formally verified using the STRIDE threat model.
 </div>
@@ -25,7 +25,7 @@ The architecture has been implemented and deployed on a real-world heterogeneous
 ---
 
 ## System Architecture
-{% include figure.liquid path="assets/img/projects/dtea-architecture.png" title="Smart contract and blockchain-assisted distributed trust enforcement architecture" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/dtea-architecture.png" title="Smart contract and blockchain-assisted distributed trust enforcement architecture" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
 DTEA architecture spanning cloud, fog, edge, and endpoint layers, with capability-based token enforcement via smart contracts and PoA-QBFT consensus.
 </div>
@@ -33,7 +33,7 @@ DTEA architecture spanning cloud, fog, edge, and endpoint layers, with capabilit
 ---
 
 ## Layered Trust Enforcement
-{% include figure.liquid path="assets/img/projects/dtea-layers.png" title="Layered Trust-Enforcement Architecture of DTEA" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/dtea-layers.png" title="Layered Trust-Enforcement Architecture of DTEA" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
 Functional layering of DTEA: Application, Communication, Trust Enforcement, Blockchain, and Device layers with modular services for registration, access control, validator governance, and capability token management.
 </div>
