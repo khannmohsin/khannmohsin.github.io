@@ -1,10 +1,14 @@
 ---
 layout: post
-title: Post-Quantum Cryptography for IoT: Are We Ready?
+title: "Post-Quantum Cryptography for IoT: Are We Ready?"
 date: 2025-08-06 18:00:00
-description: A critical look at the intersection of quantum threats and lightweight cryptography for resource-constrained IoT devices.
-tags: post-quantum-cryptography iot-security lightweight-crypto
-categories: research
+description: "A critical look at the intersection of quantum threats and lightweight cryptography for resource-constrained IoT devices."
+tags:
+  - post-quantum-cryptography
+  - iot-security
+  - lightweight-crypto
+categories:
+  - research
 thumbnail: assets/img/PQC_LWC.png
 ---
 
