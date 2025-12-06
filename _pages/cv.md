@@ -4,9 +4,10 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-cv_pdf: My_academic_CV.pdf # you can also use external links here
 
-# description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+cv_academic_pdf: My_academic_CV.pdf      # inside assets/pdf/
+cv_industry_pdf: My_industrial_CV.pdf   # inside assets/pdf/
+
 toc:
   sidebar: left
 ---
