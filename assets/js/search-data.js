@@ -58,7 +58,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-post-quantum-cryptography-for-iot-are-we-ready",
+        },{id: "post-the-hidden-world-of-lightweight-cryptography-securing-the-smallest-devices-on-earth",
+        
+          title: 'The Hidden World of Lightweight Cryptography: Securing the Smallest Devices on Earth <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://khannmohsin.medium.com/the-hidden-world-of-lightweight-cryptography-securing-the-smallest-devices-on-earth-fb14b9a0358c?source=rss-583a15af6393------2", "_blank");
+          
+        },
+      },{id: "post-post-quantum-cryptography-for-iot-are-we-ready",
         
           title: "Post-Quantum Cryptography for IoT: Are We Ready?",
         
