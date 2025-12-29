@@ -1,48 +1,48 @@
 ---
 layout: default
 ---
+
 {% unless site.data.resume %}
   <div class="post">
     <header class="post-header">
-      <h1 class="post-title">
-        {{ page.title }}
 
-        <span class="float-right" style="display:flex; gap:10px;">
+      <!-- Title -->
+      <h1 class="post-title mb-2">{{ page.title }}</h1>
 
-          {% if page.cv_academic_pdf %}
-            <a
-              {% if page.cv_academic_pdf contains '://' %}
-                href="{{ page.cv_academic_pdf }}"
-              {% else %}
-                href="{{ page.cv_academic_pdf | prepend: 'assets/pdf/' | relative_url }}"
-              {% endif %}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-sm btn-outline-primary"
-              title="Download Academic CV"
-            >
-              <i class="fa-solid fa-graduation-cap"></i> Academic CV
-            </a>
-          {% endif %}
+      <!-- Buttons (separate division, mobile-safe) -->
+      <div class="cv-buttons d-flex flex-wrap gap-2 justify-content-start justify-content-md-end mb-3">
+        {% if page.cv_academic_pdf %}
+          <a
+            {% if page.cv_academic_pdf contains '://' %}
+              href="{{ page.cv_academic_pdf }}"
+            {% else %}
+              href="{{ page.cv_academic_pdf | prepend: 'assets/pdf/' | relative_url }}"
+            {% endif %}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-sm btn-outline-primary"
+            title="Download Academic CV"
+          >
+            <i class="fa-solid fa-graduation-cap"></i> Academic CV
+          </a>
+        {% endif %}
 
-          {% if page.cv_industry_pdf %}
-            <a
-              {% if page.cv_industry_pdf contains '://' %}
-                href="{{ page.cv_industry_pdf }}"
-              {% else %}
-                href="{{ page.cv_industry_pdf | prepend: 'assets/pdf/' | relative_url }}"
-              {% endif %}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-sm btn-outline-success"
-              title="Download Industry CV"
-            >
-              <i class="fa-solid fa-briefcase"></i> Industry CV
-            </a>
-          {% endif %}
-
-        </span>
-      </h1>
+        {% if page.cv_industry_pdf %}
+          <a
+            {% if page.cv_industry_pdf contains '://' %}
+              href="{{ page.cv_industry_pdf }}"
+            {% else %}
+              href="{{ page.cv_industry_pdf | prepend: 'assets/pdf/' | relative_url }}"
+            {% endif %}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-sm btn-outline-success"
+            title="Download Industry CV"
+          >
+            <i class="fa-solid fa-briefcase"></i> Industry CV
+          </a>
+        {% endif %}
+      </div>
 
       {% if page.description %}
         <p class="post-description">{{ page.description }}</p>
@@ -52,7 +52,7 @@ layout: default
     <article>
       <div class="cv">
         {% for entry in site.data.cv %}
-          <a class="anchor" id="{{ entry.title }}"></a>
+          <a class="anchor" id="{{ entry.title | slugify }}"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
             <div>
@@ -80,45 +80,44 @@ layout: default
 
   <div class="post">
     <header class="post-header">
-      <h1 class="post-title">
-        {{ page.title }}
 
-        <span class="float-right" style="display:flex; gap:10px;">
+      <!-- Title -->
+      <h1 class="post-title mb-2">{{ page.title }}</h1>
 
-          {% if page.cv_academic_pdf %}
-            <a
-              {% if page.cv_academic_pdf contains '://' %}
-                href="{{ page.cv_academic_pdf }}"
-              {% else %}
-                href="{{ page.cv_academic_pdf | prepend: 'assets/pdf/' | relative_url }}"
-              {% endif %}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-sm btn-outline-primary"
-              title="Download Academic CV"
-            >
-              <i class="fa-solid fa-graduation-cap"></i> Academic CV
-            </a>
-          {% endif %}
+      <!-- Buttons (separate division, mobile-safe) -->
+      <div class="cv-buttons d-flex flex-wrap gap-2 justify-content-start justify-content-md-end mb-3">
+        {% if page.cv_academic_pdf %}
+          <a
+            {% if page.cv_academic_pdf contains '://' %}
+              href="{{ page.cv_academic_pdf }}"
+            {% else %}
+              href="{{ page.cv_academic_pdf | prepend: 'assets/pdf/' | relative_url }}"
+            {% endif %}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-sm btn-outline-primary"
+            title="Download Academic CV"
+          >
+            <i class="fa-solid fa-graduation-cap"></i> Academic CV
+          </a>
+        {% endif %}
 
-          {% if page.cv_industry_pdf %}
-            <a
-              {% if page.cv_industry_pdf contains '://' %}
-                href="{{ page.cv_industry_pdf }}"
-              {% else %}
-                href="{{ page.cv_industry_pdf | prepend: 'assets/pdf/' | relative_url }}"
-              {% endif %}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-sm btn-outline-success"
-              title="Download Industry CV"
-            >
-              <i class="fa-solid fa-briefcase"></i> Industry CV
-            </a>
-          {% endif %}
-
-        </span>
-      </h1>
+        {% if page.cv_industry_pdf %}
+          <a
+            {% if page.cv_industry_pdf contains '://' %}
+              href="{{ page.cv_industry_pdf }}"
+            {% else %}
+              href="{{ page.cv_industry_pdf | prepend: 'assets/pdf/' | relative_url }}"
+            {% endif %}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-sm btn-outline-success"
+            title="Download Industry CV"
+          >
+            <i class="fa-solid fa-briefcase"></i> Industry CV
+          </a>
+        {% endif %}
+      </div>
 
       {% if page.description %}
         <p class="post-description">{{ page.description }}</p>
@@ -133,8 +132,13 @@ layout: default
               {% continue %}
             {% endunless %}
           {% endif %}
-          {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
-          <a class="anchor" id="{{ data[0] }}"></a>
+
+          {% assign section = data[1] %}
+          {% if data[0] == 'meta' or section == nil or section == empty %}
+            {% continue %}
+          {% endif %}
+
+          <a class="anchor" id="{{ data[0] | slugify }}"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
             <div>
@@ -171,4 +175,5 @@ layout: default
       </div>
     </article>
   </div>
+
 {% endunless %}
