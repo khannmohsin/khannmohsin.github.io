@@ -2,137 +2,296 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: My approach to teaching, instructional experience, and impact in university courses and student mentorship.
+description: My teaching approach, instructional experience, and contribution to learning quality in cybersecurity and distributed systems.
 nav: true
 nav_order: 6
+toc: false
 ---
 
-## About My Teaching
+<style>
+/* =========================================================
+   TEACHING — Clean Academic Cards (Aligned with Publications)
+   ========================================================= */
 
-I view teaching as a **collaborative process** that helps learners build independence, critical reasoning, and real-world technical competence. My work at UiT has been shaped by evidence-informed practices that connect *theory to hands-on experience* and encourage students to approach problems as researchers and practitioners alike. 
+:root{
+  --t-text: #0b1220;
+  --t-muted: rgba(11,18,32,0.65);
 
----
+  --t-card: #ffffff;
+  --t-border: rgba(0,0,0,0.12);
+  --t-shadow: 0 10px 24px rgba(0,0,0,0.06);
 
-## Teaching Philosophy
+  --t-accent: #3685f3;
+  --t-radius: 14px;
+}
 
-My teaching philosophy is grounded in three core commitments:
+[data-theme="dark"]{
+  --t-text: rgba(255,255,255,0.92);
+  --t-muted: rgba(255,255,255,0.70);
 
-**Active Engagement:** I design learning experiences where students *do before they know*, using labs and projects that make abstract ideas concrete.
+  --t-card: rgba(18,18,18,0.65);
+  --t-border: rgba(255,255,255,0.16);
+  --t-shadow: 0 14px 30px rgba(0,0,0,0.35);
+}
 
-**Critical Reasoning:** Especially in security and distributed systems, understanding comes from *analysis as an adversary*—learning how systems fail informs how they are built.
+/* Intro block */
+.teach-intro{
+  border: 1px solid var(--t-border);
+  border-radius: var(--t-radius);
+  background: var(--t-card);
+  box-shadow: var(--t-shadow);
+  padding: 16px 18px;
+  margin: 14px 0 20px;
+}
+.teach-intro p{ margin: 0; color: var(--t-muted); }
 
-**Research-informed Instruction:** I connect course content to current research and real challenges in cybersecurity, helping students see beyond textbooks.
+/* Card sections */
+.teach-card{
+  border: 1px solid var(--t-border);
+  border-radius: var(--t-radius);
+  background: var(--t-card);
+  box-shadow: var(--t-shadow);
+  padding: 16px 18px;
+  margin: 0 0 16px;
+  transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+}
+.teach-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(54,133,243,0.35);
+}
 
-These principles guide how I structure activities, assessments, and feedback—shifting learning from rote tasks to *meaningful inquiry*.  [1](https://ctlt.ubc.ca/resources/teaching/portfolios/?utm_source=chatgpt.com)
+.teach-title{
+  margin: 0 0 10px;
+  font-weight: 650;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  color: var(--t-text);
+  letter-spacing: -0.01em;
+}
 
----
+.teach-muted{ color: var(--t-muted); }
 
-## Summary of Instructional Experience
+.teach-tags{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.teach-tag{
+  border: 1px solid rgba(54,133,243,0.25);
+  background: rgba(54,133,243,0.10);
+  color: var(--t-text);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.78rem;
+}
 
-| Course | Level | Terms | Focus |
-|--------|-------|-------|-------|
-| INF-3200 Advanced Distributed Systems | Master’s | Spring 2023, 2024 | Systems design & evaluation |
-| INF-2201 Computer Security | Bachelor’s | Fall 2022, 2023 | Secure systems & adversarial thinking |
-| INF-1100 Computer Communication | Bachelor’s | Fall 2022, 2023, 2024 | Networking fundamentals & labs |
-| INF-3315 Privacy-Preserving Computing | Master’s | Fall 2025 | Privacy & compliance in systems |
+.teach-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 980px){
+  .teach-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
----
+/* Clean table for course summary */
+.teach-table{
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--t-border);
+}
+.teach-table th, .teach-table td{
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--t-border);
+  vertical-align: top;
+}
+.teach-table th{
+  text-align: left;
+  color: var(--t-text);
+  font-weight: 650;
+  background: rgba(0,0,0,0.03);
+}
+[data-theme="dark"] .teach-table th{
+  background: rgba(255,255,255,0.06);
+}
+.teach-table td{ color: var(--t-muted); }
+.teach-table tr:last-child td{ border-bottom: 0; }
 
-## Instructional Highlights
+.teach-card strong{ color: var(--t-text); }
 
-### 🎓 **Advanced Distributed Systems (INF-3200)**  
-**Master’s | Spring 2023, Spring 2024**
+@media (prefers-reduced-motion: reduce){
+  .teach-card{ transition: none; }
+  .teach-card:hover{ transform: none; }
+}
+</style>
 
-This course focuses on distributed architecture, consensus, and fault-tolerant design. My role involved:
+<div class="teach-intro">
+  <p>
+    I am a PhD candidate in Cybersecurity at UiT (thesis submitted; awaiting defence), and alongside my research
+    I have contributed to teaching, lab instruction, assessment, and student support across networking,
+    security, distributed systems, and privacy-preserving computing.  [oai_citation:1‡My_Teaching_Portfolio.pdf](sediment://file_00000000b2a87243a2c63e603a998565)
+  </p>
+</div>
 
-- Designing and facilitating labs that mirror real system dynamics
-- Guiding students in project work with iterative feedback
-- Supporting assessments aligned with learning goals
+<div class="teach-card">
+  <h3 class="teach-title">Teaching approach</h3>
 
-**Learning outcomes emphasized:**
-- Reason about consistency and performance trade-offs  
-- Evaluate system reliability under failure conditions  
-- Communicate system design choices clearly
+  <p class="teach-muted">
+    My teaching is built around three practical commitments: (1) <strong>active learning</strong> through hands-on labs and iterative debugging,
+    (2) <strong>enquiry-based reasoning</strong>—helping students think like security professionals by analysing how systems fail, and
+    (3) <strong>clear learning-outcome alignment</strong> with structured feedback that supports student autonomy.  [oai_citation:2‡My_Teaching_Portfolio.pdf](sediment://file_00000000b2a87243a2c63e603a998565)
+  </p>
 
----
+  <div class="teach-tags">
+    <span class="teach-tag">Active learning</span>
+    <span class="teach-tag">Adversarial reasoning</span>
+    <span class="teach-tag">Constructive alignment</span>
+    <span class="teach-tag">Iterative feedback</span>
+  </div>
+</div>
 
-### 🔐 **Computer Security (INF-2201)**  
-**Bachelor’s | Fall 2022, Fall 2023**
+<div class="teach-grid">
 
-Security concepts are best learned by *doing and analysing*. I led lab sessions and mentoring on:
+  <div class="teach-card">
+    <h3 class="teach-title">Focus on student learning</h3>
+    <p class="teach-muted">
+      Across the courses I support, students often have very different backgrounds—from experienced programmers to beginners.
+      I adapt explanations accordingly, using short “explain → demonstrate → guide” cycles and encouraging students to
+      articulate concepts in their own words before implementation.  [oai_citation:3‡My_Teaching_Portfolio.pdf](sediment://file_00000000b2a87243a2c63e603a998565)
+    </p>
+    <div class="teach-tags">
+      <span class="teach-tag">Explain–demonstrate–guide</span>
+      <span class="teach-tag">Inclusive instruction</span>
+      <span class="teach-tag">Foundations + challenge</span>
+    </div>
+  </div>
 
-- Applied protocol design and cryptography labs
-- Adversarial reasoning exercises
-- Peer presentations on case studies
+  <div class="teach-card">
+    <h3 class="teach-title">Enquiry-based instruction (Feynman-style clarity)</h3>
+    <p class="teach-muted">
+      A core influence on my teaching is a Feynman-style approach: simplifying complex mechanisms into intuitive components,
+      then asking students to explain the idea back clearly. In security and distributed systems, I use enquiry questions such as:
+      <em>“If you were an adversary with these capabilities, how would you break this protocol?”</em>  [oai_citation:4‡My_Teaching_Portfolio.pdf](sediment://file_00000000b2a87243a2c63e603a998565)
+    </p>
+    <div class="teach-tags">
+      <span class="teach-tag">Feynman technique</span>
+      <span class="teach-tag">Threat modelling mindset</span>
+      <span class="teach-tag">Research-to-classroom</span>
+    </div>
+  </div>
 
-**Student impact:**  
-Students demonstrated stronger ability to articulate threats and propose mitigations in open-ended scenarios.
+</div>
 
----
+<div class="teach-card">
+  <h3 class="teach-title">Course experience summary</h3>
 
-### 🌐 **Computer Communication (INF-1100)**  
-**Bachelor’s | Fall 2022, 2023, 2024**
+  <table class="teach-table">
+    <thead>
+      <tr>
+        <th>Course</th>
+        <th>Level</th>
+        <th>Terms</th>
+        <th>Typical responsibilities</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>INF-2300</strong> Computer Communication</td>
+        <td>Bachelor (10 ECTS)</td>
+        <td>Fall 2022, 2023, 2024</td>
+        <td>Exercise groups/labs; guidance on networking labs (HTTP, DNS, sockets); feedback on mandatory assignments; support for grading.</td>
+      </tr>
+      <tr>
+        <td><strong>INF-2310</strong> Computer Security</td>
+        <td>Bachelor (10 ECTS)</td>
+        <td>Spring 2022, Spring 2023</td>
+        <td>Weekly exercise groups; support/evaluation of mandatory assignments; student presentations on attacks (e.g., XSS/DDoS); linking technical + human factors.</td>
+      </tr>
+      <tr>
+        <td><strong>INF-3203</strong> Advanced Distributed Systems</td>
+        <td>Master</td>
+        <td>Spring 2024, Spring 2025</td>
+        <td>Paper discussion support; presentation coaching; supervision of programming assignments; reasoning about consistency, fault tolerance, and performance.</td>
+      </tr>
+      <tr>
+        <td><strong>INF-3315</strong> Privacy-Preserving Computing</td>
+        <td>Master</td>
+        <td>Fall 2025</td>
+        <td>Support lectures and group work; supervision of assignments on GDPR and privacy-preserving techniques (e.g., OT, differential privacy); bridging law ↔ technical design.</td>
+      </tr>
+    </tbody>
+  </table>
 
-A core networking course where students learn by building and debugging real protocol implementations.
+  <p class="teach-muted" style="margin-top:12px;">
+    These courses reflect my teaching breadth across networking, security foundations, distributed systems, and privacy, and how I
+    connect theory with implementation and analysis.  [oai_citation:5‡My_Teaching_Portfolio.pdf](sediment://file_00000000b2a87243a2c63e603a998565)
+  </p>
+</div>
 
-Roles included:
-- Leading programming labs
-- Providing formative feedback on iterative problem solving
+<div class="teach-card">
+  <h3 class="teach-title">Collegial practice and contribution to teaching quality</h3>
+  <p class="teach-muted">
+    Collaboration is a central part of my teaching practice. I work closely with course coordinators and teaching teams to ensure consistency
+    across lab groups, contribute to lab/assignment materials, and align grading practices for fairness. I also participate in internal teaching seminars,
+    using feedback and reflection to refine instructional design and student engagement.  [oai_citation:6‡My_Teaching_Portfolio.pdf](sediment://file_00000000b2a87243a2c63e603a998565)
+  </p>
+  <div class="teach-tags">
+    <span class="teach-tag">Course-team collaboration</span>
+    <span class="teach-tag">Assessment consistency</span>
+    <span class="teach-tag">Teaching seminars</span>
+  </div>
+</div>
 
-This course helped students connect theoretical networking concepts with *concrete system behaviour*.
+<div class="teach-card">
+  <h3 class="teach-title">Examination and academic assessment</h3>
+  <p class="teach-muted">
+    I have served as an examiner for three master’s theses (UiT), independently assessing research quality, methodology, and scientific writing,
+    and contributing to grading with co-examiners when applicable.  [oai_citation:7‡My_Teaching_Portfolio.pdf](sediment://file_00000000b2a87243a2c63e603a998565)
+  </p>
+  <ul class="teach-muted" style="margin-top:10px;">
+    <li><strong>Henrik Monsen</strong> — Spring 2024</li>
+    <li><strong>Hauk Storjord</strong> — Spring 2025</li>
+    <li><strong>Jørgen Kristensen</strong> — Spring 2025</li>
+  </ul>
+  <div class="teach-tags">
+    <span class="teach-tag">Graduate-level assessment</span>
+    <span class="teach-tag">Methodology + writing quality</span>
+    <span class="teach-tag">Learning outcome alignment</span>
+  </div>
+</div>
 
----
+<div class="teach-card">
+  <h3 class="teach-title">Supervision and mentoring</h3>
+  <p class="teach-muted">
+    My supervision focuses on methodological rigour, reproducibility, and clear communication of results. I mentor students during labs,
+    projects, and research-oriented activities—especially where security concepts require careful reasoning and disciplined experimentation.  [oai_citation:8‡My_Teaching_Portfolio.pdf](sediment://file_00000000b2a87243a2c63e603a998565)
+  </p>
+  <div class="teach-tags">
+    <span class="teach-tag">Reproducible work</span>
+    <span class="teach-tag">Research habits</span>
+    <span class="teach-tag">Practical cybersecurity competence</span>
+  </div>
+</div>
 
-## Supervision & Mentorship
+<div class="teach-card">
+  <h3 class="teach-title">Future teaching directions</h3>
+  <p class="teach-muted">
+    Going forward, I aim to expand enquiry-driven, research-integrated teaching in cybersecurity, strengthen student-centred feedback loops,
+    and contribute actively to course development and educational quality work—particularly in areas that connect secure system design,
+    threat analysis, and deployable security practice.  [oai_citation:9‡My_Teaching_Portfolio.pdf](sediment://file_00000000b2a87243a2c63e603a998565)
+  </p>
+</div>
 
-I have supervised and mentored students on projects that integrate coursework and research:
-
-- **Benchmarking lightweight cryptography** on embedded platforms  
-- Applied assignments in security, distributed systems, and privacy
-
-My supervision emphasises *methodological rigour*, reproducibility, and communication of results.
-
----
-
-## Examination & Academic Assessment
-
-### 📜 **Master’s Thesis Examiner**
-
-I have served as an internal examiner for master’s theses on advanced system and security topics:
-
-- **Henrik Monsen** — Spring 2024  
-- **Hauk Storjord** — Spring 2025
-
-These roles involved independent evaluation of research quality, methodology, and academic writing—core components of a teaching portfolio assessment.  
-
----
-
-## Evidence of Practice
-
-Strong teaching portfolios connect activities to *outcomes and impact*. When available, I integrate:
-
-- Annotated lab exercises  
-- Reflective evaluations of instructional decisions  
-- Summarised student learning outcomes
-
-This curated evidence illustrates *how* and *why* my teaching strategies work.  [2](https://ctlt.ubc.ca/resources/teaching/portfolios/?utm_source=chatgpt.com)
-
----
-
-## Future Directions
-
-My teaching goals include:
-
-- Developing blended and enquiry-focused modules in cybersecurity  
-- Expanding peer and student feedback loops  
-- Contributing to *curriculum design* and quality enhancement
-
----
-
-## Get Involved
-
-I welcome discussions about supervision, collaborative instruction, and shared curriculum development in:
-
-**Cybersecurity, Cryptographic Benchmarking, Distributed Systems, Privacy Technologies**
-
-📧 [Contact me](mailto:khann.mohsin@icloud.com)
+<div class="teach-card">
+  <h3 class="teach-title">Contact</h3>
+  <p class="teach-muted">
+    If you are interested in thesis supervision or collaboration in <strong>cybersecurity</strong>, <strong>distributed systems</strong>,
+    <strong>privacy technologies</strong>, or <strong>applied cryptography</strong>, feel free to reach out:
+    <a href="mailto:khann.mohsin@icloud.com">khann.mohsin@icloud.com</a>.
+  </p>
+</div>
