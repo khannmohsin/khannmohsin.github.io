@@ -44,7 +44,7 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: false
 socials_in_search: true
 posts_in_search: true
@@ -83,7 +83,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Research Notes # blog_name will be displayed in your blog page
+blog_name: Technical and Research Notes # blog_name will be displayed in your blog page
 blog_description: Cryptography, blockchain, and post-quantum security for trustworthy embedded and distributed systems.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
