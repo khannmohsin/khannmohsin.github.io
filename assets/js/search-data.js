@@ -9,23 +9,23 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-my-story",
-          title: "My Story",
-          description: "My academic, professional, and research journey from Kashmir to Europe.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/mystory/";
-          },
-        },{id: "nav-projects",
+  },{id: "nav-projects",
           title: "Projects",
-          description: "This is what I have worked on",
+          description: "Selected research, course, and management projects—organized by category.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
+        },{id: "nav-my-story",
+          title: "My Story",
+          description: "A timeline of my academic, professional, and personal journey.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/story/";
+          },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Publications are categorized in reversed chronological order.",
+          description: "Peer-reviewed research publications and scholarly outputs.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -46,7 +46,7 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "My approach to teaching, instructional experience, and impact in university courses and student mentorship.",
+          description: "My teaching approach, instructional experience, and contribution to learning quality in cybersecurity and distributed systems.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
