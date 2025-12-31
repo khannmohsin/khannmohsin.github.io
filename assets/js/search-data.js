@@ -121,11 +121,31 @@ ninja.data = [{
           description: "Implementation of blockchain in Python with Merkle Tree, Proof of Work mining, and comparative analysis of PoW, PoS, BFT, and PoStorage.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/blockchain_mining/";
+            },},{id: "projects-cloud-security-architecture-amp-migration-risk-analysis",
+          title: 'Cloud Security Architecture &amp;amp; Migration Risk Analysis',
+          description: "Security-focused evaluation of cloud migration strategies and protection mechanisms for organizational infrastructure.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cloud_sec/";
             },},{id: "projects-dtea-distributed-trust-enforcement-architecture",
           title: 'DTEA: Distributed Trust Enforcement Architecture',
           description: "Blockchain-based access control with dynamic enforcement for secure IoT deployments.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dtea/";
+            },},{id: "projects-deloitte-australia-cyber-job-simulation",
+          title: 'Deloitte Australia Cyber Job Simulation',
+          description: "Hands-on cyber incident analysis and detection exercises based on real-world consulting scenarios.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/forage_delloitte/";
+            },},{id: "projects-healthcare-data-security-amp-hipaa-risk-assessment",
+          title: 'Healthcare Data Security &amp;amp; HIPAA Risk Assessment',
+          description: "Practical evaluation of a healthcare provider’s data security posture with respect to HIPAA requirements, risks, and control gaps.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/healthcare_HIPAA/";
+            },},{id: "projects-secure-network-architecture-amp-system-hardening",
+          title: 'Secure Network Architecture &amp;amp; System Hardening',
+          description: "Design of a secure network and system architecture emphasizing defense-in-depth and secure configuration.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/network_arch/";
             },},{id: "projects-paxos-consensus-algorithm-implementation",
           title: 'PAXOS Consensus Algorithm Implementation',
           description: "Python-based simulation of the PAXOS consensus protocol with fault tolerance testing and performance evaluation.",
@@ -136,11 +156,16 @@ ninja.data = [{
           description: "Parallel prime number calculation with forward/reverse execution and automatic archiving.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/prime_multiprocessor/";
-            },},{id: "projects-",
-          title: '',
-          description: "",
+            },},{id: "projects-iot-based-automation-and-security",
+          title: 'IoT-Based Automation and Security',
+          description: "An IoT-enabled home automation and security system integrating Arduino Mega &amp; UNO, RFID access, multiple sensors, and Cayenne Cloud for real-time monitoring and remote control.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/smart_home/";
+            },},{id: "projects-vulnerability-impact-analysis-amp-threat-mitigation",
+          title: 'Vulnerability Impact Analysis &amp;amp; Threat Mitigation',
+          description: "Identification, classification, and mitigation of organizational vulnerabilities using structured impact analysis.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/vulnerability_impact/";
             },},{
         id: 'social-email',
         title: 'email',
