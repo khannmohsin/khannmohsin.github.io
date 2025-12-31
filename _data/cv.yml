@@ -3,123 +3,205 @@
   contents:
     - name: Full Name
       value: Mohsin Khan
+    - name: Email
+      value: khann.mohsin@icloud.com
+    - name: Website
+      value: https://khannmohsin.github.io
+    - name: Location
+      value: Tromsø, Troms og Finnmark, Norway
     - name: Languages
       value: Hindi, Urdu, English, Kashmiri (Native), Norwegian (Beginner)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD in Cyber Security
-      institution: UiT The Arctic University of Tromsø, Norway
-      year: 2021 - 2025
+    - title: PhD in Cybersecurity
+      institution: UiT – The Arctic University of Norway, Tromsø, Norway
+      year: Nov 2021 - Dec 2025
       description:
-        - Focus: Information Flow Control (IFC) model based on lightweight cryptography in IoT devices.
-        - Outcome: Evaluated ~150 lightweight algorithms and built a blockchain-based architecture for distributed IoT.
-        - Supervisors: Prof. Håvard Johansen, Prof. Dag Johansen & Dr. Elisavet Kozyri
+        - Thesis: End-to-End Security for Resource-Constrained IoT Systems in Distributed Environments.
 
     - title: MBA in Operations Management
-      institution: Indira Gandhi National Open University, India
-      year: 2019 - 2022
+      institution: Indira Gandhi National Open University, New Delhi, India
+      year: Jan 2019 - Jul 2022
       description:
-        - Thesis: Impact of Management Information Systems (MIS) on banking efficiency at J&K Bank.
-        - Applied chi-square analysis to study service improvement links.
+        - Thesis: Impact of Management Information Systems (MIS) on Banking Efficiency.
 
-    - title: MTech in Computer Science and Technology
-      institution: Central University of Jammu, India
-      year: 2018 - 2020
+    - title: M.Tech in Computer Science and Engineering
+      institution: Central University of Jammu, Jammu & Kashmir, India
+      year: Aug 2018 - Nov 2020
       description:
         - Thesis: Traffic Jam Minimization and Accident Avoidance System using IoT.
-        - Developed CAV-VANET system; published in Springer LNEE and IJACI.
 
-    - title: BTech in IT and Telecommunication Engineering
-      institution: Baba Ghulam Shah Badshah University, India
-      year: 2014 - 2018
+    - title: B.Tech in IT and Telecommunication Engineering
+      institution: Baba Ghulam Shah Badshah University, Jammu & Kashmir, India
+      year: Aug 2014 - Jun 2018
       description:
-        - Project: Smart and Secure Home Automation using IoT.
-        - Published in IJSRCSEIT.
+        - Thesis: Smart and Secure Home.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Data Engineer
-      institution: Blackbuck Insight, Bangalore, India
-      year: 2021
+    - title: PhD Research Fellow in Cybersecurity
+      institution: UiT – The Arctic University of Norway
+      year: Nov 2021 - Dec 2025
       description:
-        - Migrated and processed big datasets from on-premises infrastructure to AWS cloud for TransUnion.
-        - Improved data accessibility and reduced query latency by 40%.
-        - Tools: MapReduce, HDFS, PySpark, Apache, Python, Linux, AWS.
+        - Designed secure distributed IoT/cloud architectures using Zero Trust, IAM-based access control, and STRIDE threat modeling.
+        - Performed risk and impact analysis to identify trust boundaries and failure modes in multi-node systems.
+        - Built a taxonomy and benchmarking framework for ~130 lightweight cryptographic primitives to support secure selection for constrained devices.
 
-- title: Open Source Projects
+    - title: Data Engineer (Security-Aware Systems)
+      institution: Blackbuck Insight
+      year: Jan 2021 - Nov 2021
+      description:
+        - Migrated on-premise data pipelines to AWS using IAM-based access controls and monitoring to reduce data access risk.
+        - Built and optimized distributed processing workflows using PySpark, MapReduce, and Linux for high-volume analytics.
+        - Improved pipeline observability and access separation to support secure production workflows.
+
+- title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/khannmohsin/DTEA">DTEA</a>
-      year: 2024
-      description: Blockchain-based distributed trust enforcement architecture for IoT.
-    - title: <a href="https://github.com/khannmohsin/CryptoBench-RPi-Arduino_LWC">CryptoBench (LWC)</a>
-      year: 2023
-      description: Benchmark suite for evaluating lightweight cryptography on Raspberry Pi & Arduino.
-    - title: <a href="https://github.com/khannmohsin/CryptoBench-RPi-Arduino_LWSC_Video">CryptoBench (Video)</a>
-      year: 2024
-      description: Lightweight stream cipher benchmarking for real-time video encryption.
-    - title: <a href="https://github.com/khannmohsin/CrytoBench-ChipWhisperer-AVR_LWHF">CryptoBench (AVR)</a>
-      year: 2025
-      description: Hash function benchmarking on AVR using ChipWhisperer.
-    - title: <a href="https://github.com/khannmohsin/blockchain-course-assignment">Blockchain Assignment</a>
-      year: 2023
-      description: Smart contract-based academic assignment for decentralized systems.
-    - title: <a href="https://github.com/khannmohsin/multi-paxos-simulation">Multi-Paxos Simulation</a>
-      year: 2020
-      description: Simulation of consensus using Multi-Paxos in Python.
-    - title: <a href="https://github.com/khannmohsin/prime-multiprocessor">Prime Multiprocessor</a>
-      year: 2019
-      description: Multithreaded prime number generation using multiprocessing techniques.
+    - title: BlockCap — Blockchain-Based Capability Access Control for IoT Systems
+      year: Jan 2024 - Nov 2025
+      description:
+        - Designed capability-based authorization using smart contracts and validator coordination to enforce least-privilege IoT communication.
+        - Implemented token issuance, revocation, expiry, and auditability through blockchain-backed governance.
+        - Evaluated latency, resource overhead, and security guarantees using STRIDE threat modeling.
+
+    - title: Lightweight Cryptography Benchmarking & Taxonomy for IoT
+      year: Jan 2023 - Sep 2025
+      description:
+        - Benchmarked 130+ lightweight primitives across AVR and ARM using ChipWhisperer and custom measurement tooling.
+        - Analyzed performance, memory footprint, energy cost, and known cryptanalytic properties to quantify trade-offs.
+        - Produced a structured taxonomy to guide algorithm selection under device and threat constraints.
+
+    - title: Cloud Security Architecture & Migration Risk Analysis
+      year: Dec 2025
+      description:
+        - Assessed cloud migration risks and security controls for critical systems moving to the cloud.
+        - Evaluated IaaS/PaaS/SaaS models and recommended mitigations aligned with the shared responsibility model.
+
+    - title: Deloitte Australia Cyber Job Simulation (Forage)
+      year: Dec 2025
+      description:
+        - Analyzed web/activity logs to identify anomalous behavior and potential indicators of compromise.
+        - Practiced incident investigation, triage, and clear communication under realistic constraints.
+
+    - title: Healthcare Data Security & HIPAA Risk Assessment
+      year: Dec 2025
+      description:
+        - Reviewed policies and workflows to identify CIA risks to patient data and map gaps to HIPAA Security Rule requirements.
+        - Recommended encryption, backup, and access-control improvements for a small healthcare provider.
+
+    - title: Vulnerability Impact Analysis & Threat Mitigation
+      year: Dec 2025
+      description:
+        - Identified technical/procedural vulnerabilities, assessed likelihood and impact, and prioritized remediation.
+        - Delivered a risk-based mitigation plan aligned with defensive security workflows.
+
+    - title: CAV- and VANET-Enabled Traffic Congestion Reduction and Accident Circumvention
+      year: Aug 2019 - Jan 2021
+      description:
+        - Designed cooperative decision logic for safe-distance maintenance, controlled overtaking, and permission-based lane changes.
+        - Evaluated behavior using MATLAB simulations under realistic traffic scenarios to reduce congestion waves and collision risk.
 
 - title: Certifications
   type: time_table
   contents:
+    - year: 2025
+      items:
+        - Deloitte Australia — Cyber Job Simulation (Forage)
+        - IBM — Governance, Risk, Compliance, and Data Privacy
+        - IBM — System and Network Security
+        - IBM — Vulnerability Management
+        - Qualys — Vulnerability Management, Detection, and Response
+        - LinkedIn Learning — ISO 27001:2022-Compliant Cybersecurity: Getting Started
+        - LinkedIn Learning — ISO 27001:2022-Compliant Cybersecurity: Annex A Controls
     - year: 2021
       items:
         - AWS Certified Developer – Associate
-        - Databricks Certified Associate Developer for Apache Spark 3.0 (Python)
-    - year: 2019
-      items:
-        - AICTE: Real-Time Power System Analysis and Smart Grid
-        - NCERT: Educational Administration and Leadership
+        - Databricks Certified Associate Developer for Apache Spark (Python)
 
-- title: Academic Activities
-  type: nested_list
-  contents:
-    - title: Teaching Assistant (UiT)
-      items:
-        - Advanced Distributed Systems (Spring 2024, 2025)
-        - Computer Communications (Fall 2022, 2023, 2024)
-        - Computer Security (Spring 2022, 2023)
-    - title: Internal Assessor
-      items:
-        - Henrik Monsen (Spring 2024)
-        - Hauk Storjord (Spring 2025)
-    - title: Management Roles
-      items:
-        - Volunteer, IEEE CCGRID 2025
-        - Organizer, PhD Seminars at UiT
-
-- title: Honors and Awards
+- title: Publications
   type: time_table
   contents:
-    - year: 2018
+    - title: Survey of Lightweight Hardware-Based Hash Functions for Security in Constrained IoT Devices
+      institution: IEEE Access
+      year: 2025-11
+      description:
+        - https://ieeexplore.ieee.org/abstract/document/11168213
+
+    - title: A Comparative Analysis of Lightweight Hash Functions Using AVR ATXMega128 and ChipWhisperer
+      institution: NordSec
+      year: 2025-12
+      description:
+        - https://arxiv.org/abs/2508.07840
+
+    - title: Software Benchmarking of NIST Lightweight Hash Function Finalists on Resource-Constrained AVR Platform via ChipWhisperer
+      institution: SECRYPT (SCITEPRESS)
+      year: 2025-09
+      description:
+        - https://www.scitepress.org/PublishedPapers/2025/135607/
+
+    - title: System Support for Accountable and Trusted Data Collection and Fog Processing in Remote Electronic Monitoring
+      institution: FMEC (IEEE)
+      year: 2025-07
+      description:
+        - https://ieeexplore.ieee.org/abstract/document/11119373
+
+    - title: Performance Evaluation of Lightweight Cryptographic Ciphers on ARM Processor for IoT Deployments
+      institution: SciSec (Springer, LNCS 15441)
+      year: 2024-09
+      description:
+        - https://link.springer.com/chapter/10.1007/978-981-96-2417-1_14
+
+    - title: Performance Evaluation of Lightweight Stream Ciphers for Real-Time Video Feed Encryption on ARM Processor
+      institution: Future Internet (MDPI)
+      year: 2024-07
+      description:
+        - https://www.mdpi.com/1999-5903/16/8/261
+
+    - title: A Multi-pronged Self-adaptive Controller for Analyzing Misconfigurations for Kubernetes Clusters and IoT Edge Devices
+      institution: ESoCC (Springer)
+      year: 2023-11
+      description:
+        - https://link.springer.com/chapter/10.1007/978-3-031-46235-1_10
+
+    - title: Traffic Congestion Reduction and Accident Circumvention System via Incorporation of CAV and VANET
+      institution: IGI Global
+      year: 2021-11
+      description:
+        - https://www.igi-global.com/article/traffic-congestion-reduction-and-accident-circumvention-system-via-incorporation-of-cav-and-vanet/272039
+
+    - title: Traffic Jam Minimization and Accident Avoidance System Using IoT
+      institution: ETCCS (Springer)
+      year: 2021-05
+      description:
+        - https://link.springer.com/chapter/10.1007/978-981-15-7804-5_4
+
+    - title: Smart n Secure Home Using IoT
+      institution: IJSRCSEIT
+      year: 2018-09
+      description:
+        - https://ijsrcseit.com/home/issue/view/article.php?id=CSEIT411834
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Blue Team & Defensive Security
       items:
-        - Best Paper Award: Smart n Secure Home using IoT, NCRACIT
-    - year: 2017
+        - Log Analysis; Detection Fundamentals; Incident Response; Vulnerability Management; SIEM Tools; STRIDE threat modeling
+    - title: Red Team & Adversarial Skills
       items:
-        - Certificate of Appreciation: Drawing Competition at BGSBU
+        - Penetration Testing Fundamentals; Web Application Security; Adversarial Thinking; Attack Surface Analysis
+    - title: Security Engineering & Architecture
+      items:
+        - Zero Trust; IAM; Secure Distributed Systems; IoT/OT Security; Blockchain Security
+    - title: Cryptography
+      items:
+        - Lightweight Cryptography; Hash Functions; Applied Cryptography; Post-Quantum exposure
 
 - title: Interests
   type: list
   contents:
-    - <u>Sports:</u> Bodybuilding, Fitness Training, Strength Training
-    - <u>Professional:</u> Leadership, Management, Finance, Programming
-
-- title: Languages
-  type: list
-  contents:
-    - Hindi, Urdu, English, Kashmiri (Native), Norwegian (Beginner)
+    - Blue Team Operations, Red Team Techniques, Security Architecture, OT & Critical Infrastructure Security

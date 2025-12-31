@@ -51,7 +51,7 @@ social: true
   box-shadow: var(--abt-shadow);
   padding: 16px 18px;
   margin: 14px 0 18px;
-  max-width: 615px;
+  max-width: 635px;
   color: var(--abt-muted);
   line-height: 1.6;
 }
@@ -60,7 +60,7 @@ social: true
    If your theme changes image width, adjust 320px. */
 @media (min-width: 980px){
   .abt-intro{
-    margin-right: 320px;
+    margin-right: 280px;
   }
 }
 
