@@ -3,7 +3,7 @@ layout: page
 title: Impact of Management Information System (MIS) on Banking Efficiency – A Study of J&K Bank
 description: An empirical study on how MIS implementation influences operational efficiency, decision-making, and service quality in the banking sector, with a focus on J&K Bank.
 img: assets/img/projects/MIS_JK_bank/cover.png
-importance: 1
+importance: 4
 category: Management
 related_publications: false
 ---

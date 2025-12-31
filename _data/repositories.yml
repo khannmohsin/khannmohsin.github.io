@@ -4,7 +4,7 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - khannmohsin/DTEA
+  - khannmohsin/BlockCap
   - khannmohsin/CryptoBench-RPi-Arduino_LWC
   - khannmohsin/CryptoBench-RPi-Arduino_LWSC_Video
   - khannmohsin/CrytoBench-ChipWhisperer-AVR_LWHF

@@ -159,7 +159,7 @@ toc: false
 }
 .st-collage img{
   width:100%;
-  height: 96px;
+  height: 100%;
   object-fit: cover;
   border-radius: 12px;
   border: 1px solid var(--st-border);
@@ -257,16 +257,14 @@ toc: false
               I grew up in <strong>Kashmir</strong>, a region known for its natural beauty. I completed school and high school in the science stream, focusing on mathematics and biology.
             </p>
             <p>
-              From early on, I was drawn to <strong>computers and technology</strong>—assembling PCs, experimenting with hardware, and exploring languages such as <strong>C</strong> and <strong>C#</strong>, often with guidance from my brother.
+              From early on, I was drawn to <strong>computers and technology</strong>, assembling PCs, experimenting with hardware, and exploring languages such as <strong>C</strong> and <strong>C#</strong>.
             </p>
           </div>
 
           <div class="st-collage">
             <img src="{{ '/assets/img/story/kashmir_1.jpg' | relative_url }}" alt="Kashmir">
             <img src="{{ '/assets/img/story/kashmir_2.jpg' | relative_url }}" alt="Early interest in computing">
-            <img src="{{ '/assets/img/story/kashmir_3.jpg' | relative_url }}" alt="School years">
           </div>
-          <p class="st-caption">Replace with your own images (scenery, early projects, childhood moments).</p>
 
           <div class="st-tags">
             <span class="st-tag">Curiosity-driven learning</span>
@@ -281,12 +279,12 @@ toc: false
     <article class="st-entry">
       <div class="st-spine">
         <div class="st-dot" aria-hidden="true"></div>
-        <div class="st-date">2014–2018</div>
+        <div class="st-date">2014 -- 2018</div>
       </div>
 
       <section class="st-item">
         <div class="st-card">
-          <h3 class="st-title">2014–2018 — Bachelor’s Degree</h3>
+          <h3 class="st-title">Bachelor’s in Engineering</h3>
 
           <div class="st-body">
             <p>
@@ -298,11 +296,9 @@ toc: false
           </div>
 
           <div class="st-collage">
-            <img src="{{ '/assets/img/story/bsc_1.jpg' | relative_url }}" alt="Bachelor's graduation">
-            <img src="{{ '/assets/img/story/bsc_2.jpg' | relative_url }}" alt="Thesis work">
+            <img src="{{ '/assets/img/story/bsc_1.jpeg' | relative_url }}" alt="Bachelor's graduation">
             <img src="{{ '/assets/img/story/bsc_3.jpg' | relative_url }}" alt="Lab or campus">
           </div>
-          <p class="st-caption">Ideas: graduation, thesis defense, lab work, or a screenshot of your first paper.</p>
 
           <div class="st-tags">
             <span class="st-tag">First publication</span>
@@ -316,7 +312,7 @@ toc: false
     <article class="st-entry">
       <div class="st-spine">
         <div class="st-dot" aria-hidden="true"></div>
-        <div class="st-date">2018–2020</div>
+        <div class="st-date">2018 -- 2020</div>
       </div>
 
       <section class="st-item">
@@ -333,8 +329,7 @@ toc: false
           </div>
 
           <div class="st-collage">
-            <img src="{{ '/assets/img/story/msc_1.jpg' | relative_url }}" alt="Conference or presentation">
-            <img src="{{ '/assets/img/story/msc_2.jpg' | relative_url }}" alt="Research writing">
+            <img src="{{ '/assets/img/story/msc_1.jpeg' | relative_url }}" alt="Conference or presentation">
             <img src="{{ '/assets/img/story/msc_3.jpg' | relative_url }}" alt="Pandemic-era work">
           </div>
 
@@ -351,7 +346,7 @@ toc: false
     <article class="st-entry">
       <div class="st-spine">
         <div class="st-dot" aria-hidden="true"></div>
-        <div class="st-date">2020–2021</div>
+        <div class="st-date">2020 -- 2021</div>
       </div>
 
       <section class="st-item">
@@ -367,12 +362,6 @@ toc: false
             </p>
           </div>
 
-          <div class="st-collage">
-            <img src="{{ '/assets/img/story/industry_1.jpg' | relative_url }}" alt="Cloud / data pipelines">
-            <img src="{{ '/assets/img/story/industry_2.jpg' | relative_url }}" alt="Teamwork">
-            <img src="{{ '/assets/img/story/industry_3.jpg' | relative_url }}" alt="Architecture sketch">
-          </div>
-
           <div class="st-tags">
             <span class="st-tag">AWS</span>
             <span class="st-tag">Databricks</span>
@@ -386,7 +375,7 @@ toc: false
     <article class="st-entry">
       <div class="st-spine">
         <div class="st-dot" aria-hidden="true"></div>
-        <div class="st-date">2021–Present</div>
+        <div class="st-date">2021 -- 2025</div>
       </div>
 
       <section class="st-item">
@@ -403,9 +392,9 @@ toc: false
           </div>
 
           <div class="st-collage">
-            <img src="{{ '/assets/img/story/uit_1.jpg' | relative_url }}" alt="UiT campus">
-            <img src="{{ '/assets/img/story/uit_2.jpg' | relative_url }}" alt="Research group">
-            <img src="{{ '/assets/img/story/uit_3.jpg' | relative_url }}" alt="Conference / workshop">
+            <img src="{{ '/assets/img/story/UiT_campus.jpg' | relative_url }}" alt="UiT campus">
+            <img src="{{ '/assets/img/story/testbed.jpeg' | relative_url }}" alt="Research group">
+            <img src="{{ '/assets/img/story/conference.jpeg' | relative_url }}" alt="Conference / workshop">
           </div>
 
           <div class="st-tags">
@@ -430,8 +419,8 @@ toc: false
 
           <div class="st-body">
             <p>
-              Beyond academics, I enjoy traveling, exploring local cultures, and trying different cuisines. So far, I have visited:
-              Finland, Denmark, Netherlands, Spain, France, Latvia, Estonia, Hungary, Austria, Czechia, and Italy.
+              Beyond academics, I enjoy traveling and exploring local cultures. <br>
+              I have visited 🇫🇮 Finland, 🇩🇰 Denmark, 🇳🇱 Netherlands, 🇪🇸 Spain, 🇫🇷 France, 🇱🇻 Latvia, 🇪🇪 Estonia, 🇭🇺 Hungary, 🇦🇹 Austria, 🇨🇿 Czechia, and 🇮🇹 Italy.
             </p>
             <p>
               I hope to complete my travels across <strong>Europe</strong> before exploring the rest of the world.
@@ -439,11 +428,13 @@ toc: false
           </div>
 
           <div class="st-collage">
-            <img src="{{ '/assets/img/story/travel_1.jpg' | relative_url }}" alt="Travel photo 1">
-            <img src="{{ '/assets/img/story/travel_2.jpg' | relative_url }}" alt="Travel photo 2">
-            <img src="{{ '/assets/img/story/travel_3.jpg' | relative_url }}" alt="Travel photo 3">
+            <img src="{{ '/assets/img/story/travel_1.jpeg' | relative_url }}" alt="Travel photo 1">
+            <img src="{{ '/assets/img/story/travel_2.jpeg' | relative_url }}" alt="Travel photo 2">
+            <img src="{{ '/assets/img/story/travel_3.gif' | relative_url }}" alt="Travel photo 3">
+            <img src="{{ '/assets/img/story/travel_4.jpeg' | relative_url }}" alt="Travel photo 1">
+            <img src="{{ '/assets/img/story/travel_5.jpeg' | relative_url }}" alt="Travel photo 2">
+            <img src="{{ '/assets/img/story/travel_6.jpeg' | relative_url }}" alt="Travel photo 3">
           </div>
-          <p class="st-caption">Tip: use landmark shots or a curated travel collage.</p>
 
           <div class="st-tags">
             <span class="st-tag">Culture</span>

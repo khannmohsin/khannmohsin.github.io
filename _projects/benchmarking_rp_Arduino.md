@@ -4,7 +4,7 @@ title: "ARM-Based Benchmarking of Lightweight Cryptographic Ciphers for IoT"
 category: Research
 img: assets/img/projects/benchmarking_rp_Arduino/cover.png
 description: "Unified benchmarking framework for evaluating lightweight block and stream ciphers on ARM IoT devices with performance, energy, and resource metrics."
-importance: 1
+importance: 2
 tags: ["iot", "lightweight cryptography", "benchmarking", "arm", "performance", "energy"]
 related_publications: true
 ---

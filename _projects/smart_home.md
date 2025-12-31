@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Smart-n-Secure Home: IoT-Based Automation and Security
+title: IoT-Based Automation and Security
 description: An IoT-enabled home automation and security system integrating Arduino Mega & UNO, RFID access, multiple sensors, and Cayenne Cloud for real-time monitoring and remote control.
 img: assets/img/projects/smart_home/cover.png
-importance: 1
+importance: 4
 category: Research
 related_publications: false
 ---

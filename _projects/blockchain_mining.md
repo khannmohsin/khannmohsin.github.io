@@ -4,7 +4,7 @@ title: "Blockchain Implementation & Consensus Mechanisms"
 category: Courses
 img: assets/img/projects/blockchain_mining/cover.png
 description: "Implementation of blockchain in Python with Merkle Tree, Proof of Work mining, and comparative analysis of PoW, PoS, BFT, and PoStorage."
-importance: 1
+importance: 2
 tags: ["blockchain", "consensus", "PoW", "PoS", "BFT", "PoStorage", "distributed-systems"]
 related_publications: false
 ---

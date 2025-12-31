@@ -5,7 +5,7 @@ permalink: /projects/
 description: Selected research, course, and management projects—organized by category.
 nav: true
 nav_order: 1
-display_categories: [Research, Courses, Management]
+display_categories: [Capstone Industry Projects, Research, Courses, Management]
 horizontal: false
 toc: false
 ---

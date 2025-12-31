@@ -1,18 +1,14 @@
 {
   "basics": {
     "name": "Mohsin Khan",
-    "label": "PhD Researcher in Cybersecurity",
-    "image": "",
+    "label": "PhD Cybersecurity | Aspiring Security Professional (Blue & Red Team)",
     "email": "khann.mohsin@icloud.com",
-    "phone": "",
     "url": "https://khannmohsin.github.io",
-    "summary": "PhD in cybersecurity with a strong foundation in lightweight cryptography, blockchain-secured architectures, and distributed IoT systems. I’ve evaluated over 150 cryptographic primitives on embedded platforms and built smart contract-based frameworks for dynamic policy enforcement. I’m now looking to apply this expertise toward real-world challenges in secure protocol design, trusted execution, and post-quantum security—bridging research with practice in decentralized, ML-assisted, and embedded security environments.",
+    "summary": "PhD in cybersecurity with strong systems-level expertise in IoT/OT security, distributed trust, and applied cryptography. My background combines academic rigor—evaluating 130+ cryptographic primitives and designing secure distributed architectures, with hands-on industry skills in vulnerability management, detection fundamentals, cloud security, and governance. I am actively transitioning into blue-team, red-team, or security engineering roles.",
     "location": {
-      "address": "Department of Computer Science, UiT The Arctic University of Norway",
-      "postalCode": "9006",
-      "city": "Troms\u00f8",
-      "countryCode": "NO",
-      "region": "Troms og Finnmark"
+      "city": "Tromsø",
+      "region": "Troms og Finnmark",
+      "countryCode": "NO"
     },
     "profiles": [
       {
@@ -27,340 +23,208 @@
       },
       {
         "network": "Google Scholar",
-        "username": "GyjgNdIAAAAJ",
         "url": "https://scholar.google.com/citations?user=GyjgNdIAAAAJ&hl=en"
       }
     ]
   },
-  "work": [
+
+"work": [
+  {
+    "name": "UiT – The Arctic University of Norway",
+    "position": "PhD Research Fellow in Cybersecurity",
+    "startDate": "2021-11-01",
+    "endDate": "2025-12-01",
+    "summary": "Conducted applied cybersecurity research on securing distributed IoT and OT systems under adversarial and resource-constrained conditions.",
+    "highlights": [
+      "Designed secure distributed IoT and cloud architectures using Zero Trust principles, IAM-based access control, and STRIDE threat modeling, reducing attack surface and strengthening trust enforcement across multi-node systems.",
+      "Performed risk and impact analysis on distributed components to identify trust boundaries and failure modes, improving resilience against partial compromise, misconfiguration, and insider threats.",
+      "Developed a taxonomy and benchmarking framework for ~130 lightweight cryptographic primitives, evaluating performance, memory, energy, and cryptanalytic properties to support secure algorithm selection on constrained devices."
+    ]
+  },
+  {
+    "name": "Blackbuck Insight",
+    "position": "Data Engineer (Security-Aware Systems)",
+    "startDate": "2021-01-01",
+    "endDate": "2021-11-01",
+    "summary": "Worked on large-scale data pipelines with a focus on secure cloud migration, access control, and operational reliability.",
+    "highlights": [
+      "Migrated on-premise data pipelines to AWS using IAM-based access controls and monitoring, improving security posture and reducing data access risk.",
+      "Built and optimized distributed data processing workflows using PySpark, MapReduce, and Linux, enabling scalable and reliable analytics on high-volume datasets.",
+      "Improved pipeline observability and access separation, supporting secure production analytics and downstream decision-making."
+    ]
+  }
+],
+
+ "education": [
+  {
+    "institution": "UiT – The Arctic University of Norway",
+    "location": "Tromsø, Norway",
+    "studyType": "PhD",
+    "area": "Cybersecurity",
+    "startDate": "2021-11-01",
+    "endDate": "2025-12-01",
+    "thesis": "End-to-End Security for Resource-Constrained IoT Systems in Distributed Environments"
+  },
+  {
+    "institution": "Indira Gandhi National Open University",
+    "location": "New Delhi, India",
+    "studyType": "MBA",
+    "area": "Operations Management",
+    "startDate": "2019-01-01",
+    "endDate": "2022-07-01",
+    "thesis": "Impact of Management Information Systems (MIS) on Banking Efficiency"
+  },
+  {
+    "institution": "Central University of Jammu",
+    "location": "Jammu & Kashmir, India",
+    "studyType": "M.Tech",
+    "area": "Computer Science and Engineering",
+    "startDate": "2018-08-01",
+    "endDate": "2020-11-01",
+    "thesis": "Traffic Jam Minimization and Accident Avoidance System using IoT"
+  },
+  {
+    "institution": "Baba Ghulam Shah Badshah University",
+    "location": "Jammu & Kashmir, India",
+    "studyType": "B.Tech",
+    "area": "IT and Telecommunication Engineering",
+    "startDate": "2014-08-01",
+    "endDate": "2018-06-01",
+    "thesis": "Smart and Secure Home"
+  }
+],
+
+  "projects": [
     {
-      "name": "Blackbuck Insight",
-      "position": "Data Engineer",
-      "location": "Bangalore, India",
-      "url": "",
-      "startDate": "2021-01-01",
-      "endDate": "2021-11-01",
-      "summary": "Migrated and processed big datasets from on-premises infrastructure to AWS cloud for TransUnion, improving data accessibility and reducing query latency by 40%.",
+      "name": "Distributed Trust Enforcement Architecture (DTEA)",
+      "category": "Security Engineering",
+      "summary": "Designed and implemented a blockchain-assisted capability-based access control framework for distributed IoT systems.",
       "highlights": [
-        "Worked with MapReduce, HDFS, PySpark, Apache, Python, and Linux.",
-        "Used AWS services including S3, EC2, EMR, and Lambda.",
-        "Improved data pipeline performance and security during migration."
+        "Smart-contract–based authorization with dynamic issuance, revocation, and auditability.",
+        "Validator-based trust coordination using PoA/QBFT consensus.",
+        "Evaluated latency, CPU, memory, and security guarantees under STRIDE."
       ]
-    }
-  ],
-  "volunteer": [
+    },
     {
-      "organization": "IEEE CCGRID Conference 2025",
-      "location": "Tromsø, Norway",
-      "position": "Volunteer",
-      "startDate": "2025-05-01",
-      "endDate": "2025-05-31",
-      "summary": "Assisted in the organization and coordination of the IEEE CCGRID 2025 Conference hosted at UiT.",
+      "name": "Lightweight Cryptography Benchmarking on Embedded Systems",
+      "category": "Applied Security Research",
+      "summary": "Evaluated 130+ lightweight cryptographic primitives for performance, memory, and energy trade-offs on constrained devices.",
       "highlights": [
-        "Supported session management and technical logistics.",
-        "Engaged with participants and managed venue arrangements."
+        "Used ChipWhisperer with AVR ATxmega128 and ARM platforms.",
+        "Produced practitioner-oriented taxonomy for secure algorithm selection.",
+        "Direct relevance to IoT/OT security and post-quantum readiness."
       ]
     },
     {
-      "organization": "PhD Seminars at UiT",
-      "location": "Tromsø, Norway",
-      "position": "Organizer",
-      "startDate": "2023-01-01",
-      "endDate": "2024-12-01",
-      "summary": "Organized internal PhD seminars to facilitate knowledge exchange among doctoral researchers.",
+      "name": "Healthcare Data Security & HIPAA Risk Assessment (Capstone)",
+      "category": "Industry Skills",
+      "summary": "Evaluated data security posture of a healthcare provider against HIPAA requirements.",
       "highlights": [
-        "Coordinated scheduling and speaker lineup.",
-        "Managed announcements and follow-ups with participants."
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "UiT The Arctic University of Norway",
-      "location": "Tromsø, Norway",
-      "url": "https://uit.no",
-      "area": "Cybersecurity",
-      "studyType": "PhD",
-      "startDate": "2021-11-01",
-      "endDate": "2025-11-01",
-      "courses": [
-        "Information Flow Control (IFC)",
-        "Advanced Distributed Systems",
-        "Philosophy of Science and Ethics",
-        "Science, Technology and Society (Digital Life Norway)",
-        "Research Communication"
+        "Identified internal and external risks to patient data.",
+        "Recommended encryption, backup, and compliance-aligned controls.",
+        "Performed governance, risk, and compliance analysis."
       ]
     },
     {
-      "institution": "Indira Gandhi National Open University",
-      "location": "New Delhi, India",
-      "area": "Operations Management",
-      "studyType": "MBA",
-      "startDate": "2019-01-01",
-      "endDate": "2022-07-01",
-      "title": "Impact of Management Information Systems (MIS) on Banking Efficiency"
-    },
-    {
-      "institution": "Central University of Jammu",
-      "location": "J & K, India",
-      "area": "Computer Science and Technology",
-      "studyType": "M.Tech",
-      "startDate": "2018-08-01",
-      "endDate": "2020-11-01",
-      "title": "Traffic Jam Minimization and Accident Avoidance System using IoT"
-    },
-    {
-      "institution": "Baba Ghulam Shah Badshah University",
-      "location": "J & K, India",
-      "area": "IT and Telecommunication Engineering",
-      "studyType": "B.Tech",
-      "startDate": "2014-08-01",
-      "endDate": "2018-07-01",
-      "title": "Smart and Secure Home"
+      "name": "Cloud Security & Threat Mitigation for Manufacturing Systems",
+      "category": "Industry Skills",
+      "summary": "Designed secure cloud migration strategy and threat mitigation plan for an industrial organization.",
+      "highlights": [
+        "Selected appropriate cloud models and security frameworks.",
+        "Applied threat modeling and vulnerability prioritization.",
+        "Focused on availability, safety, and OT constraints."
+      ]
     }
   ],
-  "awards": [
-    {
-      "title": "Best Paper Award",
-      "date": "2018-10-01",
-      "awarder": "National Conference on Recent Advances in Computer Science and IT (NCRACIT)",
-      "summary": "Awarded for the paper 'Smart n Secure Home using IoT' presented at NCRACIT, recognizing innovation in embedded and IoT systems for home automation."
-    },
-    {
-      "title": "Certificate of Appreciation",
-      "date": "2016-04-01",
-      "awarder": "Baba Ghulam Shah Badshah University",
-      "summary": "Received for exemplary performance in university-level drawing competition."
-    }
-  ],
+
   "certifications": [
     {
-      "name": "Amazon Web Services Certified Developer – Associate",
-      "date": "2021-02-01",
-      "issuer": "AWS",
-      "url": "https://www.credly.com/badges/06e675a8-933e-4f79-8c01-b633dda9f4cf?source=linked_in_profile",
-      "icon": "fa-brands fa-aws"
+      "name": "ISO 27001: Compliant Cybersecurity",
+      "issuer": "IBM / LinkedIn Learning"
     },
     {
-      "name": "Certified Associate Developer for Apache Spark 3.0 – Python",
-      "date": "2021-04-01",
-      "issuer": "Databricks",
-      "url": "https://credentials.databricks.com/d5a97746-81d7-42d9-af2f-4fffc622a28f#acc.rJ8mTULI",
-      "icon": "fa-solid fa-bolt"
+      "name": "Deloitte Australia – Cyber Job Simulation",
+      "issuer": "Forage",
+      "summary": "Analyzed web activity logs, supported incident response, and identified suspicious behavior."
     },
     {
-      "name": "Real-Time Power System Analysis and Smart Grid",
-      "date": "2019-03-01",
-      "issuer": "AICTE",
-      "url": "",
-      "icon": "fa-solid fa-plug"
-    },
-    {
-      "name": "Educational Administration, Management and Leadership in School Education",
-      "date": "2019-05-01",
-      "issuer": "NCERT",
-      "url": "",
-      "icon": "fa-solid fa-school"
-    }
-  ], 
-  "publications": [
-    {
-      "name": "A Comparative Analysis of Lightweight Hash Functions Using AVR ATXMega128 and ChipWhisperer",
-      "publisher": "LIGHTSEC",
-      "releaseDate": "2025-01-01",
-      "url": "",
-      "summary": "Benchmarked lightweight hash functions using ChipWhisperer and custom E-RANK metric for performance, memory, and energy evaluation on constrained devices."
-    },
-    {
-      "name": "Software Benchmarking of NIST Lightweight Hash Function Finalists on Resource-Constrained AVR Platform via ChipWhisperer",
-      "publisher": "SECRYPT",
-      "releaseDate": "2025-01-01",
-      "url": "https://www.scitepress.org/Papers/2025/135607/135607.pdf",
-      "summary": "Analyzed NIST finalists for lightweight hashing on AVR devices, evaluated using ChipWhisperer and E-RANK composite metric."
-    },
-    {
-      "name": "Traffic Congestion Reduction and Accident Circumvention System via Incorporation of CAV and VANET",
-      "publisher": "IGI Global",
-      "releaseDate": "2021-01-01",
-      "url": "https://www.igi-global.com/article/traffic-congestion-reduction-and-accident-circumvention-system-via-incorporation-of-cav-and-vanet/272039",
-      "summary": "Designed an intelligent transportation model combining CAV and VANET systems for real-time accident avoidance and congestion detection."
+      "name": "AWS Certified Developer – Associate",
+      "issuer": "Amazon Web Services"
     }
   ],
+
   "skills": [
     {
-      "name": "Cybersecurity & Cryptography",
-      "level": "Advanced",
+      "name": "Blue Team & Defensive Security",
       "keywords": [
-        "Blockchain Security",
-        "Access Control Models",
-        "Information Flow Control (IFC)",
+        "Log Analysis",
+        "Detection Fundamentals",
+        "Incident Response",
+        "Vulnerability Management",
+        "SIEM (learning: Splunk)",
+        "Threat Modeling (STRIDE)"
+      ]
+    },
+    {
+      "name": "Red Team & Adversarial Skills",
+      "keywords": [
+        "Penetration Testing Fundamentals",
+        "Web Application Security",
+        "Adversarial Thinking",
+        "Attack Surface Analysis"
+      ]
+    },
+    {
+      "name": "Security Engineering & Architecture",
+      "keywords": [
+        "Zero Trust",
+        "IAM",
+        "Secure Distributed Systems",
+        "IoT/OT Security",
+        "Blockchain Security"
+      ]
+    },
+    {
+      "name": "Cryptography & Emerging Security",
+      "keywords": [
         "Lightweight Cryptography",
-        "Smart Contract Security",
-        "STRIDE Threat Modeling",
-        "Distributed Trust",
-        "Hash Functions"
-      ]
-    },
-    {
-      "name": "Embedded Systems & IoT",
-      "level": "Advanced",
-      "keywords": [
-        "AVR/ARM Microcontrollers",
-        "ChipWhisperer (AVR ATxmega128, STM32F3)",
-        "Power/Timing Side-Channel Analysis",
-        "Real-Time Profiling",
-        "IoT Security Architectures",
-        "Hardware/Software Benchmarking",
-        "Raspberry Pi",
-        "Arduino",
-        "Jetson"
-      ]
-    },
-    {
-      "name": "Programming & Tooling",
-      "level": "Advanced",
-      "keywords": [
-        "C",
-        "C++",
-        "C#",
-        "Python",
-        "JavaScript",
-        "Solidity",
-        "SQL",
-        "MATLAB",
-        "Flask",
-        "Bash",
-        "Make",
-        "Git",
-        "Visual Studio Code",
-        "Simulink",
-        "Pandas",
-        "Numpy",
-        "Matplotlib",
-        "AVR/Microchip Toolchains",
-        "Truffle",
-        "Hyperledger"
-      ]
-    },
-    {
-      "name": "DevOps & Monitoring",
-      "level": "Intermediate",
-      "keywords": [
-        "AWS (EC2, S3, Lambda)",
-        "Docker",
-        "Kubernetes",
-        "Apache",
-        "Nginx",
-        "Linux",
-        "Prometheus",
-        "Grafana",
-        "MapReduce",
-        "HDFS",
-        "PySpark",
-        "Shell Scripting"
-      ]
-    },
-    {
-      "name": "Academic & Research Skills",
-      "level": "Expert",
-      "keywords": [
-        "Systematic Literature Reviews",
-        "Quantitative Analysis",
-        "Technical Writing",
-        "LaTeX",
-        "BibTeX",
-        "Peer Review",
-        "Paper Reviewing",
-        "Conference Presentations"
+        "Hash Functions",
+        "Applied Cryptography",
+        "Post-Quantum Cryptography (research exposure)"
       ]
     }
   ],
-  "languages": [
-    {
-      "language": "Kashmiri",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent"
-    },
-    {
-      "language": "Hindi",
-      "fluency": "Fluent"
-    },
-    {
-      "language": "Urdu",
-      "fluency": "Fluent"
-    },
-    {
-      "language": "Norwegian",
-      "fluency": "Beginner (actively learning)"
-    }
-  ],
+
   "interests": [
     {
-      "name": "Security Research",
+      "name": "Cybersecurity Practice",
       "keywords": [
-        "Lightweight Cryptography",
-        "Blockchain Security",
-        "Access Control Models",
-        "Information Flow Control",
-        "Cloud Security",
-        "Secure Protocol Design",
-        "Distributed Trust Architectures",
-        "Quantum-Resilient Algorithms"
-      ]
-    },
-    {
-      "name": "Embedded & IoT Systems",
-      "keywords": [
-        "Microcontroller Security",
-        "Side-Channel Analysis",
-        "Real-Time Embedded Monitoring",
-        "Secure IoT Architectures"
-      ]
-    },
-    {
-      "name": "Performance Benchmarking",
-      "keywords": [
-        "Energy and Timing Metrics",
-        "Hardware/Software Evaluation",
-        "Security-Cost Tradeoffs"
+        "Blue Team Operations",
+        "Red Team Techniques",
+        "Security Architecture",
+        "OT & Critical Infrastructure Security"
       ]
     }
   ],
+
   "references": [
     {
       "name": "Prof. Håvard Johansen",
-      "reference": "Professor, Department of Computer Science, UiT The Arctic University of Norway. Supervisor for PhD research in cybersecurity, cryptographic benchmarking, and blockchain-based access control.",
+      "reference": "Professor, Department of Computer Science, UiT The Arctic University of Norway.",
       "email": "havard.johansen@uit.no",
       "url": "https://app.cristin.no/persons/show.jsf?id=58842"
     },
     {
       "name": "Prof. Dag Johansen",
-      "reference": "Professor, Department of Computer Science, UiT The Arctic University of Norway. Co-advisor and collaborator on distributed trust frameworks and secure IoT architectures.",
+      "reference": "Professor, Department of Computer Science, UiT The Arctic University of Norway.",
       "email": "dag.johansen@uit.no",
       "url": "https://app.cristin.no/persons/show.jsf?id=58877"
     },
     {
       "name": "Dr. Elisavet Kozyri",
-      "reference": "Associate Professor, Department of Computer Science, UiT The Arctic University of Norway. Co-supervisor on PhD project with focus on lightweight cryptography and system security.",
+      "reference": "Associate Professor, Department of Computer Science, UiT The Arctic University of Norway.",
       "email": "elisavet.kozyri@uit.no",
       "url": "https://ekozyri.com/"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Distributed Trust Enforcement Architecture (DTEA)",
-      "summary": "A blockchain-based access control framework for IoT security using PoA and capability tokens.",
-      "startDate": "2022-01-01",
-      "endDate": "",
-      "url": "https://github.com/khannmohsin/DTEA"
-    },
-    {
-      "name": "CryptoBench-RPi-Arduino_LWC",
-      "summary": "Benchmarking lightweight cryptographic primitives on embedded RPi/Arduino systems.",
-      "url": "https://github.com/khannmohsin/CryptoBench-RPi-Arduino_LWC"
     }
   ]
 }

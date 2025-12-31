@@ -3,7 +3,7 @@ layout: page
 title: Prime Multiprocessor
 description: Parallel prime number calculation with forward/reverse execution and automatic archiving.
 img: assets/img/projects/prime_multiprocessor/cover.png
-importance: 1
+importance: 3
 category: Courses
 related_publications: false
 ---
