@@ -216,7 +216,7 @@ social: true
       I explored how trust, access control, and cryptographic guarantees can be enforced across distributed nodes under resource constraints and adversarial conditions.
       I am transitioning from academic security research to industry practice by acquiring hands-on Blue Team and Red Team skills, including detection, response, governance, and penetration testing.
       <div class="abt-pills">
-        <span class="abt-pill">IoT / OT Security</span>
+        <span class="abt-pill">IoT Security</span>
         <span class="abt-pill">Access Control</span>
         <span class="abt-pill">Cryptography</span>
         <span class="abt-pill">Read Team</span>
