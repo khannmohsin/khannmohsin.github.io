@@ -4,6 +4,7 @@
     "label": "PhD Cybersecurity | Aspiring Security Professional (Blue & Red Team)",
     "email": "khann.mohsin@icloud.com",
     "url": "https://khannmohsin.github.io",
+    "img": "assets/images/profile.jpg",
     "summary": "PhD in cybersecurity with strong systems-level expertise in IoT/OT security, distributed trust, and applied cryptography. My background combines academic rigor—evaluating 130+ cryptographic primitives and designing secure distributed architectures, with hands-on industry skills in vulnerability management, detection fundamentals, cloud security, and governance. I am actively transitioning into blue-team, red-team, or security engineering roles.",
     "location": {
       "city": "Tromsø",
@@ -32,6 +33,7 @@
   {
     "name": "UiT – The Arctic University of Norway",
     "position": "PhD Research Fellow in Cybersecurity",
+    "icon": "/assets/img/icons/uit.png",
     "startDate": "2021-11-01",
     "endDate": "2025-12-01",
     "summary": "Conducted applied cybersecurity research on securing distributed IoT and OT systems under adversarial and resource-constrained conditions.",
@@ -44,8 +46,10 @@
   {
     "name": "Blackbuck Insight",
     "position": "Data Engineer (Security-Aware Systems)",
+    "icon": "/assets/img/icons/bbi.png",
     "startDate": "2021-01-01",
     "endDate": "2021-11-01",
+    "url" : "https://www.blackbuck.com/insight/",
     "summary": "Worked on large-scale data pipelines with a focus on secure cloud migration, access control, and operational reliability.",
     "highlights": [
       "Migrated on-premise data pipelines to AWS using IAM-based access controls and monitoring, improving security posture and reducing data access risk.",
@@ -61,6 +65,7 @@
     "location": "Tromsø, Norway",
     "studyType": "PhD",
     "area": "Cybersecurity",
+    "url": "https://uit.no/phd",
     "startDate": "2021-11-01",
     "endDate": "2025-12-01",
     "thesis": "End-to-End Security for Resource-Constrained IoT Systems in Distributed Environments"
@@ -70,6 +75,7 @@
     "location": "New Delhi, India",
     "studyType": "MBA",
     "area": "Operations Management",
+    "url": "https://www.ignou.ac.in/schools/programme/MBA",
     "startDate": "2019-01-01",
     "endDate": "2022-07-01",
     "thesis": "Impact of Management Information Systems (MIS) on Banking Efficiency"
@@ -78,6 +84,7 @@
     "institution": "Central University of Jammu",
     "location": "Jammu & Kashmir, India",
     "studyType": "M.Tech",
+    "url": "https://www.cujammu.ac.in/",
     "area": "Computer Science and Engineering",
     "startDate": "2018-08-01",
     "endDate": "2020-11-01",
@@ -88,68 +95,170 @@
     "location": "Jammu & Kashmir, India",
     "studyType": "B.Tech",
     "area": "IT and Telecommunication Engineering",
+    "url": "https://www.bgsbu.ac.in/",
     "startDate": "2014-08-01",
     "endDate": "2018-06-01",
     "thesis": "Smart and Secure Home"
   }
 ],
 
-  "projects": [
+  "certificates": [
     {
-      "name": "Distributed Trust Enforcement Architecture (DTEA)",
-      "category": "Security Engineering",
-      "summary": "Designed and implemented a blockchain-assisted capability-based access control framework for distributed IoT systems.",
-      "highlights": [
-        "Smart-contract–based authorization with dynamic issuance, revocation, and auditability.",
-        "Validator-based trust coordination using PoA/QBFT consensus.",
-        "Evaluated latency, CPU, memory, and security guarantees under STRIDE."
-      ]
+      "name": "AWS Certified Developer – Associate",
+      "issuer": "Amazon Web Services (AWS)",
+      // "date": "2021-02-01",
+      "url": "https://www.credly.com/badges/06e675a8-933e-4f79-8c01-b633dda9f4cf",
+      "summary": "Validated skills in developing, deploying, and securing cloud-native applications using AWS services, IAM, and event-driven architectures."
     },
     {
-      "name": "Lightweight Cryptography Benchmarking on Embedded Systems",
-      "category": "Applied Security Research",
-      "summary": "Evaluated 130+ lightweight cryptographic primitives for performance, memory, and energy trade-offs on constrained devices.",
-      "highlights": [
-        "Used ChipWhisperer with AVR ATxmega128 and ARM platforms.",
-        "Produced practitioner-oriented taxonomy for secure algorithm selection.",
-        "Direct relevance to IoT/OT security and post-quantum readiness."
-      ]
-    },
-    {
-      "name": "Healthcare Data Security & HIPAA Risk Assessment (Capstone)",
-      "category": "Industry Skills",
-      "summary": "Evaluated data security posture of a healthcare provider against HIPAA requirements.",
-      "highlights": [
-        "Identified internal and external risks to patient data.",
-        "Recommended encryption, backup, and compliance-aligned controls.",
-        "Performed governance, risk, and compliance analysis."
-      ]
-    },
-    {
-      "name": "Cloud Security & Threat Mitigation for Manufacturing Systems",
-      "category": "Industry Skills",
-      "summary": "Designed secure cloud migration strategy and threat mitigation plan for an industrial organization.",
-      "highlights": [
-        "Selected appropriate cloud models and security frameworks.",
-        "Applied threat modeling and vulnerability prioritization.",
-        "Focused on availability, safety, and OT constraints."
-      ]
-    }
-  ],
-
-  "certifications": [
-    {
-      "name": "ISO 27001: Compliant Cybersecurity",
-      "issuer": "IBM / LinkedIn Learning"
+      "name": "Databricks Certified Associate Developer for Apache Spark (Python)",
+      "issuer": "Databricks",
+      // "date": "2021-04-01",
+      "url": "https://credentials.databricks.com/d5a97746-81d7-42d9-af2f-4fffc622a28f",
+      "summary": "Demonstrated proficiency in building and optimizing distributed data pipelines using Apache Spark and Python."
     },
     {
       "name": "Deloitte Australia – Cyber Job Simulation",
-      "issuer": "Forage",
-      "summary": "Analyzed web activity logs, supported incident response, and identified suspicious behavior."
+      "issuer": "Deloitte Australia (Forage)",
+      // "date": "2025-12-01",
+      "url": "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_694ea32abeda68c473a0df79_1766762526893_completion_certificate.pdf",
+      "summary": "Completed a practical cyber job simulation involving web activity log analysis, incident investigation, and identification of suspicious user behavior during a simulated security breach."
     },
     {
-      "name": "AWS Certified Developer – Associate",
-      "issuer": "Amazon Web Services"
+      "name": "Governance, Risk, Compliance, and Data Privacy",
+      "issuer": "IBM",
+      // "date": "2025-12-01",
+      "url": "https://www.credly.com/badges/d775f588-1489-4e22-af91-353d0fe5a093/public_url",
+      "summary": "Covered governance frameworks, risk assessment, compliance requirements, and data privacy principles used in enterprise security environments."
+    },
+    {
+      "name": "System and Network Security",
+      "issuer": "IBM",
+      // "date": "2025-12-01",
+      "url": "https://www.credly.com/badges/a7f30d6f-7be5-46ff-967c-c638ea01edd1",
+      "summary": "Focused on host and network security fundamentals, secure system design, firmware security, and access control mechanisms."
+    },
+    {
+      "name": "Vulnerability Management",
+      "issuer": "IBM",
+      // "date": "2025-12-01",
+      "url": "https://www.credly.com/badges/87eb7c46-a780-4f2d-b631-b3b215c1eb66",
+      "summary": "Developed practical understanding of vulnerability identification, prioritization, threat analysis, and remediation strategies."
+    },
+    {
+      "name": "Vulnerability Management, Detection, and Response",
+      "issuer": "Qualys",
+      // "date": "2025-12-01",
+      "url": "https://drive.google.com/file/d/1U8QYmKs3il_la4hJ1BFIOy3775AK_m7Y/view?usp=sharing",
+      "summary": "Hands-on training in vulnerability scanning, risk-based prioritization, and detection workflows using enterprise-grade tooling."
+    },
+    {
+      "name": "ISO 27001:2022-Compliant Cybersecurity – Getting Started",
+      "issuer": "LinkedIn Learning",
+      // "date": "2025-12-01",
+      "url": "https://www.linkedin.com/learning/certificates/1919b3468e95962b9a326a4a4abe0c30d9c30df30a7c4607a77f7068b0ececc0?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B1FL26jeNQcms5wfV6MB73Q%3D%3D",
+      "summary": "Introduced ISO 27001:2022 fundamentals, ISMS concepts, and baseline security control implementation."
+    },
+    {
+      "name": "ISO 27001:2022-Compliant Cybersecurity – Annex A Controls",
+      "issuer": "LinkedIn Learning",
+      // "date": "2025-12-01",
+      "url": "https://www.linkedin.com/learning/certificates/d8a58ce0c758ff94406c4053515aa85748dcd26b8f66e10e99490afb3b784e6a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B1FL26jeNQcms5wfV6MB73Q%3D%3D",
+      "summary": "Focused on Annex A security controls, including access control, incident response, asset management, and operational security."
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Cloud Security Architecture & Migration Risk Analysis",
+      "category": "Industry Skills",
+      "startDate": "2025-12-01",
+      "endDate": "2025-12-01",
+      "url": "/projects/cloud_sec/",
+      "summary": "Assessed cloud migration risks and security controls for an industrial organization transitioning critical systems to the cloud.",
+      "highlights": [
+        "Evaluated IaaS, PaaS, and SaaS deployment models to identify security risks to data, applications, and infrastructure during migration.",
+        "Applied shared responsibility principles and cloud security best practices to recommend mitigation strategies aligned with operational constraints.",
+        "Strengthened practical skills relevant to cloud security, security engineering, and architecture-focused roles."
+      ]
+    },
+    {
+      "name": "Deloitte Australia Cyber Job Simulation (Forage)",
+      "category": "Industry Skills",
+      "startDate": "2025-12-01",
+      "endDate": "2025-12-01",
+      "url": "/projects/forage_delloitte/",
+      "summary": "Completed a hands-on cyber incident simulation mirroring real SOC and consulting workflows.",
+      "highlights": [
+        "Analyzed web and activity logs to identify anomalous behavior and potential indicators of compromise during a simulated security breach.",
+        "Supported incident investigation using structured reasoning to separate benign activity from suspicious patterns under incomplete information.",
+        "Developed practical detection, triage, and communication skills directly applicable to SOC analyst and blue-team roles."
+      ]
+    },
+    {
+      "name": "Healthcare Data Security & HIPAA Risk Assessment",
+      "category": "GRC & Compliance",
+      "startDate": "2025-12-01",
+      "endDate": "2025-12-01",
+      "url": "/projects/healthcare_HIPAA/",
+      "summary": "Evaluated the data security posture of a healthcare provider against HIPAA requirements and real-world operational risks.",
+      "highlights": [
+        "Reviewed policies, workflows, and data handling practices to identify confidentiality, integrity, and availability risks to patient data.",
+        "Mapped existing controls against HIPAA Security Rule requirements to identify compliance gaps and remediation priorities.",
+        "Recommended encryption, backup, and access-control improvements suitable for a small healthcare organization."
+      ]
+    },
+    {
+      "name": "Vulnerability Impact Analysis & Threat Mitigation",
+      "category": "Blue Team & Risk Analysis",
+      "startDate": "2025-12-01",
+      "endDate": "2025-12-01",
+      "url": "/projects/vulnerability_impact/",
+      "summary": "Performed structured vulnerability analysis and risk-based mitigation planning for an organizational environment.",
+      "highlights": [
+        "Identified technical and procedural vulnerabilities, then assessed likelihood and business impact to support risk-based prioritization.",
+        "Ranked findings by severity to guide remediation decisions under limited time and resource constraints.",
+        "Delivered a mitigation plan aligned with defensive security workflows and vulnerability analyst responsibilities."
+      ]
+    },
+    {
+      "name": "BlockCap: Blockchain-Based Capability Access Control for IoT Systems",
+      "category": "Security Engineering",
+      "startDate": "2024-01-01",
+      "endDate": "2025-11-01",
+      "url": "/projects/dtea/",
+      "summary": "Designed a distributed trust and access-control architecture for IoT systems operating under partial trust and adversarial conditions.",
+      "highlights": [
+        "Designed capability-based authorization using smart contracts and validator coordination to enforce least-privilege IoT communication, reducing reliance on static credentials.",
+        "Implemented token issuance, revocation, expiry, and auditability through blockchain-backed governance, improving traceability and resistance to misconfiguration and insider threats.",
+        "Evaluated latency, resource overhead, and security guarantees using STRIDE threat modeling to validate deployability in resource-constrained environments."
+      ]
+    },
+    {
+      "name": "Lightweight Cryptography Benchmarking & Taxonomy for IoT",
+      "category": "Applied Security Research",
+      "startDate": "2023-01-01",
+      "endDate": "2025-09-01",
+      "url": "/projects/benchmarking_rp_Arduino/",
+      "summary": "Built a practitioner-oriented benchmarking and taxonomy framework to support secure cryptographic choices for constrained IoT and OT devices.",
+      "highlights": [
+        "Benchmarked 130+ lightweight primitives (hash, symmetric, asymmetric) across AVR and ARM platforms using ChipWhisperer and custom measurement tooling.",
+        "Analyzed performance, memory footprint, energy cost, and known cryptanalytic properties to quantify real-world security–efficiency trade-offs.",
+        "Produced a structured taxonomy to help engineers and security teams select algorithms aligned with device constraints and threat models."
+      ]
+    },
+    {
+      "name": "CAV- and VANET-Enabled Traffic Congestion Reduction and Accident Circumvention",
+      "category": "Systems & Cyber-Physical Security",
+      "startDate": "2019-08-01",
+      "endDate": "2021-01-01",
+      "url": "/projects/CAV_VANET/",
+      "summary": "Designed a cooperative cyber-physical system using CAV and VANET communication to reduce traffic congestion and prevent accidents through coordinated vehicle decision-making.",
+      "highlights": [
+        "Designed distributed decision logic for safe-distance maintenance, controlled overtaking, and permission-based lane changes using inter-vehicle communication.",
+        "Evaluated system behavior using MATLAB simulations under realistic traffic scenarios, demonstrating reduced congestion waves and lower collision risk.",
+        "Built early systems expertise in trust, coordination, and failure propagation in distributed cyber-physical systems—foundational to later IoT/OT security work."
+      ]
     }
   ],
 
@@ -161,7 +270,7 @@
         "Detection Fundamentals",
         "Incident Response",
         "Vulnerability Management",
-        "SIEM (learning: Splunk)",
+        "SIEM Tools",
         "Threat Modeling (STRIDE)"
       ]
     },
@@ -206,6 +315,79 @@
       ]
     }
   ],
+
+  "publications": [
+  {
+    "name": "Survey of Lightweight Hardware-Based Hash Functions for Security in Constrained IoT Devices",
+    "publisher": "IEEE Access",
+    "releaseDate": "2025-11",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11168213",
+    "summary": "Surveyed lightweight hardware hash designs (sponge- and cipher-based), compared area/throughput/energy trade-offs, and synthesized cryptanalytic findings to guide resource-aware selection for IoT deployments."
+  },
+  {
+    "name": "System Support for Accountable and Trusted Data Collection and Fog Processing in Remote Electronic Monitoring",
+    "publisher": "FMEC (IEEE)",
+    "releaseDate": "2025-07",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11119373",
+    "summary": "Co-authored a fog/edge data-collection system focusing on integrity, accountability, and verifiability for compliance-driven remote monitoring scenarios."
+  },
+  {
+    "name": "Software Benchmarking of NIST Lightweight Hash Function Finalists on Resource-Constrained AVR Platform via ChipWhisperer",
+    "publisher": "SECRYPT (SCITEPRESS)",
+    "releaseDate": "2025-09",
+    "url": "https://www.scitepress.org/PublishedPapers/2025/135607/",
+    "summary": "Benchmarked NIST lightweight hash finalists on AVR using ChipWhisperer-assisted profiling and a composite E-RANK metric spanning speed, memory footprint, and energy efficiency."
+  },
+  {
+    "name": "A Comparative Analysis of Lightweight Hash Functions Using AVR ATXMega128 and ChipWhisperer",
+    "publisher": "NordSec (Nordic Conference on Secure IT Systems)",
+    "releaseDate": "2025-12",
+    "url": "https://arxiv.org/abs/2508.07840",
+    "summary": "Compared software-based lightweight hashes on ATxmega128 using ChipWhisperer measurements and E-RANK to highlight practical performance and energy trade-offs for embedded engineers."
+  },
+  {
+    "name": "Performance Evaluation of Lightweight Cryptographic Ciphers on ARM Processor for IoT Deployments",
+    "publisher": "SciSec (Springer, LNCS 15441)",
+    "releaseDate": "2024-09",
+    "url": "https://link.springer.com/chapter/10.1007/978-981-96-2417-1_14",
+    "summary": "Evaluated lightweight block/stream ciphers on ARM and introduced E-RANK to combine throughput, memory footprint, and energy cost into a single efficiency score for IoT."
+  },
+  {
+    "name": "Performance Evaluation of Lightweight Stream Ciphers for Real-Time Video Feed Encryption on ARM Processor",
+    "publisher": "Future Internet (MDPI)",
+    "releaseDate": "2024-07",
+    "url": "https://www.mdpi.com/1999-5903/16/8/261",
+    "summary": "Built a benchmarking tool for real-time video encryption on ARM, quantifying frame rate, cycles, memory/ROM, and energy to compare lightweight stream ciphers for practical deployments."
+  },
+  {
+    "name": "A Multi-pronged Self-adaptive Controller for Analyzing Misconfigurations for Kubernetes Clusters and IoT Edge Devices",
+    "publisher": "ESoCC (Springer)",
+    "releaseDate": "2023-11",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-46235-1_10",
+    "summary": "Co-authored a controller to monitor and detect misconfigurations in Kubernetes clusters and IoT edge environments, linking observed behavior to hidden configuration states."
+  },
+  {
+    "name": "Traffic Congestion Reduction and Accident Circumvention System via Incorporation of CAV and VANET",
+    "publisher": "IGI Global",
+    "releaseDate": "2021-11",
+    "url": "https://www.igi-global.com/article/traffic-congestion-reduction-and-accident-circumvention-system-via-incorporation-of-cav-and-vanet/272039",
+    "summary": "Proposed cooperative CAV/VANET decision logic (safe distance, overtaking, lane shifting) and validated via MATLAB/Simulink-style simulations to reduce phantom jams and collision risk."
+  },
+  {
+    "name": "Traffic Jam Minimization and Accident Avoidance System Using IoT",
+    "publisher": "ETCCS (Springer)",
+    "releaseDate": "2021-05",
+    "url": "https://link.springer.com/chapter/10.1007/978-981-15-7804-5_4",
+    "summary": "Designed IoT-enabled inter-vehicle coordination algorithms to mitigate congestion waves and improve safety for level-2 automation environments."
+  },
+  {
+    "name": "Smart n Secure Home Using IoT",
+    "publisher": "IJSRCSEIT",
+    "releaseDate": "2018-09",
+    "url": "https://ijsrcseit.com/home/issue/view/article.php?id=CSEIT411834",
+    "summary": "Built an IoT smart-home system with sensing, automation, and remote control; integrated safety/security features such as motion/gas detection and automated responses."
+  }
+],
 
   "references": [
     {

@@ -124,6 +124,36 @@ toc: false
 
 .teach-card strong{ color: var(--t-text); }
 
+/* --------------------------
+   MOBILE: prevent overflow
+   -------------------------- */
+.teach-table-wrap{
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 12px; /* preserve rounded feel */
+}
+
+/* Allow horizontal scroll when needed */
+.teach-table{
+  min-width: 900px; /* adjust (800–1100px) as you prefer */
+}
+
+/* Optional: sticky first column on small screens */
+@media (max-width: 720px){
+  .teach-table th:first-child,
+  .teach-table td:first-child{
+    position: sticky;
+    left: 0;
+    background: var(--t-card);
+    box-shadow: 6px 0 10px rgba(0,0,0,0.06);
+  }
+  [data-theme="dark"] .teach-table th:first-child,
+  [data-theme="dark"] .teach-table td:first-child{
+    box-shadow: 6px 0 10px rgba(0,0,0,0.35);
+  }
+}
+
 @media (prefers-reduced-motion: reduce){
   .teach-card{ transition: none; }
   .teach-card:hover{ transform: none; }
@@ -132,9 +162,9 @@ toc: false
 
 <div>
   <p>
-    Alongside my research, 
+    Alongside my research,
     I have contributed to teaching, lab instruction, assessment, and student support across networking,
-    security, distributed systems, and privacy-preserving computing. 
+    security, distributed systems, and privacy-preserving computing.
   </p>
 </div>
 
@@ -165,7 +195,7 @@ toc: false
     <p class="teach-muted">
       Across the courses I support, students often have very different backgrounds—from experienced programmers to beginners.
       I adapt explanations accordingly, using short “explain → demonstrate → guide” cycles and encouraging students to
-      articulate concepts in their own words before implementation.  
+      articulate concepts in their own words before implementation.
     </p>
     <div class="teach-tags">
       <span class="teach-tag">Explain–demonstrate–guide</span>
@@ -193,42 +223,45 @@ toc: false
 <div class="teach-card">
   <h3 class="teach-title">Course experience summary</h3>
 
-  <table class="teach-table">
-    <thead>
-      <tr>
-        <th>Course</th>
-        <th>Level</th>
-        <th>Terms</th>
-        <th>Typical responsibilities</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>INF-2300</strong> Computer Communication</td>
-        <td>Bachelor (10 ECTS)</td>
-        <td>Fall 2022, 2023, 2024</td>
-        <td>Exercise groups/labs; guidance on networking labs (HTTP, DNS, sockets); feedback on mandatory assignments; support for grading.</td>
-      </tr>
-      <tr>
-        <td><strong>INF-2310</strong> Computer Security</td>
-        <td>Bachelor (10 ECTS)</td>
-        <td>Spring 2022, Spring 2023</td>
-        <td>Weekly exercise groups; support/evaluation of mandatory assignments; student presentations on attacks (e.g., XSS/DDoS); linking technical + human factors.</td>
-      </tr>
-      <tr>
-        <td><strong>INF-3203</strong> Advanced Distributed Systems</td>
-        <td>Master</td>
-        <td>Spring 2024, Spring 2025</td>
-        <td>Paper discussion support; presentation coaching; supervision of programming assignments; reasoning about consistency, fault tolerance, and performance.</td>
-      </tr>
-      <tr>
-        <td><strong>INF-3315</strong> Privacy-Preserving Computing</td>
-        <td>Master</td>
-        <td>Fall 2025</td>
-        <td>Support lectures and group work; supervision of assignments on GDPR and privacy-preserving techniques (e.g., OT, differential privacy); bridging law ↔ technical design.</td>
-      </tr>
-    </tbody>
-  </table>
+  <!-- WRAP TABLE to avoid mobile overflow -->
+  <div class="teach-table-wrap" aria-label="Scrollable course table">
+    <table class="teach-table">
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Level</th>
+          <th>Terms</th>
+          <th>Typical responsibilities</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>INF-2300</strong> Computer Communication</td>
+          <td>Bachelor (10 ECTS)</td>
+          <td>Fall 2022, 2023, 2024</td>
+          <td>Exercise groups/labs; guidance on networking labs (HTTP, DNS, sockets); feedback on mandatory assignments; support for grading.</td>
+        </tr>
+        <tr>
+          <td><strong>INF-2310</strong> Computer Security</td>
+          <td>Bachelor (10 ECTS)</td>
+          <td>Spring 2022, Spring 2023</td>
+          <td>Weekly exercise groups; support/evaluation of mandatory assignments; student presentations on attacks (e.g., XSS/DDoS); linking technical + human factors.</td>
+        </tr>
+        <tr>
+          <td><strong>INF-3203</strong> Advanced Distributed Systems</td>
+          <td>Master</td>
+          <td>Spring 2024, Spring 2025</td>
+          <td>Paper discussion support; presentation coaching; supervision of programming assignments; reasoning about consistency, fault tolerance, and performance.</td>
+        </tr>
+        <tr>
+          <td><strong>INF-3315</strong> Privacy-Preserving Computing</td>
+          <td>Master</td>
+          <td>Fall 2025</td>
+          <td>Support lectures and group work; supervision of assignments on GDPR and privacy-preserving techniques (e.g., OT, differential privacy); bridging law ↔ technical design.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <p class="teach-muted" style="margin-top:12px;">
     These courses reflect my teaching breadth across networking, security foundations, distributed systems, and privacy, and how I
@@ -241,7 +274,7 @@ toc: false
   <p class="teach-muted">
     Collaboration is a central part of my teaching practice. I work closely with course coordinators and teaching teams to ensure consistency
     across lab groups, contribute to lab/assignment materials, and align grading practices for fairness. I also participate in internal teaching seminars,
-    using feedback and reflection to refine instructional design and student engagement. 
+    using feedback and reflection to refine instructional design and student engagement.
   </p>
 </div>
 
@@ -249,7 +282,7 @@ toc: false
   <h3 class="teach-title">Examination and academic assessment</h3>
   <p class="teach-muted">
     I have served as an examiner for three master’s theses (UiT), independently assessing research quality, methodology, and scientific writing,
-    and contributing to grading with co-examiners when applicable.  [oai_citation:7‡My_Teaching_Portfolio.pdf](sediment://file_00000000b2a87243a2c63e603a998565)
+    and contributing to grading with co-examiners when applicable.
   </p>
   <ul class="teach-muted" style="margin-top:10px;">
     <li><strong>Henrik Monsen</strong> — Spring 2024</li>
@@ -275,14 +308,16 @@ toc: false
     You may reach me at
     <a href="mailto:khann.mohsin@icloud.com">khann.mohsin@icloud.com</a>.
   </p>
+
   <p class="teach-muted">
-    <p class="teach-muted">
-        A detailed overview of my teaching philosophy, instructional experience, and academic contributions is available as follows.
-        <span class="teach-tag" style="display: inline-block; margin-left: 4px;">
-            <a href="{{ '/assets/pdf/My_Teaching_Portfolio.pdf' | relative_url }}" target="_blank" rel="noopener" style="color: var(--t-text); text-decoration: none;">
-                Teaching Portfolio (PDF)
-            </a>
-        </span>.
-    </p>
+    A detailed overview of my teaching philosophy, instructional experience, and academic contributions is available here:
+    <span class="teach-tag" style="display: inline-block; margin-left: 4px;">
+      <a href="{{ '/assets/pdf/My_Teaching_Portfolio.pdf' | relative_url }}"
+         target="_blank"
+         rel="noopener"
+         style="color: var(--t-text); text-decoration: none;">
+        Teaching Portfolio (PDF)
+      </a>
+    </span>
   </p>
 </div>

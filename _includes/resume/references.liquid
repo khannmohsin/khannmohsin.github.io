@@ -11,19 +11,51 @@
             {% else %}
               <td class="list-group-category-icon"></td>
             {% endif %}
+
             <!-- Calculate colspan number for category title -->
             {% assign i = 1 %}
             {% for item in content.items %}
               {% assign i = i | plus: 1 %}
             {% endfor %}
-            <td colspan="{{ i }}" class="list-group-category">{{ content.name }}</td>
+
+            <td colspan="{{ i }}" class="list-group-category">
+              {% assign href = nil %}
+              {% if content.url and content.url != "" %}
+                {% assign href = content.url %}
+              {% elsif content.email and content.email != "" %}
+                {% assign href = "mailto:" | append: content.email %}
+              {% endif %}
+
+              {% if href %}
+                <a href="{{ href }}"
+                   class="cv-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  {{ content.name }}
+                </a>
+              {% else %}
+                <span class="cv-text">{{ content.name }}</span>
+              {% endif %}
+            </td>
           </tr>
+
           <tr>
             <td></td>
             <td class="list-group-name">
               <b>{{ content.reference }}</b>
             </td>
           </tr>
+
+          {% if content.email and content.email != "" %}
+          <tr>
+            <td></td>
+            <td class="list-group-name">
+              <a href="mailto:{{ content.email }}" class="cv-link">
+                {{ content.email }}
+              </a>
+            </td>
+          </tr>
+          {% endif %}
         </tbody>
       </table>
     </div>

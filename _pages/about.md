@@ -215,12 +215,13 @@ social: true
       safety-critical <strong>IoT</strong> and <strong>operational technology (OT)</strong>.
       I explored how trust, access control, and cryptographic guarantees can be enforced across distributed nodes under resource constraints and adversarial conditions.
       I am transitioning from academic security research to industry practice by acquiring hands-on Blue Team and Red Team skills, including detection, response, governance, and penetration testing.
-      <!-- <div class="abt-pills">
+      <div class="abt-pills">
         <span class="abt-pill">IoT / OT Security</span>
-        <span class="abt-pill">Distributed Trust</span>
         <span class="abt-pill">Access Control</span>
         <span class="abt-pill">Cryptography</span>
-      </div> -->
+        <span class="abt-pill">Read Team</span>
+        <span class="abt-pill">Blue Team</span>
+      </div>
   </div>
 
   <!-- Everything below becomes full-width -->
