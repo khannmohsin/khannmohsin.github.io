@@ -12,9 +12,9 @@ description: >
   Cybersecurity researcher specializing in distributed trust architectures, blockchain-based access control, IoT security, and lightweight cryptography.
 # footer_text: >
 #   © 2025 Mohsin Khan
-keywords: cybersecurity, blockchain, IoT, cryptography, research, academic portfolio
+keywords: cybersecurity, blockchain, IoT, cryptography, research, academic portfolio, blue team, red team, Pentest, vulnerability assessment, SOC analyst, threat hunting, incident response, digital forensics, malware analysis, network security, cloud security, compliance, risk management, security operations, ethical hacking
 lang: en
-icon: "Ⓜ"
+icon: "/assets/img/portfolio.png"
 
 url: "https://khannmohsin.github.io"
 # baseurl: ""
