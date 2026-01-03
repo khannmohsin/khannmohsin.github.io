@@ -106,6 +106,11 @@ ninja.data = [{
           description: "An empirical study on how MIS implementation influences operational efficiency, decision-making, and service quality in the banking sector, with a focus on J&amp;K Bank.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/MIS_JK_bank/";
+            },},{id: "projects-assemble-a-soc-team-and-perform-security-monitoring-tasks",
+          title: 'Assemble a SOC Team and Perform Security Monitoring Tasks',
+          description: "Capstone project focused on SOC role assignment, security operations models, and hands-on network reconnaissance.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/SOC/";
             },},{id: "projects-performance-benchmarking-of-lightweight-hash-functions-for-embedded-iot",
           title: 'Performance Benchmarking of Lightweight Hash Functions for Embedded IoT',
           description: "Systematic evaluation of NIST-submitted, ISO-standardized, and other lightweight hash functions on AVR ATxmega128 microcontrollers using ChipWhisperer.",
@@ -141,6 +146,11 @@ ninja.data = [{
           description: "Practical evaluation of a healthcare provider’s data security posture with respect to HIPAA requirements, risks, and control gaps.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/healthcare_HIPAA/";
+            },},{id: "projects-investigate-an-incident-through-digital-forensics",
+          title: 'Investigate an Incident Through Digital Forensics',
+          description: "Capstone project applying incident response frameworks and practical digital forensics tasks, including USB imaging and evidence analysis.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/incident_response/";
             },},{id: "projects-secure-network-architecture-amp-system-hardening",
           title: 'Secure Network Architecture &amp;amp; System Hardening',
           description: "Design of a secure network and system architecture emphasizing defense-in-depth and secure configuration.",
