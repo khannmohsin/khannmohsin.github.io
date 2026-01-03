@@ -5,7 +5,7 @@ permalink: /projects/
 description: Selected research, course, and management projects—organized by category.
 nav: true
 nav_order: 1
-display_categories: [Capstone Industry Projects, Research, Courses, Management]
+display_categories: [Cybersecurity Job Simulations, Capstone Industry Projects, Research Projects, Coursework Projects, Management Project]
 horizontal: false
 toc: false
 ---
@@ -120,7 +120,7 @@ toc: false
 
   <div>
     <p>
-      A curated overview of my work across research systems, applied security engineering, and academic coursework.
+      An overview of my work across research coursework, and applied <strong>Red Team and Blue Team security skills</strong> for transition towards cybersecurity industry.
       Projects are grouped by category and ordered by importance within each category.
     </p>
   </div>
@@ -144,14 +144,12 @@ toc: false
         <section class="prj-section" id="{{ category | slugify }}">
           <h2 class="category">{{ category }}</h2>
 
-          {% if category == "Research" %}
-            <p class="prj-caption">Peer-reviewed systems, security architectures, and empirical evaluation work.</p>
-          {% elsif category == "Courses" %}
-            <p class="prj-caption">Selected coursework outputs, labs, and applied learning artifacts.</p>
-          {% elsif category == "Management" %}
-            <p class="prj-caption">Coordination, delivery, and leadership-oriented projects and initiatives.</p>
-          {% else %}
-            <p class="prj-caption">Selected projects in this category.</p>
+          {% if category == "Research Projects" %}
+            <p class="prj-caption"></p>
+          {% elsif category == "Coursework Projects" %}
+            <p class="prj-caption"></p>
+          {% elsif category == "Management Project" %}
+            <p class="prj-caption"></p>
           {% endif %}
 
           {% if sorted_projects.size == 0 %}

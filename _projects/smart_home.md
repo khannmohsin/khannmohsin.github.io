@@ -4,7 +4,7 @@ title: IoT-Based Automation and Security
 description: An IoT-enabled home automation and security system integrating Arduino Mega & UNO, RFID access, multiple sensors, and Cayenne Cloud for real-time monitoring and remote control.
 img: assets/img/projects/smart_home/cover.png
 importance: 4
-category: Research
+category: Research Projects
 related_publications: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "PAXOS Consensus Algorithm Implementation"
-category: Courses
+category: Coursework Projects 
 img: assets/img/projects/paxos/cover.png
 description: "Python-based simulation of the PAXOS consensus protocol with fault tolerance testing and performance evaluation."
 importance: 3

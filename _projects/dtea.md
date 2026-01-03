@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "DTEA: Distributed Trust Enforcement Architecture"
-category: Research
+category: Research Projects
 img: assets/img/projects/dtea/cover.png
 description: "Blockchain-based access control with dynamic enforcement for secure IoT deployments."
 importance: 2

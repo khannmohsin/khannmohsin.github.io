@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Blockchain Implementation & Consensus Mechanisms"
-category: Courses
+category: Coursework Projects
 img: assets/img/projects/blockchain_mining/cover.png
 description: "Implementation of blockchain in Python with Merkle Tree, Proof of Work mining, and comparative analysis of PoW, PoS, BFT, and PoStorage."
 importance: 2
