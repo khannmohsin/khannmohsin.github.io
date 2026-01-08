@@ -58,7 +58,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-the-hidden-world-of-lightweight-cryptography-securing-the-smallest-devices-on-earth",
+        },{id: "post-rethinking-policies-and-permissions-in-iot-security-with-blockchain",
+        
+          title: 'Rethinking Policies and Permissions in IoT Security with Blockchain <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://khannmohsin.medium.com/what-happens-when-iot-meets-blockchain-for-security-4ca1fd83b58c?source=rss-583a15af6393------2", "_blank");
+          
+        },
+      },{id: "post-the-hidden-world-of-lightweight-cryptography-securing-the-smallest-devices-on-earth",
         
           title: 'The Hidden World of Lightweight Cryptography: Securing the Smallest Devices on Earth <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
@@ -141,6 +152,16 @@ ninja.data = [{
           description: "Hands-on cyber incident analysis and detection exercises based on real-world consulting scenarios.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/forage_delloitte/";
+            },},{id: "projects-mastercard-cybersecurity-virtual-experience-program",
+          title: 'Mastercard Cybersecurity Virtual Experience Program',
+          description: "Security awareness, phishing simulation design, and risk-based training analysis in a global enterprise context.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/forage_mastercard/";
+            },},{id: "projects-telstra-cybersecurity-job-simulation",
+          title: 'Telstra Cybersecurity Job Simulation',
+          description: "End-to-end incident response to a malware attack, including SOC triage, network analysis, mitigation, and post-incident review.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/forage_telstra/";
             },},{id: "projects-healthcare-data-security-amp-hipaa-risk-assessment",
           title: 'Healthcare Data Security &amp;amp; HIPAA Risk Assessment',
           description: "Practical evaluation of a healthcare provider’s data security posture with respect to HIPAA requirements, risks, and control gaps.",
