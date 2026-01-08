@@ -111,7 +111,7 @@ social: true
   display:flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 .abt-pill{
   display: inline-flex;
@@ -262,6 +262,15 @@ social: true
       {% include cv/inline_full.liquid %}
     </div>
   </details>
+  <div class="abt-pills">
+   Download the CV as a PDF
+  <a class="abt-pill" href="{{ '/assets/pdf/My_Industrial_CV.pdf' | relative_url }}" target="_blank">
+    Industry CV
+  </a>
+  <a class="abt-pill" href="{{ '/assets/pdf/My_academic_CV.pdf' | relative_url }}" target="_blank">
+    Academic CV
+  </a>
+</div>
 </section>
 
   <section class="abt-card">
@@ -381,14 +390,6 @@ social: true
   <p>
     I am open to opportunities across <strong>blue-team, red-team, and security engineering roles</strong>, particularly where IoT/OT security, distributed systems, and real-world threat models intersect. From an industry perspective, I am especially interested in <strong>detection and response, vulnerability assessment, penetration testing, and security architecture</strong>, where strong systems understanding and adversarial thinking matter. I am also interested in academic and applied research collaborations in areas such as <strong>distributed systems, access control, lightweight and post-quantum cryptography</strong>, including joint publications, research-driven prototypes, and industry–academia partnerships.
   </p>
-  <div class="abt-pills">
-    <a class="abt-pill" href="{{ '/assets/pdf/My_industrial_CV.pdf' | relative_url }}" target="_blank">
-      Industry CV
-    </a>
-    <a class="abt-pill" href="{{ '/assets/pdf/My_academic_CV.pdf' | relative_url }}" target="_blank">
-      Academic CV
-    </a>
-  </div>
 </section>
 
 </div>
