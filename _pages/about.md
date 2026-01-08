@@ -203,6 +203,18 @@ social: true
   .abt-card{ transition: none; }
   .abt-card:hover{ transform: none; }
 }
+
+/* CV inside About: visually align bootstrap .card with abt-card theme */
+.abt-cv .card{
+  border: 1px solid var(--abt-border) !important;
+  border-radius: var(--abt-radius) !important;
+  background: var(--abt-card) !important;
+  box-shadow: var(--abt-shadow) !important;
+}
+
+/* Reduce vertical spacing when CV is embedded */
+.abt-cv .card.mt-3{ margin-top: 12px !important; }
+
 </style>
 
 <div class="about-wrap">
@@ -226,6 +238,31 @@ social: true
 
   <!-- Everything below becomes full-width -->
   <div class="abt-clear"></div>
+
+  <section class="abt-card abt-cv">
+  <details>
+    <summary><strong>Curriculum Vitae</strong> (click to expand)</summary>
+
+    <div class="abt-cv-body">
+      <!-- Optional: show the same CV PDF buttons as /cv/ -->
+      <div class="abt-pills" style="margin-bottom: 12px;">
+        {% if page.cv_academic_pdf %}
+          <a class="abt-pill" href="{{ page.cv_academic_pdf | prepend: 'assets/pdf/' | relative_url }}" target="_blank" rel="noopener noreferrer">
+            Academic CV
+          </a>
+        {% endif %}
+        {% if page.cv_industry_pdf %}
+          <a class="abt-pill" href="{{ page.cv_industry_pdf | prepend: 'assets/pdf/' | relative_url }}" target="_blank" rel="noopener noreferrer">
+            Industry CV
+          </a>
+        {% endif %}
+      </div>
+
+      <!-- Render the same CV content as /cv/ -->
+      {% include cv/inline_full.liquid %}
+    </div>
+  </details>
+</section>
 
   <section class="abt-card">
     <h2>Research Foundations</h2>
@@ -252,7 +289,7 @@ social: true
   <!-- PROJECTS reinforce credibility immediately after systems work -->
   <section class="abt-card">
     <div class="abt-head">
-      <h3>Selected Projects</h3>
+      <h3>Projects (Scroll for more)</h3>
     </div>
 
     {% assign selected_projects = site.projects | sort: "importance" | slice: 0, 10 %}
