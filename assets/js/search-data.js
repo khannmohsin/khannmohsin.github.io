@@ -58,26 +58,37 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-rethinking-policies-and-permissions-in-iot-security-with-blockchain",
+        },{id: "post-how-security-teams-can-use-shodan-to-see-what-attackers-see",
         
-          title: 'Rethinking Policies and Permissions in IoT Security with Blockchain <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: 'How Security Teams Can Use Shodan to See What Attackers See <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "",
+        description: "Most security teams assume reconnaissance begins when an attacker actively scans their systems.",
         section: "Posts",
         handler: () => {
           
-            window.open("https://khannmohsin.medium.com/what-happens-when-iot-meets-blockchain-for-security-4ca1fd83b58c?source=rss-583a15af6393------2", "_blank");
+            window.open("https://meetcyber.net/how-security-teams-can-use-shodan-io-to-see-what-attackers-see-8f06d5b5d424", "_blank");
+          
+        },
+      },{id: "post-rethinking-policies-and-permissions-in-iot-security-with-blockchain",
+        
+          title: 'Rethinking Policies and Permissions in IoT Security with Blockchain <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "You might not think about it, but the way we secure Internet of Things systems hasn’t caught up with how they actually work.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://meetcyber.net/what-happens-when-iot-meets-blockchain-for-security-4ca1fd83b58c", "_blank");
           
         },
       },{id: "post-the-hidden-world-of-lightweight-cryptography-securing-the-smallest-devices-on-earth",
         
           title: 'The Hidden World of Lightweight Cryptography: Securing the Smallest Devices on Earth <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "",
+        description: "Modern security often focuses on large systems: cloud servers, enterprise networks, high-performance machines. But beneath that surface lies an entire universe of tiny devices that quietly power our lives – sensors in he…",
         section: "Posts",
         handler: () => {
           
-            window.open("https://khannmohsin.medium.com/the-hidden-world-of-lightweight-cryptography-securing-the-smallest-devices-on-earth-fb14b9a0358c?source=rss-583a15af6393------2", "_blank");
+            window.open("https://cybersecuritywriteups.com/the-hidden-world-of-lightweight-cryptography-securing-the-smallest-devices-on-earth-fb14b9a0358c", "_blank");
           
         },
       },{id: "post-post-quantum-cryptography-for-iot-are-we-ready",
@@ -142,9 +153,9 @@ ninja.data = [{
           description: "Security-focused evaluation of cloud migration strategies and protection mechanisms for organizational infrastructure.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/cloud_sec/";
-            },},{id: "projects-dtea-distributed-trust-enforcement-architecture",
-          title: 'DTEA: Distributed Trust Enforcement Architecture',
-          description: "Blockchain-based access control with dynamic enforcement for secure IoT deployments.",
+            },},{id: "projects-blockcap-blockchain-based-capability-authorization-for-iot",
+          title: 'BlockCap: Blockchain-Based Capability Authorization for IoT',
+          description: "A blockchain-backed capability-based authorization system for enforcing fine-grained, auditable access control in resource-constrained IoT environments.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dtea/";
             },},{id: "projects-deloitte-australia-cyber-job-simulation",
