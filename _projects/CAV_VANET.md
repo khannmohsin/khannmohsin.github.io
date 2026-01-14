@@ -5,6 +5,7 @@ description: Integrating Connected Autonomous Vehicles and VANETs for safe-dista
 img: assets/img/projects/CAV_VANET/cover.png
 importance: 3
 category: Research Projects
+tags: [Connected Autonomous Vehicles, VANET, Traffic Flow Optimization, Safety-Critical Systems, MATLAB-Based Simulation]
 related_publications: true
 ---
 
@@ -127,5 +128,3 @@ Right: Decision flow for overtaking in multi-lane traffic.
 </div>
 
 ---
-
-**Tags:** CAV, VANET, Traffic Congestion, IoT, MATLAB Simulation, Smart Transportation

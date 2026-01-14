@@ -5,7 +5,7 @@ category: Coursework Projects
 img: assets/img/projects/blockchain_mining/cover.png
 description: "Implementation of blockchain in Python with Merkle Tree, Proof of Work mining, and comparative analysis of PoW, PoS, BFT, and PoStorage."
 importance: 2
-tags: ["blockchain", "consensus", "PoW", "PoS", "BFT", "PoStorage", "distributed-systems"]
+tags: ["Blockchain", "Consensus", "PoW", "PoS", "BFT", "PoStorage", "Distributed-systems"]
 related_publications: false
 ---
 

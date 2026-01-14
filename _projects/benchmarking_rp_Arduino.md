@@ -5,7 +5,7 @@ category: Research Projects
 img: assets/img/projects/benchmarking_rp_Arduino/cover.png
 description: "Unified benchmarking framework for evaluating lightweight block and stream ciphers on ARM IoT devices with performance, energy, and resource metrics."
 importance: 2
-tags: ["iot", "lightweight cryptography", "benchmarking", "arm", "performance", "energy"]
+tags: ["Iot", "Lightweight cryptography", "Benchmarking", "ARM", "Performance", "Energy"]
 related_publications: true
 ---
 

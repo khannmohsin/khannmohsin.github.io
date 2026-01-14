@@ -84,7 +84,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Technical and Research Notes # blog_name will be displayed in your blog page
-blog_description: Cryptography, blockchain, and post-quantum security for trustworthy embedded and distributed systems.
+# blog_description: Cryptography, blockchain, and post-quantum security for trustworthy embedded and distributed systems.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -121,6 +121,8 @@ giscus:
 external_sources:
   - name: Medium
     rss_url: https://medium.com/feed/@khannmohsin
+    # default_categories: ["Medium"]
+    # default_tags: ["Writing", "Cybersecurity"]
   # - name: Google Blog
   #   posts:
   #     - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/

@@ -110,6 +110,27 @@ toc: false
   margin-top: 4px;
 }
 
+/* =========================
+   Project tags (pills)
+   Used by updated _includes/projects.liquid
+   ========================= */
+.prj-tags{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.prj-tag{
+  border: 1px solid rgba(54,133,243,0.25);
+  background: rgba(54,133,243,0.10);
+  color: var(--prj-text);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce){
   .prj-nav a{ transition: none; }

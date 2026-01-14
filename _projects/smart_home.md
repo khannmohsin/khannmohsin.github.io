@@ -5,6 +5,7 @@ description: An IoT-enabled home automation and security system integrating Ardu
 img: assets/img/projects/smart_home/cover.png
 importance: 4
 category: Research Projects
+tags: [IoT, Arduino, RFID, Sensor Networks, MQTT, Cloud Monitoring]
 related_publications: false
 ---
 
@@ -161,5 +162,3 @@ Right: Android mobile app for remote control and monitoring of Smart-n-Secure Ho
 </div>
 
 ---
-
-Tags: IoT, Arduino, RFID, Smart Home, Automation, Sensors, Cloud Dashboard

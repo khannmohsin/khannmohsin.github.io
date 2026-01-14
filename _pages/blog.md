@@ -42,6 +42,20 @@ pagination:
   --blog-shadow: 0 14px 30px rgba(0,0,0,0.35);
 }
 
+/* ---------------------------------------------------------
+   FIX: remove bullets & indentation (robust)
+   --------------------------------------------------------- */
+.blog-posts{
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+.blog-posts > li{
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
 /* Intro / header card */
 .blog-intro{
   border: 1px solid var(--blog-border);
@@ -86,7 +100,6 @@ pagination:
 
 /* Post list */
 .blog-posts{
-  list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
@@ -172,14 +185,14 @@ pagination:
   align-items: center;
 }
 
-/* Tags row styled like “chips” in Publications */
+/* Chips: now NON-clickable */
 .blog-chips{
   margin: 10px 0 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-.blog-chips a{
+.blog-chip{
   border: 1px solid rgba(54,133,243,0.25);
   background: rgba(54,133,243,0.10);
   color: var(--blog-text);
@@ -187,9 +200,12 @@ pagination:
   padding: 4px 10px;
   font-size: 0.78rem;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
-.blog-chips a:hover{
-  text-decoration: underline;
+.blog-chip i{
+  color: var(--blog-muted);
 }
 
 /* Pin icon alignment (featured) */
@@ -253,11 +269,7 @@ pagination:
             <p class="blog-meta">
               <span>{{ read_time }} min read</span>
               <span>&middot;</span>
-              <span>
-                <a href="{{ year | prepend: '/blog/' | relative_url }}" style="color:var(--blog-muted); text-decoration:none;">
-                  <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
-                </a>
-              </span>
+              <span><i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</span>
             </p>
           </div>
         </a>
@@ -321,23 +333,23 @@ pagination:
                 </p>
 
                 <div class="blog-chips">
-                  <a href="{{ year | prepend: '/blog/' | relative_url }}">
+                  <span class="blog-chip">
                     <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
-                  </a>
+                  </span>
 
                   {% if tags != "" %}
                     {% for tag in post.tags %}
-                      <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">
+                      <span class="blog-chip">
                         <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
-                      </a>
+                      </span>
                     {% endfor %}
                   {% endif %}
 
                   {% if categories != "" %}
                     {% for category in post.categories %}
-                      <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
+                      <span class="blog-chip">
                         <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
-                      </a>
+                      </span>
                     {% endfor %}
                   {% endif %}
                 </div>
@@ -377,23 +389,23 @@ pagination:
             </p>
 
             <div class="blog-chips">
-              <a href="{{ year | prepend: '/blog/' | relative_url }}">
+              <span class="blog-chip">
                 <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
-              </a>
+              </span>
 
               {% if tags != "" %}
                 {% for tag in post.tags %}
-                  <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">
+                  <span class="blog-chip">
                     <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
-                  </a>
+                  </span>
                 {% endfor %}
               {% endif %}
 
               {% if categories != "" %}
                 {% for category in post.categories %}
-                  <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
+                  <span class="blog-chip">
                     <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
-                  </a>
+                  </span>
                 {% endfor %}
               {% endif %}
             </div>

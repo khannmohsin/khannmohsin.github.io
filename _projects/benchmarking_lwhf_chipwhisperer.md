@@ -5,6 +5,7 @@ description: Systematic evaluation of NIST-submitted, ISO-standardized, and othe
 img: assets/img/projects/benchmarking_lwhf_chipwhisperer/cover.png
 importance: 3
 category: Research Projects
+tags: [IoT, Lightweight Crypto, Embedded Security, Performance Benchmarking, Cryptographic Engineering]
 related_publications: true
 ---
 
@@ -85,5 +86,3 @@ ChipWhisperer Lite with ATxmega128 target microcontroller for synchronized power
 </div>
 
 ---
-
-**Tags:** Lightweight Cryptography, Hash Functions, IoT Security, Benchmarking, ChipWhisperer, Embedded Systems

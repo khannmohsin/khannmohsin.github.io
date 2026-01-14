@@ -5,8 +5,6 @@ date: 2025-08-06 18:00:00
 description: "A critical look at the intersection of quantum threats and lightweight cryptography for resource-constrained IoT devices."
 tags:
   - research
-categories:
-  - research
 thumbnail: assets/img/PQC_LWC.png
 ---
 

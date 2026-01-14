@@ -5,6 +5,7 @@ description: An empirical study on how MIS implementation influences operational
 img: assets/img/projects/MIS_JK_bank/cover.png
 importance: 4
 category: Management Project
+tags: [MIS, Banking Operations, Decision Support Systems, Operational Efficiency, SPSS Analysis]
 related_publications: false
 ---
 
@@ -103,5 +104,3 @@ Right: J&K Bank headquarters in Srinagar, the central hub for MIS-driven banking
 </div>
 
 ---
-
-**Tags:** MIS, Banking Efficiency, Decision Support Systems, J&K Bank, Information Systems, SPSS Analysis
