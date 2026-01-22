@@ -5,7 +5,7 @@ description: Capstone project applying incident response frameworks and practica
 img: assets/img/projects/IBM/incident_response.png
 category: Capstone Industry Projects
 importance: 1
-tags: ["Incident Response", "Digital Forensics", "Evidence Collection", "USB Imaging", "Investigation"]
+tags: ["Incident Response", "Digital Forensics", "Evidence Collection", "Investigation"]
 ---
 
 ## Overview

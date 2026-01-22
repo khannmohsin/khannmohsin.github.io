@@ -5,7 +5,7 @@ permalink: /projects/
 description: Selected research, course, and management projects—organized by category.
 nav: true
 nav_order: 1
-display_categories: [Cybersecurity Job Simulations, Capstone Industry Projects, Research Projects, Coursework Projects, Management Project]
+display_categories: [Training Projects, Cybersecurity Job Simulations, Capstone Industry Projects, Research Projects, Coursework Projects, Management Project]
 horizontal: false
 toc: false
 ---

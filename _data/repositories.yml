@@ -4,6 +4,7 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - khannmohsin/nbim-fund-value-decomposition
   - khannmohsin/BlockCap
   - khannmohsin/CryptoBench-RPi-Arduino_LWC
   - khannmohsin/CryptoBench-RPi-Arduino_LWSC_Video

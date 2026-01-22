@@ -5,7 +5,7 @@ description: End-to-end incident response to a malware attack, including SOC tri
 img: assets/img/projects/forage/telstra.webp
 category: Cybersecurity Job Simulations
 importance: 1
-tags: ["SOC", "Incident Response", "Malware Analysis", "Python", "Blue Team"]
+tags: ["SOC", "Incident Response", "Malware Analysis"]
 ---
 
 ## Overview
