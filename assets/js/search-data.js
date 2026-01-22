@@ -58,7 +58,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-how-security-teams-can-use-shodan-to-see-what-attackers-see",
+        },{id: "post-what-actually-drives-norges-bank-investment-management-s-fund-growth",
+        
+          title: 'What Actually Drives Norges Bank Investment Management’s Fund Growth? <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "Recently, I became interested in Norges Bank Investment Management and started looking into cybersecurity roles there. While learning more about NBIM and how it operates, I kept asking myself one simple question:",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.productcoalition.com/what-actually-drives-nbims-fund-growth-59f182c4ca6d", "_blank");
+          
+        },
+      },{id: "post-how-security-teams-can-use-shodan-to-see-what-attackers-see",
         
           title: 'How Security Teams Can Use Shodan to See What Attackers See <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
@@ -73,7 +84,7 @@ ninja.data = [{
         
           title: 'Rethinking Policies and Permissions in IoT Security with Blockchain <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "You might not think about it, but the way we secure Internet of Things systems hasn’t caught up with how they actually work.",
+        description: "Today’s IoT systems are everywhere: in factories, homes, hospitals, and cities. They are complex networks of sensors and devices talking to each other and to bigger systems. Yet most security still assumes a central cont…",
         section: "Posts",
         handler: () => {
           
@@ -133,6 +144,16 @@ ninja.data = [{
           description: "Capstone project focused on SOC role assignment, security operations models, and hands-on network reconnaissance.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/SOC/";
+            },},{id: "projects-tryhackme-soc-level-1-learning-path",
+          title: 'TryHackMe — SOC Level 1 Learning Path',
+          description: "Hands-on SOC training covering SIEM/EDR/SOAR concepts, phishing analysis, traffic analysis with Wireshark, and detection frameworks (MITRE, Kill Chain, Pyramid of Pain).",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/THM_SOC/";
+            },},{id: "projects-tryhackme-jr-penetration-tester-learning-path-pt1",
+          title: 'TryHackMe — Jr Penetration Tester Learning Path (PT1)',
+          description: "Completed offensive security pathway covering web hacking, Burp Suite, network recon, Metasploit, vulnerability research, and privilege escalation.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/THM_pentest/";
             },},{id: "projects-performance-benchmarking-of-lightweight-hash-functions-for-embedded-iot",
           title: 'Performance Benchmarking of Lightweight Hash Functions for Embedded IoT',
           description: "Systematic evaluation of NIST-submitted, ISO-standardized, and other lightweight hash functions on AVR ATxmega128 microcontrollers using ChipWhisperer.",
@@ -158,6 +179,26 @@ ninja.data = [{
           description: "A blockchain-backed capability-based authorization system for enforcing fine-grained, auditable access control in resource-constrained IoT environments.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dtea/";
+            },},{id: "projects-aig-shields-up-cybersecurity-job-simulation",
+          title: 'AIG Shields Up: Cybersecurity Job Simulation',
+          description: "Zero-day advisory writing (Log4Shell), stakeholder communication, and a Python-based ZIP ransomware decryption brute-forcer using a wordlist.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/forage_aig/";
+            },},{id: "projects-commonwealth-bank-introduction-to-cybersecurity-job-simulation",
+          title: 'Commonwealth Bank Introduction to Cybersecurity Job Simulation',
+          description: "Fraud analytics in Splunk, incident response handling, security awareness design, and entry-level web pentesting in a banking context.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/forage_commonwealth/";
+            },},{id: "projects-commonwealth-bank-tech-explorer-job-simulation-forage",
+          title: 'Commonwealth Bank Tech Explorer Job Simulation (Forage)',
+          description: "Cross-functional simulation covering iOS widget design, requirements gathering (BDD user stories), IAM permissions modelling, and data-driven demographic targeting for a new savings feature.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/forage_commonwealth2/";
+            },},{id: "projects-datacom-cyber-security-operations-job-simulation-forage",
+          title: 'Datacom Cyber Security Operations Job Simulation (Forage)',
+          description: "Cybersecurity operations simulation involving ransomware investigation, breach impact analysis, and enterprise risk assessment using real-world scenarios.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/forage_datacom/";
             },},{id: "projects-deloitte-australia-cyber-job-simulation",
           title: 'Deloitte Australia Cyber Job Simulation',
           description: "Hands-on cyber incident analysis and detection exercises based on real-world consulting scenarios.",
@@ -168,6 +209,11 @@ ninja.data = [{
           description: "Security awareness, phishing simulation design, and risk-based training analysis in a global enterprise context.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/forage_mastercard/";
+            },},{id: "projects-tata-cybersecurity-iam-developer-job-simulation-forage",
+          title: 'Tata Cybersecurity – IAM Developer Job Simulation (Forage)',
+          description: "IAM consulting simulation covering IAM fundamentals, enterprise readiness assessment, solution design, and IAM platform implementation planning for a global organization.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/forage_tata/";
             },},{id: "projects-telstra-cybersecurity-job-simulation",
           title: 'Telstra Cybersecurity Job Simulation',
           description: "End-to-end incident response to a malware attack, including SOC triage, network analysis, mitigation, and post-incident review.",
