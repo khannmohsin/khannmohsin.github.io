@@ -7,11 +7,11 @@ permalink: /job-tracker/
 ---
 
 <script>
-  window.location.replace("{{ '/_jobAp/'}}");
+  window.location.replace("{{ '/jobApp/'}}");
 </script>
 <noscript>
   <p>
     Redirecting to the job applications tracker.
-    <a href="{{ '/_jobAp/' }}">Continue</a>
+    <a href="{{ '/jobApp/' }}">Continue</a>
   </p>
 </noscript>
