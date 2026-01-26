@@ -122,21 +122,21 @@ Actuators include a multi-channel relay module for switching high-voltage home a
 
 ---
 
-## 5. Implementation Snapshots
+<!-- ## 5. Implementation Snapshots -->
 
-<div class="row">
+<!-- <div class="row">
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/projects/smart_home/dashboard.png" title="Cayenne Cloud Dashboard" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/projects/smart_home/android_app.png" title="Android Control App" class="img-fluid rounded z-depth-1" %}
   </div>
-</div>
+</div> -->
 
-<div class="caption">
+<!-- <div class="caption">
 Left: Cayenne IoT dashboard displaying real-time sensor readings and allowing appliance control.  
 Right: Android mobile app for remote control and monitoring of Smart-n-Secure Home devices.
-</div>
+</div> -->
 
 ---
 

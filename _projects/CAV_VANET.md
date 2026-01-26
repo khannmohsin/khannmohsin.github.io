@@ -81,17 +81,17 @@ Vehicles exchange local telemetry via VANET; MATLAB algorithms process inputs to
 </div>
 
 ---
-
+<!-- 
 ## 4. Simulation Snapshots
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/traffic_flow.png" title="Traffic Algorithm Flowchart" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/projects/CAV_VANET/traffic_flow.png" title="Traffic Algorithm Flowchart" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/GUI_CAV.png" title="Controlled Overtaking Logic" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/projects/CAV_VANET/GUI_CAV.png" title="Controlled Overtaking Logic" class="img-fluid rounded z-depth-1" %}
   </div>
-</div>
+</div> -->
 
 <div class="caption">
 Left: Simulated roadway applying safe-distance, overtaking, and lane-shift rules.  

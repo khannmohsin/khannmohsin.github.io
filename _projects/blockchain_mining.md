@@ -38,7 +38,7 @@ Merkle Tree structure showing iterative hashing of transaction pairs until the r
 ---
 
 ## Proof of Work Mining
-{% include figure.liquid path="assets/img/projects/blockchain_mining/blockchain-pow.png" title="Proof of Work Mining Process" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/projects/blockchain_mining/blockchain_pow.png" title="Proof of Work Mining Process" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
 PoW process: miners repeatedly hash the block header (previous block hash, Merkle root, timestamp, nonce) until the hash meets the difficulty target.
 </div>
