@@ -2,16 +2,16 @@
 layout: default
 title: Login
 nav: true
-nav_order: 9
+nav_order: 8
 permalink: /job-tracker/
 ---
 
 <script>
-  window.location.replace("{{ '/assets/job-applications/' | relative_url }}");
+  window.location.replace("{{ '/_jobAp/'}}");
 </script>
 <noscript>
   <p>
     Redirecting to the job applications tracker.
-    <a href="{{ '/assets/job-applications/' | relative_url }}">Continue</a>
+    <a href="{{ '/_jobAp/' }}">Continue</a>
   </p>
 </noscript>
