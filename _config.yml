@@ -165,9 +165,6 @@ kramdown:
     block:
       line_numbers: false
       start_line: 1
-sass:
-  quiet_deps: true
-
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
@@ -224,6 +221,7 @@ defaults:
 
 sass:
   style: compressed
+  quiet_deps: true
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
