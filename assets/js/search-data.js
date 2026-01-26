@@ -58,6 +58,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
+        },{id: "nav-login",
+          title: "Login",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/job-tracker/";
+          },
         },{id: "post-what-actually-drives-norges-bank-investment-management-s-fund-growth",
         
           title: 'What Actually Drives Norges Bank Investment Management’s Fund Growth? <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
@@ -66,7 +73,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.open("https://medium.productcoalition.com/what-actually-drives-nbims-fund-growth-59f182c4ca6d", "_blank");
+            window.open("https://khannmohsin.medium.com/what-actually-drives-nbims-fund-growth-59f182c4ca6d", "_blank");
           
         },
       },{id: "post-how-security-teams-can-use-shodan-to-see-what-attackers-see",
