@@ -58,7 +58,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-what-actually-drives-norges-bank-investment-management-s-fund-growth",
+        },{id: "post-why-security-breaches-hurt-more-in-healthcare",
+        
+          title: 'Why Security Breaches Hurt More in Healthcare <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "Cybersecurity breaches are a problem for most industries, but in healthcare, they hit far harder than most people realize. In most sectors, a breach means stolen files or lost credentials. In healthcare, breaches can dis…",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://cybersecuritywriteups.com/why-security-breaches-hurt-more-in-healthcare-677eafdb0ce3", "_blank");
+          
+        },
+      },{id: "post-what-actually-drives-norges-bank-investment-management-s-fund-growth",
         
           title: 'What Actually Drives Norges Bank Investment Management’s Fund Growth? <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
@@ -66,18 +77,18 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.open("https://khannmohsin.medium.com/what-actually-drives-nbims-fund-growth-59f182c4ca6d", "_blank");
+            window.open("https://medium.datadriveninvestor.com/what-actually-drives-nbims-fund-growth-59f182c4ca6d", "_blank");
           
         },
-      },{id: "post-how-security-teams-can-use-shodan-to-see-what-attackers-see",
+      },{id: "post-how-security-teams-can-use-shodan-io-to-see-what-attackers-see",
         
-          title: 'How Security Teams Can Use Shodan to See What Attackers See <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+          title: 'How Security Teams Can Use Shodan.io to See What Attackers See <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
         description: "Most security teams assume reconnaissance begins when an attacker actively scans their systems.",
         section: "Posts",
         handler: () => {
           
-            window.open("https://meetcyber.net/how-security-teams-can-use-shodan-io-to-see-what-attackers-see-8f06d5b5d424", "_blank");
+            window.open("https://cybersecuritywriteups.com/how-security-teams-can-use-shodan-io-to-see-what-attackers-see-8f06d5b5d424", "_blank");
           
         },
       },{id: "post-rethinking-policies-and-permissions-in-iot-security-with-blockchain",
@@ -88,7 +99,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.open("https://meetcyber.net/what-happens-when-iot-meets-blockchain-for-security-4ca1fd83b58c", "_blank");
+            window.open("https://cybersecuritywriteups.com/what-happens-when-iot-meets-blockchain-for-security-4ca1fd83b58c", "_blank");
           
         },
       },{id: "post-the-hidden-world-of-lightweight-cryptography-securing-the-smallest-devices-on-earth",
