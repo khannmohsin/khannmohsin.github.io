@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/khannmohsin/khannmohsin.github.io/tree/main/jobApp/static/css/main.c276f719.css",
-    "main.js": "/khannmohsin/khannmohsin.github.io/tree/main/jobApp/static/js/main.1ab5e032.js",
-    "static/js/453.cae4a608.chunk.js": "/khannmohsin/khannmohsin.github.io/tree/main/jobApp/static/js/453.cae4a608.chunk.js",
-    "index.html": "/khannmohsin/khannmohsin.github.io/tree/main/jobApp/index.html",
-    "main.c276f719.css.map": "/khannmohsin/khannmohsin.github.io/tree/main/jobApp/static/css/main.c276f719.css.map",
-    "main.1ab5e032.js.map": "/khannmohsin/khannmohsin.github.io/tree/main/jobApp/static/js/main.1ab5e032.js.map",
-    "453.cae4a608.chunk.js.map": "/khannmohsin/khannmohsin.github.io/tree/main/jobApp/static/js/453.cae4a608.chunk.js.map"
+    "main.css": "/khannmohsin/khannmohsin.github.io/jobApp/static/css/main.c276f719.css",
+    "main.js": "/khannmohsin/khannmohsin.github.io/jobApp/static/js/main.93c5b434.js",
+    "static/js/453.cae4a608.chunk.js": "/khannmohsin/khannmohsin.github.io/jobApp/static/js/453.cae4a608.chunk.js",
+    "index.html": "/khannmohsin/khannmohsin.github.io/jobApp/index.html",
+    "main.c276f719.css.map": "/khannmohsin/khannmohsin.github.io/jobApp/static/css/main.c276f719.css.map",
+    "main.93c5b434.js.map": "/khannmohsin/khannmohsin.github.io/jobApp/static/js/main.93c5b434.js.map",
+    "453.cae4a608.chunk.js.map": "/khannmohsin/khannmohsin.github.io/jobApp/static/js/453.cae4a608.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c276f719.css",
-    "static/js/main.1ab5e032.js"
+    "static/js/main.93c5b434.js"
   ]
 }
