@@ -1,4 +1,4 @@
-<!-- ---
+---
 layout: default
 title: Login
 nav: true
@@ -14,4 +14,4 @@ permalink: /job-tracker/
     Redirecting to the job applications tracker.
     <a href="{{ '/jobApp/' }}">Continue</a>
   </p>
-</noscript> -->
+</noscript>
