@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='https://uit.no/ansatte/mohsin.khan'>UiT The Arctic University of Norway</a>
+subtitle: Cybersecurity Professional
 profile:
   align: right
   image: mohsin_khan.png
