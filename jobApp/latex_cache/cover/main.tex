@@ -1,0 +1,47 @@
+% Project:  TeX Cover Letter Template
+% Author:   Sid Lacy
+% EDIT info.tex, body.tex
+
+\documentclass[11pt]{letter}
+
+% ---------- Font setup (pdfLaTeX) ----------
+\usepackage{newtxtext} % Times-like professional font
+
+% ---------- Packages ----------
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{eso-pic}
+\usepackage{xcolor}
+
+\addtolength{\topmargin}{0cm}
+\addtolength{\textheight}{0cm}
+\definecolor{gr}{RGB}{225,225,225}
+
+\input{info}
+
+\begin{document}
+
+% Opening block
+\today\\
+
+% \recipient\\
+% \position\\
+% \company\\
+% \zip\ \street\\
+% \city, \country\\
+
+% \vspace{-0.1in}\greeting\ Mr. Winsnes,\\
+% % Body
+% \vspace{-0.2in}
+% \setlength\parindent{0pt}
+\noindent\input{academic_bodies/SINTEF}
+
+\vspace{1em}
+
+\closer,\\
+\myname\\
+
+\end{document}
