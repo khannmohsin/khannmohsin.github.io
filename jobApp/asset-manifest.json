@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jobApp/static/css/main.da5784ec.css",
-    "main.js": "/jobApp/static/js/main.0d442a2a.js",
-    "static/js/453.cae4a608.chunk.js": "/jobApp/static/js/453.cae4a608.chunk.js",
-    "index.html": "/jobApp/index.html",
-    "main.da5784ec.css.map": "/jobApp/static/css/main.da5784ec.css.map",
-    "main.0d442a2a.js.map": "/jobApp/static/js/main.0d442a2a.js.map",
-    "453.cae4a608.chunk.js.map": "/jobApp/static/js/453.cae4a608.chunk.js.map"
+    "main.css": "./static/css/main.77550042.css",
+    "main.js": "./static/js/main.25bfcc25.js",
+    "static/js/453.cae4a608.chunk.js": "./static/js/453.cae4a608.chunk.js",
+    "index.html": "./index.html",
+    "main.77550042.css.map": "./static/css/main.77550042.css.map",
+    "main.25bfcc25.js.map": "./static/js/main.25bfcc25.js.map",
+    "453.cae4a608.chunk.js.map": "./static/js/453.cae4a608.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da5784ec.css",
-    "static/js/main.0d442a2a.js"
+    "static/css/main.77550042.css",
+    "static/js/main.25bfcc25.js"
   ]
 }
