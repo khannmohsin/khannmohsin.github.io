@@ -357,22 +357,24 @@
 
 @media (max-width: 860px) {
   .story-flagship .st-timeline::before {
-    left: 17px;
+    left: 26px;
     transform: translateX(-50%);
   }
 
   .story-flagship .st-timeline::after {
-    left: 17px;
+    left: 26px;
     transform: translateX(-50%);
   }
 
   .story-flagship .st-entry {
-    grid-template-columns: 76px minmax(0, 1fr);
+    grid-template-columns: 52px minmax(0, 1fr);
     column-gap: 0.72rem;
   }
 
   .story-flagship .st-marker {
     grid-column: 1;
+    justify-self: center;
+    width: max-content;
     align-items: center;
     padding-top: 0.62rem;
   }

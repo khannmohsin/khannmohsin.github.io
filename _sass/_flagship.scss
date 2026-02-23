@@ -705,6 +705,28 @@
 @media (max-width: 680px) {
   .flag-hero {
     padding: 22px 16px 16px;
+    text-align: center;
+  }
+
+  .flag-kicker {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .flag-subheadline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flag-hero .flag-cta-row,
+  .flag-hero-actions {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flag-hero-actions .flag-btn {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .flag-portrait-wrap {

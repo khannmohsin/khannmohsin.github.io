@@ -19,6 +19,7 @@ nav_order: 4
         autocomplete="off"
         aria-label="Search repositories"
       >
+      <button id="repo-search-btn" class="aux-btn aux-btn--primary" type="button" aria-label="Search repositories">Search</button>
       <a class="aux-btn aux-btn--primary" href="https://github.com/khannmohsin" target="_blank" rel="noopener noreferrer">
         Open GitHub
       </a>
@@ -66,6 +67,7 @@ nav_order: 4
     if (!root) return;
 
     var searchInput = root.querySelector("#repo-search");
+    var searchButton = root.querySelector("#repo-search-btn");
     var featuredBlock = root.querySelector("#repo-featured-block");
     var repoItems = Array.prototype.slice.call(root.querySelectorAll("[data-repo-item]"));
 
@@ -96,6 +98,19 @@ nav_order: 4
 
     if (searchInput) {
       searchInput.addEventListener("input", applySearch);
+      searchInput.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          applySearch();
+        }
+      });
+    }
+
+    if (searchButton) {
+      searchButton.addEventListener("click", function () {
+        applySearch();
+        if (searchInput) searchInput.focus();
+      });
     }
 
     document.addEventListener("repo-pinned:updated", applySearch);

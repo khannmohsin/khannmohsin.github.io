@@ -200,11 +200,21 @@
   margin-top: 0.52rem;
 }
 
+.aux-publications .bibsearch-toolbar {
+  width: 100%;
+  margin: 0 0 0.46rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.45rem;
+  align-items: center;
+}
+
 .aux-publications #bibsearch {
   width: 100%;
   max-width: none;
   min-width: 0;
-  margin: 0 0 0.46rem;
+  height: 2.25rem;
+  margin: 0;
   border: 1px solid var(--aux-border);
   border-radius: 12px;
   background: color-mix(in srgb, var(--aux-surface-soft) 90%, transparent);
@@ -217,6 +227,23 @@
   border-color: color-mix(in srgb, var(--aux-accent) 62%, var(--aux-border));
   background: color-mix(in srgb, var(--aux-surface) 94%, var(--aux-surface-soft));
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--aux-accent) 14%, transparent);
+}
+
+.aux-publications #bibsearch-button {
+  min-height: 2.25rem;
+  height: 2.25rem;
+  padding-inline: 0.86rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .aux-publications .bibsearch-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .aux-publications #bibsearch-button {
+    width: 100%;
+  }
 }
 
 .aux-publications .publications {
@@ -417,7 +444,7 @@
   margin-top: 0;
   display: grid;
   gap: 0.48rem;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto auto;
   align-items: stretch;
 }
 

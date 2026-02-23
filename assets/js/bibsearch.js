@@ -1,6 +1,10 @@
 import { highlightSearchTerm } from "./highlight-search-term.js";
 
 document.addEventListener("DOMContentLoaded", function () {
+  const bibsearchInput = document.getElementById("bibsearch");
+  const bibsearchButton = document.getElementById("bibsearch-button");
+  if (!bibsearchInput) return;
+
   // actual bibsearch logic
   const filterItems = (searchTerm) => {
     document.querySelectorAll(".bibliography, .unloaded").forEach((element) => element.classList.remove("unloaded"));
@@ -52,17 +56,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const updateInputField = () => {
     const hashValue = decodeURIComponent(window.location.hash.substring(1)); // Remove the '#' character
-    document.getElementById("bibsearch").value = hashValue;
+    bibsearchInput.value = hashValue;
     filterItems(hashValue);
   };
 
   // Sensitive search. Only start searching if there's been no input for 300 ms
   let timeoutId;
-  document.getElementById("bibsearch").addEventListener("input", function () {
+  bibsearchInput.addEventListener("input", function () {
     clearTimeout(timeoutId); // Clear the previous timeout
     const searchTerm = this.value.toLowerCase();
-    timeoutId = setTimeout(filterItems(searchTerm), 300);
+    timeoutId = setTimeout(() => filterItems(searchTerm), 300);
   });
+
+  bibsearchInput.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      filterItems((this.value || "").toLowerCase());
+    }
+  });
+
+  if (bibsearchButton) {
+    bibsearchButton.addEventListener("click", function () {
+      filterItems((bibsearchInput.value || "").toLowerCase());
+      bibsearchInput.focus();
+    });
+  }
 
   window.addEventListener("hashchange", updateInputField); // Update the filter when the hash changes
 

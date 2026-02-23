@@ -37,16 +37,12 @@ toc: false
         />
       </div>
 
-      <div class="prj-control-field">
-        <select id="prj-category-filter" aria-label="Filter by category">
-          <option value="all">Category: All</option>
-          {% for category in page.display_categories %}
-            <option value="{{ category }}">{{ category }}</option>
-          {% endfor %}
-        </select>
+      <div class="prj-control-field prj-control-action">
+        <button id="prj-search-btn" class="prj-btn prj-btn-primary prj-search-btn" type="button" aria-label="Search projects">
+          Search
+        </button>
       </div>
 
-      <p class="prj-results" id="prj-results-count" aria-live="polite"></p>
     </div>
   </section>
 
@@ -156,7 +152,7 @@ toc: false
 
   <section class="prj-empty" id="prj-empty" hidden>
     <h3>No projects matched your current filters.</h3>
-    <p>Try broadening your search terms, category, or track.</p>
+    <p>Try broadening your search terms.</p>
   </section>
 </div>
 
@@ -166,8 +162,7 @@ toc: false
     if (!root) return;
 
     var searchInput = root.querySelector("#prj-search");
-    var categorySelect = root.querySelector("#prj-category-filter");
-    var resultNode = root.querySelector("#prj-results-count");
+    var searchButton = root.querySelector("#prj-search-btn");
     var emptyNode = root.querySelector("#prj-empty");
     var cards = Array.prototype.slice.call(root.querySelectorAll("[data-project-card]"));
     var sections = Array.prototype.slice.call(root.querySelectorAll("[data-project-section]"));
@@ -175,16 +170,12 @@ toc: false
 
     function applyFilters() {
       var query = (searchInput.value || "").trim().toLowerCase();
-      var selectedCategory = categorySelect.value;
       var visibleCards = 0;
 
       cards.forEach(function (card) {
         var searchable = card.dataset.search || "";
-        var category = card.dataset.category || "";
 
-        var matchesQuery = query.length === 0 || searchable.indexOf(query) !== -1;
-        var matchesCategory = selectedCategory === "all" || category === selectedCategory;
-        var shouldShow = matchesQuery && matchesCategory;
+        var shouldShow = query.length === 0 || searchable.indexOf(query) !== -1;
         card.hidden = !shouldShow;
 
         if (shouldShow) {
@@ -211,7 +202,6 @@ toc: false
         setActiveNav(firstVisibleSection.id);
       }
 
-      resultNode.textContent = "Visible: " + visibleCards + "/" + cards.length;
       emptyNode.hidden = visibleCards !== 0;
     }
 
@@ -222,7 +212,15 @@ toc: false
     }
 
     searchInput.addEventListener("input", applyFilters);
-    categorySelect.addEventListener("change", applyFilters);
+    searchInput.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        applyFilters();
+      }
+    });
+    if (searchButton) {
+      searchButton.addEventListener("click", applyFilters);
+    }
 
     navLinks.forEach(function (link) {
       link.addEventListener("click", function () {

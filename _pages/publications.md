@@ -9,6 +9,7 @@ toc: false
 ---
 
 <div class="aux-flagship aux-publications">
+  {% include bib_search.liquid placeholder="Filter publications by title, author, venue, or year" %}
   <div class="aux-publications-intro" aria-label="Publication search context">
     <div class="aux-chip-row" aria-label="Research domains">
       <span class="aux-chip">IoT/OT Security</span>
@@ -17,7 +18,6 @@ toc: false
       <span class="aux-chip">Applied Cyber Defense</span>
     </div>
   </div>
-  {% include bib_search.liquid placeholder="Filter publications by title, author, venue, or year" %}
 
   <div class="publications">
     {% bibliography %}
