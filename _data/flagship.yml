@@ -1,0 +1,170 @@
+hero:
+  kicker: Systems Security and Applied Security  Research
+  headline: I design resilient security for distributed systems.
+  subheadline: >
+    Cybersecurity architect and researcher focused on trust architectures, vulnerability 
+    operations, and detection engineering across distributed systems.
+  portrait:
+    path: assets/img/mohsin_khan.jpg
+    alt: Mohsin Khan portrait
+  ctas:
+    - label: View Flagship Cases
+      url: /projects/
+      style: primary
+    - label: Download Industry CV
+      url: /assets/pdf/My_Industrial_CV.pdf
+      style: secondary
+    - label: Contact for Collaboration
+      url: mailto:khann.mohsin@icloud.com
+      style: secondary
+
+metrics:
+  - value: "3"
+    label: Flagship security projects
+    url: /projects/
+    source: View flagship cases
+  - value: "130+"
+    label: Lightweight primitives benchmarked
+    url: /projects/benchmarking_lwhf_chipwhisperer/
+    source: View benchmark project
+  - value: "25"
+    label: Portfolio projects shipped
+    url: /projects/
+    source: Browse projects
+  - value: "9+"
+    label: Industry certifications and simulations
+    url: /cv/
+    source: See credentials
+  - value: "10+"
+    label: Peer-reviewed publications
+    url: /publications/
+    source: Verify publications
+
+trust_strip:
+  title: Trusted Domains of Work
+  last_reviewed: "February 22, 2026"
+  items:
+    - IEEE Access / IEEE FMEC / NordSec
+    - Springer / LNCS / SECRYPT
+    - IoT and Lightweight Crypto
+    - Distributed Systems Security and Resilience
+    - SOC / Vulnerability / Incident Response
+    - IAM / Zero Trust / Security Architecture
+
+cv_snapshot:
+  title: CV Snapshot
+  subtitle: Concise highlights from research, engineering, and credentials.
+  left:
+    heading: Security Engineering Impact
+    items:
+      - "PhD Research Fellow, UiT (2021-2025): designed Zero Trust and IAM security architectures for distributed IoT and cloud systems."
+      - "Built a benchmarking and taxonomy framework for ~130 lightweight cryptographic primitives on constrained platforms."
+      - "Data Engineer, Blackbuck Insight (2021): migrated data pipelines to AWS with IAM controls and security-focused monitoring."
+  right:
+    heading: Education and Credentials
+    items:
+      - "PhD in Cybersecurity, UiT - The Arctic University of Norway."
+      - "MBA in Operations Management, Indira Gandhi National Open University."
+      - "M.Tech in Computer Science and Engineering, Central University of Jammu."
+      - "2025 credentials: IBM security tracks, Qualys VMDR, and Deloitte Cyber Job Simulation."
+  ctas:
+    - label: View Full CV
+      url: /cv/
+      style: primary
+    - label: Academic CV PDF
+      url: /assets/pdf/My_academic_CV.pdf
+      style: secondary
+
+cases:
+  - category: Research and System Design
+    title: BlockCap - Blockchain Capability Authorization for IoT
+    url: /projects/dtea/
+    challenge: >
+      Secure authorization for constrained IoT nodes while preserving auditability
+      across distributed trust boundaries.
+    approach: >
+      Implemented blockchain-governed token lifecycle controls and enforced least
+      privilege with threat-model-driven policy rules.
+    outcome: >
+      Delivered verifiable access decisions, stronger accountability, and practical
+      governance for distributed IoT communication.
+    metrics:
+      - Smart-contract authorization layer
+      - Token lifecycle governance
+      - Threat-model-based policy design
+
+  - category: Security Benchmarking
+    title: Lightweight Hash Benchmarking with ChipWhisperer
+    url: /projects/benchmarking_lwhf_chipwhisperer/
+    challenge: >
+      Generate practical evidence for selecting cryptographic primitives on deeply
+      constrained embedded IoT platforms.
+    approach: >
+      Benchmarked lightweight hash candidates on AVR using reproducible measurement
+      workflows and comparative evaluation criteria.
+    outcome: >
+      Produced a decision-ready reference balancing security strength, performance
+      cost, and deployment feasibility.
+    metrics:
+      - 130+ primitives benchmarked
+      - Reproducible AVR pipeline
+      - Security-performance trade-off matrix
+
+  - category: Industry Security Ops
+    title: Datacom Cyber Security Operations Simulation
+    url: /projects/forage_datacom/
+    challenge: >
+      Assess a ransomware scenario and produce defensible risk decisions across
+      technical and business contexts.
+    approach: >
+      Mapped attack evidence, quantified impact, prioritized risks, and translated
+      findings into operational control actions.
+    outcome: >
+      Demonstrated SOC-ready triage, clear stakeholder communication, and actionable
+      response planning for operations.
+    metrics:
+      - Ransomware impact analysis
+      - Risk-prioritization workflow
+      - Executive decision reporting
+
+threat_map:
+  title: Signature View - Attack -> Control -> Signal
+  intro: Threat-to-defense map across core intrusion stages.
+  stages:
+    - stage: Recon
+      attack: OSINT, exposed assets.
+      control: ASM, hardening.
+      signal: Exposure alerts.
+    - stage: Initial Access
+      attack: Phishing, exploit creds.
+      control: MFA, patching.
+      signal: Risky login.
+    - stage: Privilege Escalation
+      attack: Role abuse, token theft.
+      control: Least privilege, RBAC.
+      signal: Role anomalies.
+    - stage: Lateral Movement
+      attack: Cred reuse, remote pivot.
+      control: Segmentation, JIT.
+      signal: East-west anomalies.
+    - stage: Impact and Response
+      attack: Ransomware, exfiltration.
+      control: Immutable backups, IR playbooks.
+      signal: Encryption alerts.
+
+conversion:
+  title: Open to Security Engineering and Research Collaboration
+  body: >
+    I collaborate on applied cybersecurity research, architecture reviews, and
+    security engineering initiatives where distributed systems and real-world threat
+    models matter.
+  ctas:
+    - label: Explore All Projects
+      url: /projects/
+      style: primary
+    - label: Read Publications
+      url: /publications/
+      style: secondary
+    - label: View Teaching Portfolio
+      url: /assets/pdf/My_Teaching_Portfolio.pdf
+      style: secondary

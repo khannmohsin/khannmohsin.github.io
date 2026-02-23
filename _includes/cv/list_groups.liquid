@@ -25,19 +25,20 @@
               {% if item.level %}
                 <td class="list-group-level">{{ item.level }}</td>
               {% endif %}
-              {% if item.school %}
-                <td class="list-group-school">{{ item.school }}
-              {% endif %}
-              {% if item.time %}
-                <br>
-                <span class="list-group-time">{{ item.time }}</span>
-                </td>
-              {% else %}
+              {% if item.school or item.time %}
+                <td class="list-group-school">
+                  {% if item.school %}
+                    {{ item.school }}
+                  {% endif %}
+                  {% if item.time %}
+                    <br>
+                    <span class="list-group-time">{{ item.time }}</span>
+                  {% endif %}
                 </td>
               {% endif %}
               {% if item.link %}
                 <td class="list-group-link">
-                  <a href="{{ item.link }}" target="_blank" class="btncv z-depth-0">
+                  <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer" class="btncv z-depth-0">
                     {% if item.linkname %}{{ item.linkname }}{% else %}DOC{% endif %}
                   </a>
                 </td>

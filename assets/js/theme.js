@@ -2,14 +2,8 @@
 
 // Toggle through light, dark, and system theme settings.
 let toggleThemeSetting = () => {
-  let themeSetting = determineThemeSetting();
-  if (themeSetting == "system") {
-    setThemeSetting("light");
-  } else if (themeSetting == "light") {
-    setThemeSetting("dark");
-  } else {
-    setThemeSetting("system");
-  }
+  const currentTheme = determineComputedTheme();
+  setThemeSetting(currentTheme === "dark" ? "light" : "dark");
 };
 
 // Change the theme setting and apply the theme.
@@ -56,6 +50,7 @@ let applyTheme = () => {
   }
 
   document.documentElement.setAttribute("data-theme", theme);
+  updateThemeToggle(theme);
 
   // Add class to tables.
   let tables = document.getElementsByTagName("table");
@@ -85,6 +80,19 @@ let applyTheme = () => {
     medium_zoom.update({
       background: getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color") + "ee", // + 'ee' for trasparency.
     });
+  }
+};
+
+let updateThemeToggle = (theme) => {
+  const modeToggle = document.getElementById("light-toggle");
+  if (!modeToggle) return;
+
+  if (theme === "dark") {
+    modeToggle.setAttribute("title", "Switch to light mode");
+    modeToggle.setAttribute("aria-label", "Switch to light mode");
+  } else {
+    modeToggle.setAttribute("title", "Switch to dark mode");
+    modeToggle.setAttribute("aria-label", "Switch to dark mode");
   }
 };
 
@@ -285,6 +293,7 @@ let initTheme = () => {
   // Add event listener to the theme toggle button.
   document.addEventListener("DOMContentLoaded", function () {
     const mode_toggle = document.getElementById("light-toggle");
+    if (!mode_toggle) return;
 
     mode_toggle.addEventListener("click", function () {
       toggleThemeSetting();
@@ -292,7 +301,15 @@ let initTheme = () => {
   });
 
   // Add event listener to the system theme preference change.
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches }) => {
-    applyTheme();
-  });
+  const systemThemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+  if (typeof systemThemeQuery.addEventListener === "function") {
+    systemThemeQuery.addEventListener("change", () => {
+      applyTheme();
+    });
+  } else if (typeof systemThemeQuery.addListener === "function") {
+    // Fallback for older Safari engines.
+    systemThemeQuery.addListener(() => {
+      applyTheme();
+    });
+  }
 };

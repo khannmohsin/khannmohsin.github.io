@@ -1,19 +1,21 @@
 <!-- jQuery -->
 <script
+  defer
   src="{{ site.third_party_libraries.jquery.url.js }}"
   integrity="{{ site.third_party_libraries.jquery.integrity.js }}"
   crossorigin="anonymous"
 ></script>
 
 <!-- Bootsrap & MDB scripts -->
-<script src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/bootstrap.bundle.min.js' | relative_url }}"></script>
 <script
+  defer
   src="{{ site.third_party_libraries.mdb.url.js }}"
   integrity="{{ site.third_party_libraries.mdb.integrity.js }}"
   crossorigin="anonymous"
 ></script>
 
-{% if site.enable_masonry %}
+{% if page.masonry %}
   <!-- Masonry & imagesLoaded -->
   <script
     defer
@@ -144,12 +146,12 @@
 
 {% if page.typograms %}
   <!-- Typograms -->
-  <script src="{{ '/assets/js/typograms.js' | relative_url | bust_file_cache }}"></script>
+  <script defer src="{{ '/assets/js/typograms.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
 
 {% if site.enable_tooltips %}
   <!-- Tooltips -->
-  <script src="{{ '/assets/js/tooltips-setup.js' | relative_url | bust_file_cache }}"></script>
+  <script defer src="{{ '/assets/js/tooltips-setup.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
 
 {% if site.enable_medium_zoom %}
@@ -180,7 +182,7 @@
 {% endif %}
 
 <!-- Load Common JS -->
-<script src="{{ '/assets/js/no_defer.js' | relative_url | bust_file_cache }}"></script>
+<script defer src="{{ '/assets/js/no_defer.js' | relative_url | bust_file_cache }}"></script>
 <script defer src="{{ '/assets/js/common.js' | relative_url | bust_file_cache }}"></script>
 <script defer src="{{ '/assets/js/copy_code.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
 
@@ -195,7 +197,11 @@
   <script async src="https://badge.dimensions.ai/badge.js"></script>
 {% endif %}
 
-{% if site.enable_math %}
+{% assign load_math_assets = false %}
+{% if page.math or page.pseudocode %}
+  {% assign load_math_assets = true %}
+{% endif %}
+{% if site.enable_math and load_math_assets %}
   <!-- MathJax -->
   <script
     defer

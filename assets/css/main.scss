@@ -11,15 +11,27 @@
 @use "cv";
 @use "tabs";
 @use "typograms";
+@use "flagship";
+@use "projects-flagship";
+@use "story-flagship";
+@use "secondary-flagship";
 @use "font-awesome/fontawesome";
 @use "font-awesome/brands";
 @use "font-awesome/solid";
 @use "font-awesome/regular";
-@use "tabler-icons/tabler-icons" with ($ti-font-path: "../fonts");
-@use "tabler-icons/tabler-icons-filled" with ($ti-font-path: "../fonts");
-@use "tabler-icons/tabler-icons-outline" with ($ti-font-path: "../fonts");
+@use "tabler-icons/tabler-icons" with (
+  $ti-font-path: "../fonts",
+  $ti-font-display: swap
+);
+@use "tabler-icons/tabler-icons-filled" with (
+  $ti-font-path: "../fonts",
+  $ti-font-display: swap
+);
+@use "tabler-icons/tabler-icons-outline" with (
+  $ti-font-path: "../fonts",
+  $ti-font-display: swap
+);
 
 .justify-text {
   text-align: justify;
 }
-

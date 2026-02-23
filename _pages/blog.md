@@ -2,6 +2,7 @@
 layout: default
 permalink: /blog/
 title: Blog
+description: Technical writing across system security, cybersecurity research, and implementation-oriented lessons from projects.
 nav: true
 nav_order: 7
 pagination:
@@ -16,239 +17,22 @@ pagination:
     after: 3
 ---
 
-<style>
-/* =========================================================
-   BLOG — Clean Academic Cards (Aligned with Publications)
-   ========================================================= */
-
-:root{
-  --blog-text: #0b1220;
-  --blog-muted: rgba(11,18,32,0.65);
-
-  --blog-card: #ffffff;
-  --blog-border: rgba(0,0,0,0.12);
-  --blog-shadow: 0 10px 24px rgba(0,0,0,0.06);
-
-  --blog-accent: #3685f3;
-  --blog-radius: 14px;
-}
-
-[data-theme="dark"]{
-  --blog-text: rgba(255,255,255,0.92);
-  --blog-muted: rgba(255,255,255,0.70);
-
-  --blog-card: rgba(18,18,18,0.65);
-  --blog-border: rgba(255,255,255,0.16);
-  --blog-shadow: 0 14px 30px rgba(0,0,0,0.35);
-}
-
-/* ---------------------------------------------------------
-   FIX: remove bullets & indentation (robust)
-   --------------------------------------------------------- */
-.blog-posts{
-  list-style: none !important;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
-.blog-posts > li{
-  list-style: none !important;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
-
-/* Intro / header card */
-.blog-intro{
-  border: 1px solid var(--blog-border);
-  border-radius: var(--blog-radius);
-  background: var(--blog-card);
-  box-shadow: var(--blog-shadow);
-  padding: 16px 18px;
-  margin: 14px 0 20px;
-}
-.blog-intro h1{
-  margin: 0 0 6px;
-  color: var(--blog-text);
-  font-weight: 650;
-  letter-spacing: -0.01em;
-}
-.blog-intro p{
-  margin: 0;
-  color: var(--blog-muted);
-}
-
-/* Section title */
-.blog-section-title{
-  margin: 0 0 10px;
-  color: var(--blog-text);
-  font-weight: 650;
-  letter-spacing: -0.01em;
-  font-size: 1.05rem;
-}
-
-/* Featured grid */
-.blog-featured-grid{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  margin: 10px 0 22px;
-}
-@media (min-width: 980px){
-  .blog-featured-grid{
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* Post list */
-.blog-posts{
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
-
-/* Card */
-.blog-card{
-  border: 1px solid var(--blog-border);
-  border-radius: var(--blog-radius);
-  background: var(--blog-card);
-  box-shadow: var(--blog-shadow);
-  padding: 14px 16px;
-  transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
-}
-.blog-card:hover{
-  transform: translateY(-2px);
-  border-color: rgba(54,133,243,0.35);
-}
-
-/* Card layout for posts with thumbnails */
-.blog-card.has-thumb{
-  padding: 0;
-  overflow: hidden;
-}
-.blog-card-grid{
-  display: grid;
-  grid-template-columns: 1fr;
-}
-@media (min-width: 860px){
-  .blog-card-grid{
-    grid-template-columns: 1fr 220px;
-  }
-}
-.blog-card-body{
-  padding: 14px 16px;
-}
-.blog-card-thumb{
-  width: 100%;
-  height: 100%;
-  min-height: 170px;
-  object-fit: cover;
-  border-left: 1px solid var(--blog-border);
-}
-@media (max-width: 859px){
-  .blog-card-thumb{
-    border-left: 0;
-    border-top: 1px solid var(--blog-border);
-    min-height: 200px;
-  }
-}
-
-/* Title */
-.blog-title{
-  margin: 0 0 6px;
-  font-weight: 650;
-  font-size: 1.05rem;
-  line-height: 1.35;
-  letter-spacing: -0.01em;
-}
-.blog-title a{
-  color: var(--blog-text);
-  text-decoration: none;
-}
-.blog-title a:hover{
-  text-decoration: underline;
-  text-decoration-color: rgba(54,133,243,0.45);
-}
-.blog-desc{
-  margin: 0 0 10px;
-  color: var(--blog-muted);
-}
-
-/* Meta */
-.blog-meta{
-  margin: 0;
-  color: var(--blog-muted);
-  font-size: 0.92rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-}
-
-/* Chips: now NON-clickable */
-.blog-chips{
-  margin: 10px 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.blog-chip{
-  border: 1px solid rgba(54,133,243,0.25);
-  background: rgba(54,133,243,0.10);
-  color: var(--blog-text);
-  border-radius: 999px;
-  padding: 4px 10px;
-  font-size: 0.78rem;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.blog-chip i{
-  color: var(--blog-muted);
-}
-
-/* Pin icon alignment (featured) */
-.blog-pin{
-  float: right;
-  color: var(--blog-muted);
-  margin-left: 10px;
-}
-
-/* Divider */
-.blog-divider{
-  border: 0;
-  border-top: 1px solid var(--blog-border);
-  margin: 18px 0;
-}
-
-/* Reduced motion */
-@media (prefers-reduced-motion: reduce){
-  .blog-card{ transition: none; }
-  .blog-card:hover{ transform: none; }
-}
-</style>
-
-<div class="post">
-
-  {% assign blog_name_size = site.blog_name | size %}
-  {% assign blog_description_size = site.blog_description | size %}
-
-  {% if blog_name_size > 0 or blog_description_size > 0 %}
-    <div>
-      <h1>{{ site.blog_name }}</h1>
-      <p>{{ site.blog_description }}</p>
-    </div>
-  {% endif %}
+<div class="post aux-flagship aux-blog">
+  <section class="blog-intro" aria-label="Blog overview">
+    <h1 class="blog-page-title page-title-uniform">Technical and Research Notes</h1>
+    {% if site.blog_description and site.blog_description != '' %}
+      <p class="blog-page-subtitle">{{ site.blog_description }}</p>
+    {% else %}
+      <p class="blog-page-subtitle">Technical writing across system security, cybersecurity research, and implementation-oriented lessons from projects.</p>
+    {% endif %}
+  </section>
 
   {% assign featured_posts = site.posts | where: "featured", "true" %}
   {% if featured_posts.size > 0 %}
-
     <h2 class="blog-section-title">Featured posts</h2>
 
     <div class="blog-featured-grid">
       {% for post in featured_posts %}
-
         {% if post.external_source == blank %}
           {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
         {% else %}
@@ -256,24 +40,28 @@ pagination:
         {% endif %}
         {% assign year = post.date | date: "%Y" %}
 
-        <a href="{{ post.url | relative_url }}" style="text-decoration:none;">
-          <div class="blog-card">
+        {% if post.redirect == blank %}
+          {% assign post_href = post.url | relative_url %}
+        {% elsif post.redirect contains '://' %}
+          {% assign post_href = post.redirect %}
+        {% else %}
+          {% assign post_href = post.redirect | relative_url %}
+        {% endif %}
+
+        <a class="blog-featured-link" href="{{ post_href }}"{% if post.redirect contains '://' %} target="_blank" rel="noopener noreferrer"{% endif %}>
+          <article class="blog-card">
             <span class="blog-pin"><i class="fa-solid fa-thumbtack fa-xs"></i></span>
-
             <h3 class="blog-title">{{ post.title }}</h3>
-
             {% if post.description %}
               <p class="blog-desc">{{ post.description }}</p>
             {% endif %}
-
             <p class="blog-meta">
               <span>{{ read_time }} min read</span>
               <span>&middot;</span>
               <span><i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</span>
             </p>
-          </div>
+          </article>
         </a>
-
       {% endfor %}
     </div>
 
@@ -285,11 +73,23 @@ pagination:
   {% else %}
     {% assign postlist = site.posts %}
   {% endif %}
+  {% assign suppress_featured_in_latest = false %}
+  {% if featured_posts.size > 0 %}
+    {% if page.pagination.enabled %}
+      {% if paginator.page == 1 %}
+        {% assign suppress_featured_in_latest = true %}
+      {% endif %}
+    {% else %}
+      {% assign suppress_featured_in_latest = true %}
+    {% endif %}
+  {% endif %}
 
+  <h2 class="blog-section-title">Latest posts</h2>
   <ul class="blog-posts">
-
     {% for post in postlist %}
-
+      {% if suppress_featured_in_latest and post.featured %}
+        {% continue %}
+      {% endif %}
       {% if post.external_source == blank %}
         {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
       {% else %}
@@ -301,18 +101,15 @@ pagination:
       {% assign categories = post.categories | join: "" %}
 
       <li>
-
         {% if post.thumbnail %}
-
-          <div class="blog-card has-thumb">
+          <article class="blog-card has-thumb">
             <div class="blog-card-grid">
               <div class="blog-card-body">
-
                 <h3 class="blog-title">
                   {% if post.redirect == blank %}
                     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
                   {% elsif post.redirect contains '://' %}
-                    <a href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
+                    <a href="{{ post.redirect }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
                   {% else %}
                     <a href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
                   {% endif %}
@@ -333,42 +130,30 @@ pagination:
                 </p>
 
                 <div class="blog-chips">
-                  <span class="blog-chip">
-                    <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
-                  </span>
-
+                  <span class="blog-chip"><i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</span>
                   {% if tags != "" %}
                     {% for tag in post.tags %}
-                      <span class="blog-chip">
-                        <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
-                      </span>
+                      <span class="blog-chip"><i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</span>
                     {% endfor %}
                   {% endif %}
-
                   {% if categories != "" %}
                     {% for category in post.categories %}
-                      <span class="blog-chip">
-                        <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
-                      </span>
+                      <span class="blog-chip"><i class="fa-solid fa-tag fa-sm"></i> {{ category }}</span>
                     {% endfor %}
                   {% endif %}
                 </div>
-
               </div>
 
-              <img class="blog-card-thumb" src="{{ post.thumbnail | relative_url }}" alt="thumbnail">
-
+              <img class="blog-card-thumb" src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }} thumbnail" loading="lazy" decoding="async">
             </div>
-          </div>
-
+          </article>
         {% else %}
-
-          <div class="blog-card">
+          <article class="blog-card">
             <h3 class="blog-title">
               {% if post.redirect == blank %}
                 <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
               {% elsif post.redirect contains '://' %}
-                <a href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
+                <a href="{{ post.redirect }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
               {% else %}
                 <a href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
               {% endif %}
@@ -389,30 +174,20 @@ pagination:
             </p>
 
             <div class="blog-chips">
-              <span class="blog-chip">
-                <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
-              </span>
-
+              <span class="blog-chip"><i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</span>
               {% if tags != "" %}
                 {% for tag in post.tags %}
-                  <span class="blog-chip">
-                    <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
-                  </span>
+                  <span class="blog-chip"><i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</span>
                 {% endfor %}
               {% endif %}
-
               {% if categories != "" %}
                 {% for category in post.categories %}
-                  <span class="blog-chip">
-                    <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
-                  </span>
+                  <span class="blog-chip"><i class="fa-solid fa-tag fa-sm"></i> {{ category }}</span>
                 {% endfor %}
               {% endif %}
             </div>
-          </div>
-
+          </article>
         {% endif %}
-
       </li>
     {% endfor %}
   </ul>
@@ -420,5 +195,4 @@ pagination:
   {% if page.pagination.enabled %}
     {% include pagination.liquid %}
   {% endif %}
-
 </div>

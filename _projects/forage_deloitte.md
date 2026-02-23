@@ -2,7 +2,7 @@
 layout: page
 title: Deloitte Australia Cyber Job Simulation
 description: Hands-on cyber incident analysis and detection exercises based on real-world consulting scenarios.
-img: assets/img/projects/forage/delloitte.png
+img: assets/img/projects/forage/deloitte.png
 category: Cybersecurity Job Simulations
 importance: 1
 tags: ["SOC", "Log Analysis", "Incident Response"]

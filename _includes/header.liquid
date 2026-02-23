@@ -128,10 +128,10 @@
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
-              <button id="light-toggle" title="Change theme">
-                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
-                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
-                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+              <button id="light-toggle" type="button" title="Change theme" aria-label="Change theme">
+                <span id="light-toggle-system" class="theme-icon" aria-hidden="true">◐</span>
+                <span id="light-toggle-dark" class="theme-icon" aria-hidden="true">☾</span>
+                <span id="light-toggle-light" class="theme-icon" aria-hidden="true">☀</span>
               </button>
             </li>
           {% endif %}

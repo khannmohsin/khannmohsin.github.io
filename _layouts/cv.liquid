@@ -2,15 +2,12 @@
 layout: default
 ---
 
-{% unless site.data.resume %}
-  <div class="post">
-    <header class="post-header">
+<div class="post cv-flagship">
+  <header class="post-header cvf-header">
+    <div class="cvf-title-row">
+      <h1 class="post-title mb-0 cvf-title page-title-uniform">{{ page.title }}</h1>
 
-      <!-- Title -->
-      <h1 class="post-title mb-2">{{ page.title }}</h1>
-
-      <!-- Buttons (separate division, mobile-safe) -->
-      <div class="cv-buttons d-flex flex-wrap gap-2 justify-content-start justify-content-md-end mb-3">
+      <div class="cv-buttons cvf-actions d-flex flex-wrap gap-2 justify-content-start justify-content-md-end mb-0">
         {% if page.cv_academic_pdf %}
           <a
             {% if page.cv_academic_pdf contains '://' %}
@@ -43,89 +40,16 @@ layout: default
           </a>
         {% endif %}
       </div>
+    </div>
 
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
-      {% endif %}
-    </header>
+    {% if page.description %}
+      <p class="post-description cvf-summary">{{ page.description }}</p>
+    {% endif %}
+  </header>
 
-    <article>
-      <div class="cv">
-        {% for entry in site.data.cv %}
-          <a class="anchor" id="{{ entry.title | slugify }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
-            <div>
-              {% if entry.type == 'list' %}
-                {% include cv/list.liquid %}
-              {% elsif entry.type == 'map' %}
-                {% include cv/map.liquid %}
-              {% elsif entry.type == 'nested_list' %}
-                {% include cv/nested_list.liquid %}
-              {% elsif entry.type == 'time_table' %}
-                {% include cv/time_table.liquid %}
-              {% elsif entry.type == 'list_groups' %}
-                {% include cv/list_groups.liquid %}
-              {% else %}
-                {{ entry.contents }}
-              {% endif %}
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </article>
-  </div>
-
-{% else %}
-
-  <div class="post">
-    <header class="post-header">
-
-      <!-- Title -->
-      <h1 class="post-title mb-2">{{ page.title }}</h1>
-
-      <!-- Buttons (separate division, mobile-safe) -->
-      <div class="cv-buttons d-flex flex-wrap gap-2 justify-content-start justify-content-md-end mb-3">
-        {% if page.cv_academic_pdf %}
-          <a
-            {% if page.cv_academic_pdf contains '://' %}
-              href="{{ page.cv_academic_pdf }}"
-            {% else %}
-              href="{{ page.cv_academic_pdf | prepend: 'assets/pdf/' | relative_url }}"
-            {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-sm btn-outline-primary"
-            title="Download Academic CV"
-          >
-            <i class="fa-solid fa-graduation-cap"></i> Academic CV
-          </a>
-        {% endif %}
-
-        {% if page.cv_industry_pdf %}
-          <a
-            {% if page.cv_industry_pdf contains '://' %}
-              href="{{ page.cv_industry_pdf }}"
-            {% else %}
-              href="{{ page.cv_industry_pdf | prepend: 'assets/pdf/' | relative_url }}"
-            {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-sm btn-outline-success"
-            title="Download Industry CV"
-          >
-            <i class="fa-solid fa-briefcase"></i> Industry CV
-          </a>
-        {% endif %}
-      </div>
-
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
-      {% endif %}
-    </header>
-
-    <article>
-      <div class="cv">
+  <article>
+    <div class="cv">
+      {% if site.data.resume %}
         {% for data in site.data.resume %}
           {% if site.jsonresume and site.jsonresume.size > 0 %}
             {% unless site.jsonresume contains data[0] %}
@@ -139,7 +63,7 @@ layout: default
           {% endif %}
 
           <a class="anchor" id="{{ data[0] | slugify }}"></a>
-          <div class="card mt-3 p-3">
+          <div class="card mt-3 p-3 cvf-card">
             <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
             <div>
               {% case data[0] %}
@@ -172,8 +96,29 @@ layout: default
             </div>
           </div>
         {% endfor %}
-      </div>
-    </article>
-  </div>
-
-{% endunless %}
+      {% else %}
+        {% for entry in site.data.cv %}
+          <a class="anchor" id="{{ entry.title | slugify }}"></a>
+          <div class="card mt-3 p-3 cvf-card">
+            <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+            <div>
+              {% if entry.type == 'list' %}
+                {% include cv/list.liquid %}
+              {% elsif entry.type == 'map' %}
+                {% include cv/map.liquid %}
+              {% elsif entry.type == 'nested_list' %}
+                {% include cv/nested_list.liquid %}
+              {% elsif entry.type == 'time_table' %}
+                {% include cv/time_table.liquid %}
+              {% elsif entry.type == 'list_groups' %}
+                {% include cv/list_groups.liquid %}
+              {% else %}
+                {{ entry.contents }}
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </article>
+</div>

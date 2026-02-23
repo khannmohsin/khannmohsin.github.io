@@ -125,17 +125,17 @@
 - title: Publications
   type: time_table
   contents:
-    - title: Survey of Lightweight Hardware-Based Hash Functions for Security in Constrained IoT Devices
-      institution: IEEE Access
-      year: 2025-11
-      description:
-        - https://ieeexplore.ieee.org/abstract/document/11168213
-
     - title: A Comparative Analysis of Lightweight Hash Functions Using AVR ATXMega128 and ChipWhisperer
       institution: NordSec
       year: 2025-12
       description:
         - https://arxiv.org/abs/2508.07840
+
+    - title: Survey of Lightweight Hardware-Based Hash Functions for Security in Constrained IoT Devices
+      institution: IEEE Access
+      year: 2025-11
+      description:
+        - https://ieeexplore.ieee.org/abstract/document/11168213
 
     - title: Software Benchmarking of NIST Lightweight Hash Function Finalists on Resource-Constrained AVR Platform via ChipWhisperer
       institution: SECRYPT (SCITEPRESS)

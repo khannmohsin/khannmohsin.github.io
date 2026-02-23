@@ -15,6 +15,7 @@ tags:
     "STRIDE",
   ]
 related_publications: true
+math: true
 ---
 
 <div class="justify-text">

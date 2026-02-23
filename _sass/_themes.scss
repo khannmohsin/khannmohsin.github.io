@@ -11,8 +11,8 @@
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
+  --global-theme-color: #{$blue-color};
+  --global-hover-color: #{$blue-color};
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
@@ -20,7 +20,7 @@
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0, 0, 0, 0.1);
   --global-card-bg-color: #{$white-color};
-  --global-highlight-color: #{$red-color-dark};
+  --global-highlight-color: #{$blue-color-dark};
   --global-back-to-top-bg-color: rgba(
     #{color.channel($black-color, "red", $space: rgb)},
     #{color.channel($black-color, "green", $space: rgb)},
@@ -44,18 +44,15 @@
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
 
-  #light-toggle-system {
-    padding-left: 10px;
-    padding-top: 12px;
-    display: block;
-  }
-
-  #light-toggle-dark {
-    display: none;
-  }
-
+  #light-toggle-system,
+  #light-toggle-dark,
   #light-toggle-light {
     display: none;
+  }
+
+  /* Default to "switch to dark mode" icon until theme JS runs */
+  #light-toggle-dark {
+    display: inline-block;
   }
 
   .only-light {
@@ -83,8 +80,8 @@ html[data-theme="dark"] {
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
+  --global-theme-color: #{color.adjust($blue-color, $lightness: 14%)};
+  --global-hover-color: #{color.adjust($blue-color, $lightness: 14%)};
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};
@@ -124,39 +121,33 @@ html[data-theme="dark"] {
   }
 }
 
-html[data-theme-setting="dark"] {
-  #light-toggle-system {
+/* Show the next mode (target) icon:
+ * current light => show moon (switch to dark)
+ * current dark  => show sun  (switch to light)
+ */
+html[data-theme="light"] {
+  #light-toggle-system,
+  #light-toggle-light {
     display: none;
   }
 
   #light-toggle-dark {
-    padding-left: 10px;
-    padding-top: 12px;
-    display: block;
+    display: inline-block;
+  }
+}
+
+html[data-theme="dark"] {
+  #light-toggle-system,
+  #light-toggle-dark {
+    display: none;
   }
 
   #light-toggle-light {
-    display: none;
+    display: inline-block;
   }
 
   #back-to-top {
     color: var(--global-back-to-top-text-color);
     background: var(--global-back-to-top-bg-color);
-  }
-}
-
-html[data-theme-setting="light"] {
-  #light-toggle-system {
-    display: none;
-  }
-
-  #light-toggle-dark {
-    display: none;
-  }
-
-  #light-toggle-light {
-    padding-left: 10px;
-    padding-top: 12px;
-    display: block;
   }
 }

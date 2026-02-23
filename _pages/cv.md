@@ -2,6 +2,7 @@
 layout: cv
 permalink: /cv/
 title: CV
+description: Academic and industry-focused experience, research, and credentials in system security and cybersecurity.
 nav: true
 nav_order: 5
 

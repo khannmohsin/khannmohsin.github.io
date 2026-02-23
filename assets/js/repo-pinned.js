@@ -143,6 +143,7 @@
 
     try {
       const repo = await fetchRepo(cache, fullName);
+      let searchText = [fullName, repo.name, repo.description, repo.language].filter(Boolean).join(" ").toLowerCase();
 
       if (descEl) descEl.textContent = repo.description || "No description provided.";
 
@@ -150,6 +151,8 @@
       const forks = repo.forks_count ?? 0;
       if (forksCount) forksCount.textContent = String(forks);
       if (forksWrap) forksWrap.style.display = forks === 0 ? "none" : "";
+      card.dataset.repoStars = String(repo.stargazers_count ?? 0);
+      card.dataset.repoLanguage = repo.language || "";
 
       // Prefer multi-language chips if the container exists.
       const hasMultiContainer = !!card.querySelector(".ghpinned-langs");
@@ -158,14 +161,21 @@
         const langsObj = await fetchLanguages(cache, fullName);
         const top = topLanguages(langsObj, 3);
         const usedMulti = renderMultiLanguages(card, top);
+        if (top.length) {
+          searchText = `${searchText} ${top.map(([name]) => name).join(" ").toLowerCase()}`.trim();
+        }
         if (!usedMulti) renderSingleLanguage(card, repo.language);
       } else {
         renderSingleLanguage(card, repo.language);
       }
+      card.dataset.repoSearch = searchText;
+      document.dispatchEvent(new CustomEvent("repo-pinned:updated", { detail: { card, fullName } }));
     } catch (e) {
       if (descEl) descEl.textContent = e?.message ? `Unable to load: ${e.message}` : "Unable to load repository details.";
       const meta = card.querySelector(".ghpinned-meta");
       if (meta) meta.style.display = "none";
+      card.dataset.repoSearch = `${fullName} unavailable`;
+      document.dispatchEvent(new CustomEvent("repo-pinned:updated", { detail: { card, fullName, error: true } }));
       console.error("[repo-pinned] failed:", fullName, e);
     }
   }
@@ -193,6 +203,7 @@
     const cache = loadCache();
     await runWithConcurrency(cards, (card) => processCard(cache, card), CONCURRENCY);
     saveCache(cache);
+    document.dispatchEvent(new CustomEvent("repo-pinned:ready"));
   }
 
   main().catch((e) => console.error("[repo-pinned] fatal:", e));

@@ -1,58 +1,131 @@
-<div class="col">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
-      {% if project.img %}
+{% assign card_variant = include.variant | default: "catalog" %}
+{% assign image_loading = "lazy" %}
+{% if card_variant == "featured" %}
+  {% assign image_loading = "eager" %}
+{% endif %}
+
+{% if project.redirect %}
+  {% assign project_url = project.redirect %}
+{% else %}
+  {% assign project_url = project.url | relative_url %}
+{% endif %}
+
+{% assign project_track = "general" %}
+{% case project.category %}
+  {% when "Research Projects" %}
+    {% assign project_track = "research" %}
+  {% when "Cybersecurity Job Simulations" %}
+    {% assign project_track = "simulation" %}
+  {% when "Capstone Industry Projects" %}
+    {% assign project_track = "capstone" %}
+  {% when "Training Projects" %}
+    {% assign project_track = "training" %}
+  {% when "Coursework Projects" %}
+    {% assign project_track = "coursework" %}
+  {% when "Management Project" %}
+    {% assign project_track = "management" %}
+{% endcase %}
+
+{% assign evidence_label = "Portfolio Case Study" %}
+{% if project.related_publications %}
+  {% assign evidence_label = "Peer-Reviewed Evidence" %}
+{% elsif project.category == "Cybersecurity Job Simulations" %}
+  {% assign evidence_label = "Industry Simulation" %}
+{% elsif project.category == "Capstone Industry Projects" %}
+  {% assign evidence_label = "Industry Capstone" %}
+{% elsif project.category == "Training Projects" %}
+  {% assign evidence_label = "Hands-On Training" %}
+{% endif %}
+
+{% assign importance_label = "Core" %}
+{% if project.importance == 1 %}
+  {% assign importance_label = "Flagship" %}
+{% elsif project.importance == 2 %}
+  {% assign importance_label = "High Priority" %}
+{% elsif project.importance == 3 %}
+  {% assign importance_label = "Selected" %}
+{% endif %}
+
+{% assign focus_label = "System Security" %}
+{% if project.tags and project.tags.size > 0 %}
+  {% assign focus_label = project.tags | first %}
+{% endif %}
+
+{% capture searchable_text %}
+  {{ project.title }} {{ project.description }} {{ project.category }}
+  {% if project.tags %}
+    {% for tag in project.tags %}
+      {{ tag }}
+    {% endfor %}
+  {% endif %}
+{% endcapture %}
+
+<div
+  class="col {% if card_variant == 'featured' %}prj-col-featured{% endif %}"
+  {% if card_variant == "catalog" %}
+    data-project-card
+    data-category="{{ project.category | escape }}"
+    data-track="{{ project_track }}"
+    data-search="{{ searchable_text | strip_html | strip_newlines | downcase | escape }}"
+  {% endif %}
+>
+  <article class="card h-100 hoverable prj-card {% if card_variant == 'featured' %}prj-card-featured{% endif %}">
+    {% if project.img %}
+      <div class="prj-media-frame">
         {%
           include figure.liquid
-          loading="eager"
+          loading=image_loading
           path=project.img
-          sizes = "250px"
-          alt="project thumbnail"
+          sizes="(min-width: 1200px) 360px, (min-width: 768px) 46vw, 100vw"
+          alt=project.title
           class="card-img-top"
         %}
+      </div>
+    {% endif %}
+
+    <div class="card-body prj-card-body">
+      <div class="prj-card-kicker">
+        <span class="prj-chip">{{ evidence_label }}</span>
+        <span class="prj-chip prj-chip-muted">{{ importance_label }}</span>
+      </div>
+
+      <h3 class="card-title prj-card-title">
+        <a href="{{ project_url }}">{{ project.title }}</a>
+      </h3>
+
+      <p class="card-text prj-card-text">
+        {{ project.description | default: "Security project covering architecture, implementation, and validation details." }}
+      </p>
+
+      <dl class="prj-card-meta">
+        <div>
+          <dt>Domain</dt>
+          <dd>{{ project.category }}</dd>
+        </div>
+        <div>
+          <dt>Focus</dt>
+          <dd>{{ focus_label }}</dd>
+        </div>
+      </dl>
+
+      {% if project.tags and project.tags.size > 0 %}
+        <div class="prj-tags" aria-label="Project tags">
+          {% for tag in project.tags limit: 4 %}
+            <span class="prj-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
       {% endif %}
 
-      <div class="card-body">
-
-        <p class="card-title text-center">{{ project.title }}</p>
-
-        {%- comment -%}
-        {%- if project.description -%}
-          <p class="card-text text-muted" style="margin-top:-6px;">
-            {{ project.description }}
-          </p>
-        {%- endif -%}
-        {%- endcomment -%}
-
-        {%- if project.tags and project.tags.size > 0 -%}
-          <div class="prj-tags" aria-label="Project tags">
-            {%- for tag in project.tags -%}
-              <span class="prj-tag">{{ tag }}</span>
-            {%- endfor -%}
-          </div>
-        {%- endif -%}
-
-        <div class="row ml-1 mr-1 p-0">
-          {% if project.github %}
-            <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <!-- NOTE: nested <a> inside outer <a> is invalid HTML.
-                     This existed in your original file; keeping it unchanged for compatibility.
-                     If you want, I can provide a clean fix that preserves click behavior. -->
-                <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-              </div>
-
-              {% if project.github_stars %}
-                <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                  <i class="fa-solid fa-star"></i>
-                  <span id="{{ project.github_stars }}-stars"></span>
-                </span>
-              {% endif %}
-            </div>
-          {% endif %}
-        </div>
-
+      <div class="prj-card-actions">
+        <a class="prj-btn prj-btn-primary" href="{{ project_url }}">View Case Study</a>
+        {% if project.github %}
+          <a class="prj-btn prj-btn-ghost" href="{{ project.github }}" target="_blank" rel="noopener noreferrer">Source</a>
+        {% elsif project.external %}
+          <a class="prj-btn prj-btn-ghost" href="{{ project.external }}" target="_blank" rel="noopener noreferrer">External</a>
+        {% elsif project.related_publications %}
+          <a class="prj-btn prj-btn-ghost" href="{{ '/publications/' | relative_url }}">Publications</a>
+        {% endif %}
       </div>
     </div>
-  </a>
+  </article>
 </div>
