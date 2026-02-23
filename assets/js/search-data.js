@@ -11,21 +11,21 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "Projects",
-          description: "Selected research, course, and management projects—organized by category.",
+          description: "Selected research, industry, and cybersecurity projects organized for fast technical review.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-my-story",
           title: "My Story",
-          description: "A timeline of my academic, professional, and personal journey.",
+          description: "Timeline across systems thinking, cybersecurity research, and industry execution.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/story/";
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Peer-reviewed research publications and scholarly outputs.",
+          description: "Peer-reviewed output across IoT/OT security, distributed trust, lightweight cryptography, and applied system defense. Search by title, author, venue, year, or keyword.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -39,21 +39,21 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "",
+          description: "Academic and industry-focused experience, research, and credentials in system security and cybersecurity.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "My teaching approach, instructional experience, and contribution to learning quality in cybersecurity and distributed systems.",
+          description: "Applied cybersecurity teaching and supervision across networking, computer security, distributed systems, and privacy-preserving computing.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
           },
         },{id: "nav-blog",
           title: "Blog",
-          description: "",
+          description: "Technical writing across system security, cybersecurity research, and implementation-oriented lessons from projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
@@ -65,7 +65,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/job-tracker/";
           },
-        },{id: "post-why-security-breaches-hurt-more-in-healthcare",
+        },{id: "post-colpali-vs-bm25-two-retrieval-philosophies-that-fail-in-different-ways",
+        
+          title: 'ColPali vs BM25: Two Retrieval Philosophies That Fail in Different Ways <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "BM25 is engineered for lexical certainty. ColPali is engineered for visual-semantic understanding. Your choice changes not just relevance — but the entire risk surface.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://generativeai.pub/colpali-vs-bm25-two-retrieval-philosophies-that-fail-in-different-ways-10bb33228b9c", "_blank");
+          
+        },
+      },{id: "post-securing-retrieval-augmented-generation-rag-in-production-systems",
+        
+          title: 'Securing Retrieval-Augmented Generation (RAG) in Production Systems <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "From prototype convenience to security-critical infrastructure",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://cybersecuritywriteups.com/securing-retrieval-augmented-generation-in-production-systems-330d72ca5260", "_blank");
+          
+        },
+      },{id: "post-why-security-breaches-hurt-more-in-healthcare",
         
           title: 'Why Security Breaches Hurt More in Healthcare <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
@@ -221,7 +243,7 @@ ninja.data = [{
           title: 'Deloitte Australia Cyber Job Simulation',
           description: "Hands-on cyber incident analysis and detection exercises based on real-world consulting scenarios.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/forage_delloitte/";
+              window.location.href = "/projects/forage_deloitte/";
             },},{id: "projects-mastercard-cybersecurity-virtual-experience-program",
           title: 'Mastercard Cybersecurity Virtual Experience Program',
           description: "Security awareness, phishing simulation design, and risk-based training analysis in a global enterprise context.",
