@@ -73,7 +73,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.open("https://generativeai.pub/colpali-vs-bm25-two-retrieval-philosophies-that-fail-in-different-ways-10bb33228b9c", "_blank");
+            window.open("https://khannmohsin.medium.com/colpali-vs-bm25-two-retrieval-philosophies-that-fail-in-different-ways-10bb33228b9c", "_blank");
           
         },
       },{id: "post-securing-retrieval-augmented-generation-rag-in-production-systems",
