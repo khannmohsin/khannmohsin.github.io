@@ -1,1 +1,210 @@
-!function(){function e(e){return new Promise((t=>setTimeout(t,e)))}function t(){try{return JSON.parse(localStorage.getItem("repoPinnedCache_v2")||"{}")}catch{return{}}}function n(e){try{localStorage.setItem("repoPinnedCache_v2",JSON.stringify(e))}catch{}}function a(e,t){const n=e[t];return n?n.expiresAt&&n.expiresAt<S()?null:n.value??null:null}function o(e,t,n){e[t]={value:n,expiresAt:S()+h}}async function r(e){const t=await fetch(e,{headers:{Accept:"application/vnd.github+json"}});if(403===t.status){if("0"===t.headers.get("X-RateLimit-Remaining")){const e=t.headers.get("X-RateLimit-Reset"),n=e?new Date(1e3*Number(e)).toLocaleString():"later";throw new Error(`GitHub API rate limit exceeded. Resets: ${n}`)}}if(!t.ok){const e=await t.text().catch((()=>""));throw new Error(`GitHub API ${t.status}. ${e.slice(0,120)}`)}return t.json()}async function s(e,t){const n=`repo:${t}`,s=a(e,n);if(s)return s;const i=await r(`https://api.github.com/repos/${t}`);return o(e,n,i),i}async function i(e,t){const n=`langs:${t}`,s=a(e,n);if(s)return s;const i=await r(`https://api.github.com/repos/${t}/languages`);return o(e,n,i),i}function c(e,t=3){const n=Object.entries(e||{});return n.length?n.sort(((e,t)=>t[1]-e[1])).slice(0,t):[]}function l(e,t){const n=e.querySelector(".ghpinned-lang"),a=e.querySelector(".ghpinned-lang-name"),o=e.querySelector(".ghpinned-lang-dot");t&&n&&a?(a.textContent=t,o&&(o.style.backgroundColor=m[t]||"#999",o.style.display="inline-block"),n.style.display=""):n&&(n.style.display="none")}function u(e,t){const n=e.querySelector(".ghpinned-langs"),a=e.querySelector(".ghpinned-lang");return!!n&&(t.length?(n.innerHTML=t.map((([e])=>`\n            <span class="ghpinned-langchip">\n              <span class="ghpinned-lang-dot" style="background:${m[e]||"#999"}"></span>\n              <span class="ghpinned-lang-name">${e}</span>\n            </span>\n          `)).join(""),n.style.display=""):(n.textContent="",n.style.display="none"),a&&(a.style.display="none"),!0)}async function d(e,t){const n=t.getAttribute("data-repo");if(!n)return;const a=t.querySelector(".ghpinned-desc"),o=t.querySelector(".ghpinned-stars-count"),r=t.querySelector(".ghpinned-forks-count"),d=t.querySelector(".ghpinned-forks");a&&(a.textContent="Loading\u2026");try{const p=await s(e,n);let g=[n,p.name,p.description,p.language].filter(Boolean).join(" ").toLowerCase();a&&(a.textContent=p.description||"No description provided."),o&&(o.textContent=String(p.stargazers_count??0));const y=p.forks_count??0;r&&(r.textContent=String(y)),d&&(d.style.display=0===y?"none":""),t.dataset.repoStars=String(p.stargazers_count??0),t.dataset.repoLanguage=p.language||"";const h=!!t.querySelector(".ghpinned-langs");if(f&&h){const a=c(await i(e,n),3),o=u(t,a);a.length&&(g=`${g} ${a.map((([e])=>e)).join(" ").toLowerCase()}`.trim()),o||l(t,p.language)}else l(t,p.language);t.dataset.repoSearch=g,document.dispatchEvent(new CustomEvent("repo-pinned:updated",{detail:{card:t,fullName:n}}))}catch(e){a&&(a.textContent=e?.message?`Unable to load: ${e.message}`:"Unable to load repository details.");const o=t.querySelector(".ghpinned-meta");o&&(o.style.display="none"),t.dataset.repoSearch=`${n} unavailable`,document.dispatchEvent(new CustomEvent("repo-pinned:updated",{detail:{card:t,fullName:n,error:!0}}))}}async function p(t,n,a){let o=0;const r=new Array(a).fill(0).map((async()=>{for(;o<t.length;){const a=o++;await n(t[a]),await e(0)}}));await Promise.all(r)}async function g(){"loading"===document.readyState&&await new Promise((e=>document.addEventListener("DOMContentLoaded",e,{once:!0})));const e=Array.from(document.querySelectorAll("[data-repo]"));if(!e.length)return;const a=t();await p(e,(e=>d(a,e)),y),n(a),document.dispatchEvent(new CustomEvent("repo-pinned:ready"))}const y=6,h=864e5,f=!0,m={JavaScript:"#f1e05a",TypeScript:"#3178c6",Python:"#3572A5",Java:"#b07219","C++":"#f34b7d",C:"#555555",Go:"#00ADD8",Rust:"#dea584",Shell:"#89e051",HTML:"#e34c26",CSS:"#563d7c",Solidity:"#AA6746"},S=()=>Date.now();g().catch((()=>{}))}();
+(function () {
+  const CONCURRENCY = 6;          // 4–8 recommended
+  const TTL_MS = 24 * 60 * 60e3;  // 24 hours
+  const ENABLE_LANGUAGES = true;  // show top languages like your old script
+
+  const langColor = {
+    JavaScript: "#f1e05a",
+    TypeScript: "#3178c6",
+    Python: "#3572A5",
+    Java: "#b07219",
+    "C++": "#f34b7d",
+    C: "#555555",
+    Go: "#00ADD8",
+    Rust: "#dea584",
+    Shell: "#89e051",
+    HTML: "#e34c26",
+    CSS: "#563d7c",
+    Solidity: "#AA6746",
+  };
+
+  function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+  const now = () => Date.now();
+
+  function loadCache() {
+    try { return JSON.parse(localStorage.getItem("repoPinnedCache_v2") || "{}"); }
+    catch { return {}; }
+  }
+  function saveCache(cache) {
+    try { localStorage.setItem("repoPinnedCache_v2", JSON.stringify(cache)); }
+    catch {}
+  }
+  function getCached(cache, key) {
+    const item = cache[key];
+    if (!item) return null;
+    if (item.expiresAt && item.expiresAt < now()) return null;
+    return item.value ?? null;
+  }
+  function setCached(cache, key, value) {
+    cache[key] = { value, expiresAt: now() + TTL_MS };
+  }
+
+  async function fetchJSON(url) {
+    const res = await fetch(url, { headers: { Accept: "application/vnd.github+json" } });
+
+    if (res.status === 403) {
+      const remaining = res.headers.get("X-RateLimit-Remaining");
+      if (remaining === "0") {
+        const reset = res.headers.get("X-RateLimit-Reset");
+        const resetTime = reset ? new Date(Number(reset) * 1000).toLocaleString() : "later";
+        throw new Error(`GitHub API rate limit exceeded. Resets: ${resetTime}`);
+      }
+    }
+
+    if (!res.ok) {
+      const text = await res.text().catch(() => "");
+      throw new Error(`GitHub API ${res.status}. ${text.slice(0, 120)}`);
+    }
+    return res.json();
+  }
+
+  async function fetchRepo(cache, fullName) {
+    const key = `repo:${fullName}`;
+    const cached = getCached(cache, key);
+    if (cached) return cached;
+
+    const data = await fetchJSON(`https://api.github.com/repos/${fullName}`);
+    setCached(cache, key, data);
+    return data;
+  }
+
+  async function fetchLanguages(cache, fullName) {
+    const key = `langs:${fullName}`;
+    const cached = getCached(cache, key);
+    if (cached) return cached;
+
+    const data = await fetchJSON(`https://api.github.com/repos/${fullName}/languages`);
+    setCached(cache, key, data);
+    return data;
+  }
+
+  function topLanguages(langsObj, topN = 3) {
+    const entries = Object.entries(langsObj || {});
+    if (!entries.length) return [];
+    return entries.sort((a, b) => b[1] - a[1]).slice(0, topN);
+  }
+
+  function renderSingleLanguage(card, language) {
+    const langWrap = card.querySelector(".ghpinned-lang");
+    const langName = card.querySelector(".ghpinned-lang-name");
+    const langDot = card.querySelector(".ghpinned-lang-dot");
+
+    if (!language || !langWrap || !langName) {
+      if (langWrap) langWrap.style.display = "none";
+      return;
+    }
+
+    langName.textContent = language;
+    if (langDot) {
+      langDot.style.backgroundColor = langColor[language] || "#999";
+      langDot.style.display = "inline-block";
+    }
+    langWrap.style.display = "";
+  }
+
+  function renderMultiLanguages(card, top) {
+    const langsEl = card.querySelector(".ghpinned-langs");
+    const langWrap = card.querySelector(".ghpinned-lang");
+    if (!langsEl) return false;
+
+    if (!top.length) {
+      langsEl.textContent = "";
+      langsEl.style.display = "none";
+    } else {
+      langsEl.innerHTML = top
+        .map(([name]) => {
+          const color = langColor[name] || "#999";
+          return `
+            <span class="ghpinned-langchip">
+              <span class="ghpinned-lang-dot" style="background:${color}"></span>
+              <span class="ghpinned-lang-name">${name}</span>
+            </span>
+          `;
+        })
+        .join("");
+      langsEl.style.display = "";
+    }
+
+    // Hide single-language container if multi exists
+    if (langWrap) langWrap.style.display = "none";
+    return true;
+  }
+
+  async function processCard(cache, card) {
+    const fullName = card.getAttribute("data-repo");
+    if (!fullName) return;
+
+    const descEl = card.querySelector(".ghpinned-desc");
+    const starsCount = card.querySelector(".ghpinned-stars-count");
+    const forksCount = card.querySelector(".ghpinned-forks-count");
+    const forksWrap = card.querySelector(".ghpinned-forks");
+
+    if (descEl) descEl.textContent = "Loading…";
+
+    try {
+      const repo = await fetchRepo(cache, fullName);
+      let searchText = [fullName, repo.name, repo.description, repo.language].filter(Boolean).join(" ").toLowerCase();
+
+      if (descEl) descEl.textContent = repo.description || "No description provided.";
+
+      if (starsCount) starsCount.textContent = String(repo.stargazers_count ?? 0);
+      const forks = repo.forks_count ?? 0;
+      if (forksCount) forksCount.textContent = String(forks);
+      if (forksWrap) forksWrap.style.display = forks === 0 ? "none" : "";
+      card.dataset.repoStars = String(repo.stargazers_count ?? 0);
+      card.dataset.repoLanguage = repo.language || "";
+
+      // Prefer multi-language chips if the container exists.
+      const hasMultiContainer = !!card.querySelector(".ghpinned-langs");
+
+      if (ENABLE_LANGUAGES && hasMultiContainer) {
+        const langsObj = await fetchLanguages(cache, fullName);
+        const top = topLanguages(langsObj, 3);
+        const usedMulti = renderMultiLanguages(card, top);
+        if (top.length) {
+          searchText = `${searchText} ${top.map(([name]) => name).join(" ").toLowerCase()}`.trim();
+        }
+        if (!usedMulti) renderSingleLanguage(card, repo.language);
+      } else {
+        renderSingleLanguage(card, repo.language);
+      }
+      card.dataset.repoSearch = searchText;
+      document.dispatchEvent(new CustomEvent("repo-pinned:updated", { detail: { card, fullName } }));
+    } catch (e) {
+      if (descEl) descEl.textContent = e?.message ? `Unable to load: ${e.message}` : "Unable to load repository details.";
+      const meta = card.querySelector(".ghpinned-meta");
+      if (meta) meta.style.display = "none";
+      card.dataset.repoSearch = `${fullName} unavailable`;
+      document.dispatchEvent(new CustomEvent("repo-pinned:updated", { detail: { card, fullName, error: true } }));
+      console.error("[repo-pinned] failed:", fullName, e);
+    }
+  }
+
+  async function runWithConcurrency(items, worker, limit) {
+    let i = 0;
+    const runners = new Array(limit).fill(0).map(async () => {
+      while (i < items.length) {
+        const idx = i++;
+        await worker(items[idx]);
+        await sleep(0);
+      }
+    });
+    await Promise.all(runners);
+  }
+
+  async function main() {
+    if (document.readyState === "loading") {
+      await new Promise((r) => document.addEventListener("DOMContentLoaded", r, { once: true }));
+    }
+
+    const cards = Array.from(document.querySelectorAll("[data-repo]"));
+    if (!cards.length) return;
+
+    const cache = loadCache();
+    await runWithConcurrency(cards, (card) => processCard(cache, card), CONCURRENCY);
+    saveCache(cache);
+    document.dispatchEvent(new CustomEvent("repo-pinned:ready"));
+  }
+
+  main().catch((e) => console.error("[repo-pinned] fatal:", e));
+})();

@@ -1,1 +1,22 @@
-!function(){function n(n){return document.getElementById(n)}function t(){(n("passwordInput").value||"").trim()===e?window.location.href=window.JOB_TRACKER_REDIRECT||"/assets/job-applications/":n("errorMsg").style.display="block"}const e="change_this_password";document.addEventListener("DOMContentLoaded",(function(){n("unlockBtn").addEventListener("click",t),n("passwordInput").addEventListener("keydown",(function(n){"Enter"===n.key&&t()}))}))}();
+(function () {
+  const PASSWORD = "change_this_password";
+
+  function $(id) { return document.getElementById(id); }
+
+  function checkPassword() {
+    const val = ($("passwordInput").value || "").trim();
+    if (val === PASSWORD) {
+      // Redirect to the React app as a full page
+      window.location.href = window.JOB_TRACKER_REDIRECT || "/assets/job-applications/";
+    } else {
+      $("errorMsg").style.display = "block";
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    $("unlockBtn").addEventListener("click", checkPassword);
+    $("passwordInput").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") checkPassword();
+    });
+  });
+})();
