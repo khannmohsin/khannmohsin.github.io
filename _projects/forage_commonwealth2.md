@@ -20,6 +20,7 @@ This project is based on the **Commonwealth Bank Tech Explorer** job simulation 
 **Objective:** Produce designs for a banking app widget in three iOS widget sizes, displaying **current balance** and **last three transactions**, with deep-link navigation into the app.
 
 **Work performed:**
+
 - Designed layout variants for small/medium/large widgets with hierarchy, readability, and tap targets.
 - Considered user interaction model: tapping **balance** or **transactions** routes to relevant in-app views.
 - Accounted for release workflow dependencies (engineering implementation → QA testing → App Store submission).
@@ -33,6 +34,7 @@ This project is based on the **Commonwealth Bank Tech Explorer** job simulation 
 **Objective:** Gather requirements for a new **savings goal feature**, reconcile stakeholder expectations, surface ambiguities, and translate into implementable delivery artifacts.
 
 **Work performed:**
+
 - Synthesized inputs from senior/product/engineering perspectives.
 - Identified terminology conflicts (e.g., “phone notifications” vs “remote notifications”).
 - Captured edge cases (insufficient funds, duplicate account names, cancellation flow).
@@ -47,6 +49,7 @@ This project is based on the **Commonwealth Bank Tech Explorer** job simulation 
 **Objective:** Review Confluence usage within the iOS engineering space and recommend **least-privilege permissions** per user group.
 
 **Work performed:**
+
 - Modelled access needs across roles and content types in Confluence spaces.
 - Produced a permission matrix aligning with least privilege and operational collaboration.
 
@@ -59,6 +62,7 @@ This project is based on the **Commonwealth Bank Tech Explorer** job simulation 
 **Objective:** Use transactional and demographic data to identify groups most suitable for advertising the new savings feature.
 
 **Work performed:**
+
 - Performed data cleaning (e.g., filtering out entries missing location).
 - Used Excel filtering/sorting to answer business questions about target demographics.
 - Translated findings into marketing-relevant targeting recommendations.
@@ -70,6 +74,7 @@ This project is based on the **Commonwealth Bank Tech Explorer** job simulation 
 ## Practical Relevance
 
 This project demonstrates readiness for roles involving cross-functional delivery, including:
+
 - Product/security collaboration in regulated environments
 - IAM and least-privilege access reasoning for collaboration platforms
 - Requirements and acceptance criteria writing (useful for BA/PO/engineering interfaces)

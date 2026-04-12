@@ -16,22 +16,22 @@ This project involved designing a **secure network and system architecture** wit
 
 ## Key Activities
 
-- Designed a segmented and secure network architecture  
-- Applied **host operating system hardening techniques**  
-- Evaluated firmware update and secure configuration practices  
-- Mapped controls to system and network-level threats  
+- Designed a segmented and secure network architecture
+- Applied **host operating system hardening techniques**
+- Evaluated firmware update and secure configuration practices
+- Mapped controls to system and network-level threats
 
 ---
 
 ## Learning Outcomes
 
-- Applied principles of **secure network design**  
-- Developed system-level security reasoning  
-- Improved understanding of configuration-based vulnerabilities  
+- Applied principles of **secure network design**
+- Developed system-level security reasoning
+- Improved understanding of configuration-based vulnerabilities
 
 ---
 
 ## Industry Relevance
 
-- Applicable to **security engineering**, **infrastructure security**, and **network defense roles**  
+- Applicable to **security engineering**, **infrastructure security**, and **network defense roles**
 - Demonstrates architectural security thinking beyond point tools

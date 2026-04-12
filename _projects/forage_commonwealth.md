@@ -18,7 +18,8 @@ The simulation reflects the responsibilities of a **cybersecurity generalist** s
 ## Key Activities
 
 ### 1) Fraud Analytics & Dashboarding (Splunk)
-- Installed and configured **Splunk Enterprise**, imported a structured payments dataset, and explored fields via *Interesting Fields*.
+
+- Installed and configured **Splunk Enterprise**, imported a structured payments dataset, and explored fields via _Interesting Fields_.
 - Built a **fraud-focused dashboard** including:
   - Counts by **Category**, **Fraud**, **Age group**, and **Merchant**
   - Fraud distribution by **Age**, **Category**, **Month (Step)**, and **Gender**
@@ -27,6 +28,7 @@ The simulation reflects the responsibilities of a **cybersecurity generalist** s
 - Produced reporting outputs designed to support **rapid operational decision-making** in fraud monitoring.
 
 ### 2) Incident Response (Phishing → Credential Theft → Ransomware)
+
 - Analyzed a timeline consistent with **phishing-led credential harvesting** followed by **malware/ransomware impact** (file access failures and document errors).
 - Documented the next-response actions aligned to standard IR phases:
   - **Detection & escalation**, stakeholder notification, evidence preservation
@@ -36,10 +38,12 @@ The simulation reflects the responsibilities of a **cybersecurity generalist** s
   - **Post-incident** review and control improvements
 
 ### 3) Security Awareness (Password Hygiene)
+
 - Designed an employee-facing **password security infographic** based on **Australian Cyber Security Centre (ACSC)** guidance.
 - Focused on clear, actionable content to reduce credential compromise risk.
 
 ### 4) Web Application Security (Basic Pentesting)
+
 - Completed HackThisSite “Basic” challenges (Levels 1–11) to practice identifying common web weaknesses.
 - Produced a structured **pentest-style report** (scope, findings, impact, and remediation guidance).
 

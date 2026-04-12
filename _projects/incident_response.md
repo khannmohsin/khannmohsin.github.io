@@ -30,14 +30,17 @@ By completing this project, I demonstrated the ability to:
 ## What I Did
 
 ### Incident response framing
+
 - Applied an incident response approach tailored to a manufacturing environment
 - Prioritized evidence preservation and investigative sequencing under realistic constraints
 
 ### Evidence acquisition (USB imaging)
+
 - Created an image of a USB flash drive for forensic analysis
 - Maintained an evidence-handling mindset aligned with integrity and repeatability
 
 ### Evidence analysis
+
 - Analyzed the collected evidence to extract investigation-relevant artifacts
 - Interpreted findings in the context of incident reports and the compromise scenario
 
@@ -47,7 +50,7 @@ By completing this project, I demonstrated the ability to:
 
 This capstone included two assessments:
 
-1. A project-based assessment requiring an **80% score** to pass (with retries available)  
+1. A project-based assessment requiring an **80% score** to pass (with retries available)
 2. A 10-question assessment requiring an **80% score** to pass (with retries available)
 
 ---

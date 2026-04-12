@@ -14,6 +14,7 @@ This project implements a Python-based blockchain with a focus on the <strong>Pr
 The work also explores alternative consensus algorithms — <em>Proof of Stake (PoS)</em>, <em>Byzantine Fault Tolerance (BFT)</em>, and <em>Proof of Storage (PoStorage)</em> — and compares their strengths, weaknesses, and application contexts.
 
 The implementation covers:
+
 - <strong>Merkle Tree generation</strong> for transaction integrity verification.
 - <strong>Block mining</strong> with adjustable difficulty, nonce incrementation, and hash validation.
 - <strong>Transaction broadcasting and verification</strong> across nodes.
@@ -21,6 +22,7 @@ The implementation covers:
 - <strong>Comparative analysis</strong> of multiple consensus mechanisms.
 
 Additionally, the project investigates:
+
 1. <strong>Environmental impact of PoW</strong> — energy consumption, carbon footprint, and sustainability challenges.
 2. <strong>Security threats</strong> — 51% attack, Sybil attack, routing attacks, double spending, and mining pool centralization.
 3. <strong>Scalability limitations</strong> — transaction throughput, network congestion, blockchain size, and difficulty growth.
@@ -30,7 +32,9 @@ Additionally, the project investigates:
 ---
 
 ## Merkle Tree Construction
+
 {% include figure.liquid path="assets/img/projects/blockchain_mining/blockchain_merkle-tree.png" title="Merkle Tree for Transaction Verification" class="img-fluid rounded z-depth-1" %}
+
 <div class="caption">
 Merkle Tree structure showing iterative hashing of transaction pairs until the root hash is obtained, ensuring transaction integrity.
 </div>
@@ -38,7 +42,9 @@ Merkle Tree structure showing iterative hashing of transaction pairs until the r
 ---
 
 ## Proof of Work Mining
+
 {% include figure.liquid path="assets/img/projects/blockchain_mining/blockchain_pow.png" title="Proof of Work Mining Process" class="img-fluid rounded z-depth-1" %}
+
 <div class="caption">
 PoW process: miners repeatedly hash the block header (previous block hash, Merkle root, timestamp, nonce) until the hash meets the difficulty target.
 </div>
@@ -46,16 +52,18 @@ PoW process: miners repeatedly hash the block header (previous block hash, Merkl
 ---
 
 ## Comparative Analysis of Consensus Mechanisms
-| Mechanism | Strengths | Weaknesses |
-|-----------|-----------|------------|
-| **PoW** | Secure, reliable, fully decentralized | High energy use, scalability limits, 51% attack risk |
-| **PoS** | Energy-efficient, scalable, low computational cost | Centralization of stake, “nothing at stake” problem |
-| **BFT** | Low energy use, high security, fast transactions | Limited scalability, partial decentralization |
-| **PoStorage** | Energy-efficient, secure, decentralized | Complex to implement, less adoption, storage failure risk |
+
+| Mechanism     | Strengths                                          | Weaknesses                                                |
+| ------------- | -------------------------------------------------- | --------------------------------------------------------- |
+| **PoW**       | Secure, reliable, fully decentralized              | High energy use, scalability limits, 51% attack risk      |
+| **PoS**       | Energy-efficient, scalable, low computational cost | Centralization of stake, “nothing at stake” problem       |
+| **BFT**       | Low energy use, high security, fast transactions   | Limited scalability, partial decentralization             |
+| **PoStorage** | Energy-efficient, secure, decentralized            | Complex to implement, less adoption, storage failure risk |
 
 ---
 
 ## Key Insights
+
 - PoW offers strong decentralization and security but suffers from high energy consumption and low scalability.
 - PoS and PoStorage present more sustainable options but introduce other trade-offs like centralization or complexity.
 - Layer 2 solutions and alternative consensus mechanisms can significantly mitigate PoW’s limitations.
@@ -63,6 +71,7 @@ PoW process: miners repeatedly hash the block header (previous block hash, Merkl
 ---
 
 ## Technologies Used
+
 - **Python** for blockchain and consensus implementation.
 - **Cryptographic hashing** (SHA-256) for Merkle Tree and block hashing.
 - **Time-based mining simulation** for PoW difficulty adjustment.

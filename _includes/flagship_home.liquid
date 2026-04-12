@@ -16,7 +16,9 @@
           <a
             class="flag-btn {% if cta.style == 'primary' %}flag-btn--primary{% endif %}"
             href="{{ cta_url }}"
-            {% if cta.url contains 'mailto:' or cta.url contains '.pdf' %}target="_blank" rel="noopener noreferrer"{% endif %}
+            {% if cta.url contains 'mailto:' or cta.url contains '.pdf' %}
+              target="_blank" rel="noopener noreferrer"
+            {% endif %}
           >
             {{ cta.label }}
           </a>
@@ -43,7 +45,9 @@
             <a
               class="flag-metric-link"
               href="{{ metric_url }}"
-              {% if metric.url contains '://' %}target="_blank" rel="noopener noreferrer"{% endif %}
+              {% if metric.url contains '://' %}
+                target="_blank" rel="noopener noreferrer"
+              {% endif %}
             >
               <p class="flag-metric-value">{{ metric.value }}</p>
               <p class="flag-metric-label">{{ metric.label }}</p>
@@ -109,7 +113,9 @@
             <a
               class="flag-btn {% if cta.style == 'primary' %}flag-btn--primary{% endif %}"
               href="{{ cta_url }}"
-              {% if cta.url contains '.pdf' %}target="_blank" rel="noopener noreferrer"{% endif %}
+              {% if cta.url contains '.pdf' %}
+                target="_blank" rel="noopener noreferrer"
+              {% endif %}
             >
               {{ cta.label }}
             </a>
@@ -124,7 +130,9 @@
       {% for case in flagship.cases %}
         <article class="flag-case">
           <p class="flag-case-topline">{{ case.category }}</p>
-          <h3><a href="{{ case.url | relative_url }}">{{ case.title }}</a></h3>
+          <h3>
+            <a href="{{ case.url | relative_url }}">{{ case.title }}</a>
+          </h3>
           <p><strong>Challenge:</strong> {{ case.challenge }}</p>
           <p><strong>Approach:</strong> {{ case.approach }}</p>
           <p class="flag-outcome"><strong>Outcome:</strong> {{ case.outcome }}</p>

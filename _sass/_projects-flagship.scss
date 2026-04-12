@@ -156,7 +156,9 @@
   min-height: 0;
   padding: 0.34rem 0.64rem;
   text-decoration: none;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .projects-flagship .prj-nav-text {

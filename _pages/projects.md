@@ -5,7 +5,8 @@ permalink: /projects/
 description: Selected research, industry, and cybersecurity projects organized for fast technical review.
 nav: true
 nav_order: 1
-display_categories: [Training Projects, Cybersecurity Job Simulations, Capstone Industry Projects, Research Projects, Coursework Projects, Management Project]
+display_categories:
+  [Training Projects, Cybersecurity Job Simulations, Capstone Industry Projects, Research Projects, Coursework Projects, Management Project]
 horizontal: false
 toc: false
 ---
@@ -44,26 +45,29 @@ toc: false
       </div>
 
     </div>
+
   </section>
 
-  {% if site.enable_project_categories and page.display_categories %}
-    <nav class="prj-nav" aria-label="Project categories">
-      {% for category in page.display_categories %}
-        {% assign category_count = site.projects | where: "category", category | size %}
-        <a class="prj-nav-link" href="#{{ category | slugify }}" data-target="{{ category | slugify }}">
-          <span class="prj-nav-text">{{ category }}</span>
-          <span class="prj-nav-count">{{ category_count }}</span>
-        </a>
-      {% endfor %}
-    </nav>
-  {% endif %}
+{% if site.enable_project_categories and page.display_categories %}
 
-  {% if featured_projects.size > 0 %}
-    <section class="prj-section prj-section-featured" id="featured-research">
-      <div class="prj-section-head">
-        <h2 class="prj-section-title">Featured Research Cases</h2>
-        <p class="prj-caption">Peer-reviewed projects with explicit security architecture and empirical validation.</p>
-      </div>
+<nav class="prj-nav" aria-label="Project categories">
+{% for category in page.display_categories %}
+{% assign category_count = site.projects | where: "category", category | size %}
+<a class="prj-nav-link" href="#{{ category | slugify }}" data-target="{{ category | slugify }}">
+<span class="prj-nav-text">{{ category }}</span>
+<span class="prj-nav-count">{{ category_count }}</span>
+</a>
+{% endfor %}
+</nav>
+{% endif %}
+
+{% if featured_projects.size > 0 %}
+
+<section class="prj-section prj-section-featured" id="featured-research">
+<div class="prj-section-head">
+<h2 class="prj-section-title">Featured Research Cases</h2>
+<p class="prj-caption">Peer-reviewed projects with explicit security architecture and empirical validation.</p>
+</div>
 
       <div class="prj-featured-scroll" aria-label="Featured projects carousel">
         {% for project in featured_projects limit: 4 %}
@@ -71,12 +75,13 @@ toc: false
         {% endfor %}
       </div>
     </section>
-  {% endif %}
 
-  {% if site.projects %}
-    {% if site.enable_project_categories and page.display_categories %}
-      {% for category in page.display_categories %}
-        {% assign sorted_projects = site.projects | where: "category", category | sort: "importance" %}
+{% endif %}
+
+{% if site.projects %}
+{% if site.enable_project_categories and page.display_categories %}
+{% for category in page.display_categories %}
+{% assign sorted_projects = site.projects | where: "category", category | sort: "importance" %}
 
         <section class="prj-section" id="{{ category | slugify }}" data-project-section>
           <div class="prj-section-head">
@@ -146,9 +151,11 @@ toc: false
         {% endif %}
       </section>
     {% endif %}
-  {% else %}
-    <p class="text-muted">No projects found. Add Markdown files to <code>_projects/</code>.</p>
-  {% endif %}
+
+{% else %}
+
+<p class="text-muted">No projects found. Add Markdown files to <code>\_projects/</code>.</p>
+{% endif %}
 
   <section class="prj-empty" id="prj-empty" hidden>
     <h3>No projects matched your current filters.</h3>

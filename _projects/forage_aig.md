@@ -21,6 +21,7 @@ The simulation mirrors the role of an **Information Security Analyst** responsib
 **Objective:** Review CISA advisories, identify affected internal infrastructure, and draft an actionable security advisory to the owning technical team.
 
 **Work performed:**
+
 - Researched the Apache Log4j zero-day vulnerability (**CVE-2021-44228 / Log4Shell**) using CISA guidance and broader community reporting.
 - Mapped the vulnerability to an internal infrastructure inventory to identify exposure (e.g., environments running **Log4j**).
 - Drafted a concise advisory email for technical owners, covering:
@@ -38,6 +39,7 @@ The simulation mirrors the role of an **Information Security Analyst** responsib
 **Objective:** Recover an encrypted ZIP file without paying ransom by brute-forcing the decryption password using a provided wordlist subset.
 
 **Work performed:**
+
 - Implemented a **Python 3** brute-force workflow to test candidate passwords against an encrypted ZIP payload.
 - Applied secure extraction principles to prevent unsafe archive paths (Zip Slip/path traversal) during recovery.
 - Automated progress reporting and stop conditions to make the process operationally usable.
@@ -59,6 +61,7 @@ The simulation mirrors the role of an **Information Security Analyst** responsib
 ## Practical Relevance
 
 This project is directly relevant to entry-level roles in:
+
 - **SOC / Blue Team operations** (alerting-to-action translation)
 - **Vulnerability management** (advisory, remediation tracking, verification)
 - **Incident response** (containment and recovery support)

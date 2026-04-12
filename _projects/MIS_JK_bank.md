@@ -77,9 +77,10 @@ Right: J&K Bank headquarters in Srinagar, the central hub for MIS-driven banking
 </div>
 
 **Highlights:**
-- **Operational Efficiency:** Significant improvement in transaction speed, data accuracy, and reduced redundancy.  
-- **Decision-Making:** Faster reporting and better-informed strategic choices.  
-- **Customer Service:** Enhanced responsiveness, reduced service delays.  
+
+- **Operational Efficiency:** Significant improvement in transaction speed, data accuracy, and reduced redundancy.
+- **Decision-Making:** Faster reporting and better-informed strategic choices.
+- **Customer Service:** Enhanced responsiveness, reduced service delays.
 - **Employee Productivity:** Increased due to automation and centralized data access.
 
 ---

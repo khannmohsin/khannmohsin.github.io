@@ -1,7 +1,9 @@
 (function () {
   const PASSWORD = "change_this_password";
 
-  function $(id) { return document.getElementById(id); }
+  function $(id) {
+    return document.getElementById(id);
+  }
 
   function checkPassword() {
     const val = ($("passwordInput").value || "").trim();

@@ -45,8 +45,7 @@
   overflow: hidden;
   border: 1px solid var(--flag-border);
   border-radius: var(--flag-radius-lg);
-  background:
-    radial-gradient(circle at 8% 10%, rgba(42, 134, 255, 0.2), transparent 40%),
+  background: radial-gradient(circle at 8% 10%, rgba(42, 134, 255, 0.2), transparent 40%),
     radial-gradient(circle at 88% 5%, rgba(17, 87, 197, 0.24), transparent 36%),
     linear-gradient(145deg, var(--flag-surface), var(--flag-surface-soft));
   box-shadow: var(--flag-shadow);
@@ -182,7 +181,10 @@
   background: rgba(255, 255, 255, 0.78);
   border-radius: 12px;
   padding: 10px 12px;
-  transition: border-color 140ms ease, box-shadow 140ms ease, transform 140ms ease;
+  transition:
+    border-color 140ms ease,
+    box-shadow 140ms ease,
+    transform 140ms ease;
 }
 
 [data-theme="dark"] .flag-metric {
@@ -602,8 +604,11 @@
   position: absolute;
   inset: 1px;
   clip-path: var(--flow-shape);
-  background:
-    linear-gradient(145deg, color-mix(in srgb, var(--flag-surface-soft) 90%, transparent), color-mix(in srgb, var(--flag-surface) 96%, transparent));
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--flag-surface-soft) 90%, transparent),
+    color-mix(in srgb, var(--flag-surface) 96%, transparent)
+  );
   pointer-events: none;
   z-index: 1;
 }
@@ -736,7 +741,6 @@
   .flag-grid {
     grid-template-columns: 1fr;
   }
-
 }
 
 @media (prefers-reduced-motion: reduce) {

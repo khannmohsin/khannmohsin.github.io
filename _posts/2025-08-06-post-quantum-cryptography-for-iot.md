@@ -26,8 +26,8 @@ The real challenge lies in merging the two: can we create cryptographic primitiv
 
 Some areas of research and implementation showing promise include:
 
-- **Lattice-based KEMs** like Kyber, though heavy, are being profiled for constrained devices  
-- **Hash-based signatures** like SPHINCS+ offer strong quantum resilience but with large signature sizes  
+- **Lattice-based KEMs** like Kyber, though heavy, are being profiled for constrained devices
+- **Hash-based signatures** like SPHINCS+ offer strong quantum resilience but with large signature sizes
 - **Isogeny-based schemes** such as SIKE (though recently broken) show that novel constructions may offer small footprints in the future
 
 Moreover, researchers are now benchmarking PQC candidates on embedded platforms using tools like **ChipWhisperer**, **EnergyTrace**, and **Cycle Accurate Profiling**.
@@ -36,17 +36,17 @@ Moreover, researchers are now benchmarking PQC candidates on embedded platforms 
 
 To bring PQC to IoT, we must balance:
 
-- **Execution Time** – Can the crypto run under hard real-time constraints?  
-- **Energy Use** – Will it deplete battery-powered devices too quickly?  
-- **Memory Footprint** – Can the code and keys fit in flash and RAM?  
+- **Execution Time** – Can the crypto run under hard real-time constraints?
+- **Energy Use** – Will it deplete battery-powered devices too quickly?
+- **Memory Footprint** – Can the code and keys fit in flash and RAM?
 - **Side-Channel Resilience** – Are we introducing new attack surfaces?
 
 ## Call to Action
 
 As a cybersecurity researcher working on secure IoT frameworks, I see PQC integration as the next major frontier. While some efforts are underway, we urgently need:
 
-- More open-source benchmarking of PQC on real embedded devices  
-- Standardized testbeds for comparing performance and resilience  
+- More open-source benchmarking of PQC on real embedded devices
+- Standardized testbeds for comparing performance and resilience
 - Hybrid models combining classical and post-quantum security for transition periods
 
 ## Final Thoughts
@@ -57,6 +57,6 @@ We must start asking not just “**Which algorithms are post-quantum secure?**�
 
 ---
 
-**Author**: *Mohsin Khan* — Cybersecurity Researcher at UiT, working on secure, distributed systems for IoT and post-quantum cryptography.
+**Author**: _Mohsin Khan_ — Cybersecurity Researcher at UiT, working on secure, distributed systems for IoT and post-quantum cryptography.
 
-*Comments or suggestions? Reach out here or connect on [GitHub](https://github.com/khannmohsin).*
+_Comments or suggestions? Reach out here or connect on [GitHub](https://github.com/khannmohsin)._

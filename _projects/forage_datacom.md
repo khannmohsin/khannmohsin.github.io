@@ -24,22 +24,24 @@ The program emphasizes analytical thinking, business-impact reasoning, and clear
 A mid-sized healthcare technology provider (**Orion Health Services**) experienced a ransomware attack following a phishing campaign targeting internal staff.
 
 **Key incident details:**
+
 - **Attack type:** Phishing-led ransomware
 - **Initial access:** Malicious Excel attachment sent to finance staff
-- **Compromised assets:**  
-  - Employee payroll records  
-  - Patient appointment schedules  
+- **Compromised assets:**
+  - Employee payroll records
+  - Patient appointment schedules
   - Internal system credentials
-- **Affected systems:**  
-  - File server  
-  - HR and finance platforms  
+- **Affected systems:**
+  - File server
+  - HR and finance platforms
   - Backup server (partially encrypted)
-- **Indicators of Compromise (IOCs):**  
-  - Overseas suspicious login  
-  - Mimikatz credential harvesting  
+- **Indicators of Compromise (IOCs):**
+  - Overseas suspicious login
+  - Mimikatz credential harvesting
   - `.orionlock` encrypted files
 
 **Work performed:**
+
 - Analysed attack vector and infection timeline
 - Assessed technical, legal, financial, and reputational impact
 - Identified exploited weaknesses in email security and credential protection
@@ -55,6 +57,7 @@ A mid-sized healthcare technology provider (**Orion Health Services**) experienc
 A retail enterprise (**RetailNova Pty Ltd**) operating e-commerce, cloud infrastructure, and nationwide POS systems required a comprehensive cybersecurity risk review.
 
 **Assessment scope included:**
+
 - Cloud-hosted e-commerce platform (AWS)
 - Payment integrations (PayPal, Afterpay)
 - Salesforce CRM and SAP ERP
@@ -63,6 +66,7 @@ A retail enterprise (**RetailNova Pty Ltd**) operating e-commerce, cloud infrast
 - Third-party vendors and marketing integrations
 
 **Work performed:**
+
 - Identified critical information assets and data types (PII, transaction data, behavioral analytics)
 - Mapped threats based on historical incidents (phishing, ransomware, third-party data leakage)
 - Evaluated likelihood and impact of risks using a structured risk framework
@@ -82,6 +86,7 @@ A retail enterprise (**RetailNova Pty Ltd**) operating e-commerce, cloud infrast
 ---
 
 ## Tools & Concepts Used
+
 - Incident response lifecycle
 - Ransomware analysis and IOCs
 - Risk assessment frameworks
@@ -91,4 +96,4 @@ A retail enterprise (**RetailNova Pty Ltd**) operating e-commerce, cloud infrast
 
 ---
 
-*This project was completed as part of a virtual job simulation on Forage and reflects practical, scenario-based cybersecurity training aligned with industry expectations.*
+_This project was completed as part of a virtual job simulation on Forage and reflects practical, scenario-based cybersecurity training aligned with industry expectations._

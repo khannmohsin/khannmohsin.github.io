@@ -45,6 +45,7 @@ Technologies & Platforms:
 - Android App – Remote access to system controls and sensor data.
 
 Core Functionalities:
+
 1. RFID-Based Door Lock – Unlock/lock doors with keycards or remotely via the Cayenne dashboard.
 2. Intrusion Detection – PIR motion sensors trigger alarms or automatic lighting.
 3. Gas/Smoke Detection – Automatic valve shutdown via servo motor upon leak detection.
@@ -52,6 +53,7 @@ Core Functionalities:
 5. Appliance Control – Relay modules switch lights, fans, and high-voltage devices.
 
 Integration Approach:
+
 - Arduino UNO handles RFID logic and relay for door locking.
 - Arduino Mega handles sensor monitoring, appliance control, and cloud communication.
 - Cayenne Cloud stores data, triggers automation, and provides a dashboard interface.
@@ -62,6 +64,7 @@ Integration Approach:
 ## 4. Hardware Components
 
 ### Microcontrollers & Communication Modules
+
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/projects/smart_home//arduino_mega.webp" title="Arduino Mega 2560 with Ethernet Shield" class="img-fluid rounded z-depth-1" %}
@@ -82,6 +85,7 @@ Arduino UNO is dedicated to handling RFID authentication and controlling the doo
 ---
 
 ### Sensors
+
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/projects/smart_home/rfid_module.png" title="MFRC522 RFID Module with Keycards and Fobs" class="img-fluid rounded z-depth-1" %}
@@ -107,6 +111,7 @@ Sensors include MFRC522 RFID for access control, PIR for motion detection, DHT11
 ---
 
 ### Actuators
+
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/projects/smart_home/relay_module.png" title="Relay Module" class="img-fluid rounded z-depth-1" %}
@@ -123,6 +128,7 @@ Actuators include a multi-channel relay module for switching high-voltage home a
 ---
 
 {% comment %}
+
 ## 5. Implementation Snapshots
 
 <div class="row">

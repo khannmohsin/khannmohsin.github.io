@@ -20,7 +20,7 @@
             <a href="{{ project_url }}">{{ project.title }}</a>
           </h3>
           <p class="card-text prj-card-text">
-            {{ project.description | default: "Project summary available in full case study." }}
+            {{ project.description | default: 'Project summary available in full case study.' }}
           </p>
 
           {% if project.tags and project.tags.size > 0 %}

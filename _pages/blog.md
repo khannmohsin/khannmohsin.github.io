@@ -27,9 +27,10 @@ pagination:
     {% endif %}
   </section>
 
-  {% assign featured_posts = site.posts | where: "featured", "true" %}
-  {% if featured_posts.size > 0 %}
-    <h2 class="blog-section-title">Featured posts</h2>
+{% assign featured_posts = site.posts | where: "featured", "true" %}
+{% if featured_posts.size > 0 %}
+
+<h2 class="blog-section-title">Featured posts</h2>
 
     <div class="blog-featured-grid">
       {% for post in featured_posts %}
@@ -66,23 +67,24 @@ pagination:
     </div>
 
     <hr class="blog-divider">
-  {% endif %}
 
-  {% if page.pagination.enabled %}
-    {% assign postlist = paginator.posts %}
-  {% else %}
-    {% assign postlist = site.posts %}
-  {% endif %}
-  {% assign suppress_featured_in_latest = false %}
-  {% if featured_posts.size > 0 %}
-    {% if page.pagination.enabled %}
-      {% if paginator.page == 1 %}
-        {% assign suppress_featured_in_latest = true %}
-      {% endif %}
-    {% else %}
-      {% assign suppress_featured_in_latest = true %}
-    {% endif %}
-  {% endif %}
+{% endif %}
+
+{% if page.pagination.enabled %}
+{% assign postlist = paginator.posts %}
+{% else %}
+{% assign postlist = site.posts %}
+{% endif %}
+{% assign suppress_featured_in_latest = false %}
+{% if featured_posts.size > 0 %}
+{% if page.pagination.enabled %}
+{% if paginator.page == 1 %}
+{% assign suppress_featured_in_latest = true %}
+{% endif %}
+{% else %}
+{% assign suppress_featured_in_latest = true %}
+{% endif %}
+{% endif %}
 
   <h2 class="blog-section-title">Latest posts</h2>
   <ul class="blog-posts">
@@ -190,9 +192,11 @@ pagination:
         {% endif %}
       </li>
     {% endfor %}
+
   </ul>
 
-  {% if page.pagination.enabled %}
-    {% include pagination.liquid %}
-  {% endif %}
+{% if page.pagination.enabled %}
+{% include pagination.liquid %}
+{% endif %}
+
 </div>

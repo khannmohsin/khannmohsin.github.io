@@ -19,21 +19,21 @@ The work focused on **phishing threat identification**, **human-centric security
 
 ## Key Activities
 
-- Designed a **realistic phishing email simulation** aligned with common enterprise attack patterns  
-- Applied **social engineering techniques** to increase realism and user engagement  
-- Analyzed phishing campaign results to identify **departments with higher failure rates**  
-- Identified **high-risk business units** requiring additional security awareness  
-- Designed and delivered **targeted phishing awareness training** tailored to vulnerable teams  
+- Designed a **realistic phishing email simulation** aligned with common enterprise attack patterns
+- Applied **social engineering techniques** to increase realism and user engagement
+- Analyzed phishing campaign results to identify **departments with higher failure rates**
+- Identified **high-risk business units** requiring additional security awareness
+- Designed and delivered **targeted phishing awareness training** tailored to vulnerable teams
 
 ---
 
 ## Skills Applied
 
-- Security awareness and phishing risk analysis  
-- Social engineering threat modeling  
-- Data analysis and interpretation of campaign results  
-- Risk-based security training design  
-- Clear communication for non-technical audiences  
+- Security awareness and phishing risk analysis
+- Social engineering threat modeling
+- Data analysis and interpretation of campaign results
+- Risk-based security training design
+- Clear communication for non-technical audiences
 
 ---
 
@@ -41,9 +41,9 @@ The work focused on **phishing threat identification**, **human-centric security
 
 This project reflects real-world work performed by:
 
-- **Security Awareness & Human Risk** teams  
-- **GRC and Cyber Risk** functions  
-- **Blue Team / Preventive Security** roles  
-- Enterprise cybersecurity consulting engagements  
+- **Security Awareness & Human Risk** teams
+- **GRC and Cyber Risk** functions
+- **Blue Team / Preventive Security** roles
+- Enterprise cybersecurity consulting engagements
 
 It demonstrates how **human behavior**, not just technology, is a critical factor in organizational security—and how targeted education can significantly reduce risk in large enterprises like Mastercard.

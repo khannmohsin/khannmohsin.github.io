@@ -1,7 +1,7 @@
-{% assign card_variant = include.variant | default: "catalog" %}
-{% assign image_loading = "lazy" %}
-{% if card_variant == "featured" %}
-  {% assign image_loading = "eager" %}
+{% assign card_variant = include.variant | default: 'catalog' %}
+{% assign image_loading = 'lazy' %}
+{% if card_variant == 'featured' %}
+  {% assign image_loading = 'eager' %}
 {% endif %}
 
 {% if project.redirect %}
@@ -10,43 +10,43 @@
   {% assign project_url = project.url | relative_url %}
 {% endif %}
 
-{% assign project_track = "general" %}
+{% assign project_track = 'general' %}
 {% case project.category %}
-  {% when "Research Projects" %}
-    {% assign project_track = "research" %}
-  {% when "Cybersecurity Job Simulations" %}
-    {% assign project_track = "simulation" %}
-  {% when "Capstone Industry Projects" %}
-    {% assign project_track = "capstone" %}
-  {% when "Training Projects" %}
-    {% assign project_track = "training" %}
-  {% when "Coursework Projects" %}
-    {% assign project_track = "coursework" %}
-  {% when "Management Project" %}
-    {% assign project_track = "management" %}
+  {% when 'Research Projects' %}
+    {% assign project_track = 'research' %}
+  {% when 'Cybersecurity Job Simulations' %}
+    {% assign project_track = 'simulation' %}
+  {% when 'Capstone Industry Projects' %}
+    {% assign project_track = 'capstone' %}
+  {% when 'Training Projects' %}
+    {% assign project_track = 'training' %}
+  {% when 'Coursework Projects' %}
+    {% assign project_track = 'coursework' %}
+  {% when 'Management Project' %}
+    {% assign project_track = 'management' %}
 {% endcase %}
 
-{% assign evidence_label = "Portfolio Case Study" %}
+{% assign evidence_label = 'Portfolio Case Study' %}
 {% if project.related_publications %}
-  {% assign evidence_label = "Peer-Reviewed Evidence" %}
-{% elsif project.category == "Cybersecurity Job Simulations" %}
-  {% assign evidence_label = "Industry Simulation" %}
-{% elsif project.category == "Capstone Industry Projects" %}
-  {% assign evidence_label = "Industry Capstone" %}
-{% elsif project.category == "Training Projects" %}
-  {% assign evidence_label = "Hands-On Training" %}
+  {% assign evidence_label = 'Peer-Reviewed Evidence' %}
+{% elsif project.category == 'Cybersecurity Job Simulations' %}
+  {% assign evidence_label = 'Industry Simulation' %}
+{% elsif project.category == 'Capstone Industry Projects' %}
+  {% assign evidence_label = 'Industry Capstone' %}
+{% elsif project.category == 'Training Projects' %}
+  {% assign evidence_label = 'Hands-On Training' %}
 {% endif %}
 
-{% assign importance_label = "Core" %}
+{% assign importance_label = 'Core' %}
 {% if project.importance == 1 %}
-  {% assign importance_label = "Flagship" %}
+  {% assign importance_label = 'Flagship' %}
 {% elsif project.importance == 2 %}
-  {% assign importance_label = "High Priority" %}
+  {% assign importance_label = 'High Priority' %}
 {% elsif project.importance == 3 %}
-  {% assign importance_label = "Selected" %}
+  {% assign importance_label = 'Selected' %}
 {% endif %}
 
-{% assign focus_label = "System Security" %}
+{% assign focus_label = 'System Security' %}
 {% if project.tags and project.tags.size > 0 %}
   {% assign focus_label = project.tags | first %}
 {% endif %}
@@ -62,7 +62,7 @@
 
 <div
   class="col {% if card_variant == 'featured' %}prj-col-featured{% endif %}"
-  {% if card_variant == "catalog" %}
+  {% if card_variant == 'catalog' %}
     data-project-card
     data-category="{{ project.category | escape }}"
     data-track="{{ project_track }}"
@@ -94,7 +94,7 @@
       </h3>
 
       <p class="card-text prj-card-text">
-        {{ project.description | default: "Security project covering architecture, implementation, and validation details." }}
+        {{ project.description | default: 'Security project covering architecture, implementation, and validation details.' }}
       </p>
 
       <dl class="prj-card-meta">

@@ -19,18 +19,20 @@
             {% endfor %}
 
             <td colspan="{{ i }}" class="list-group-category">
-              {% assign href = nil %}
-              {% if content.url and content.url != "" %}
+              {% assign href = null %}
+              {% if content.url and content.url != '' %}
                 {% assign href = content.url %}
-              {% elsif content.email and content.email != "" %}
-                {% assign href = "mailto:" | append: content.email %}
+              {% elsif content.email and content.email != '' %}
+                {% assign href = 'mailto:' | append: content.email %}
               {% endif %}
 
               {% if href %}
-                <a href="{{ href }}"
-                   class="cv-link"
-                   target="_blank"
-                   rel="noopener noreferrer">
+                <a
+                  href="{{ href }}"
+                  class="cv-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {{ content.name }}
                 </a>
               {% else %}
@@ -46,15 +48,15 @@
             </td>
           </tr>
 
-          {% if content.email and content.email != "" %}
-          <tr>
-            <td></td>
-            <td class="list-group-name">
-              <a href="mailto:{{ content.email }}" class="cv-link">
-                {{ content.email }}
-              </a>
-            </td>
-          </tr>
+          {% if content.email and content.email != '' %}
+            <tr>
+              <td></td>
+              <td class="list-group-name">
+                <a href="mailto:{{ content.email }}" class="cv-link">
+                  {{ content.email }}
+                </a>
+              </td>
+            </tr>
           {% endif %}
         </tbody>
       </table>

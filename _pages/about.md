@@ -35,6 +35,7 @@ social: true
 </section>
 
 {% assign flagship = site.data.flagship %}
+
 <section class="flag-cta" aria-label="Collaboration and hiring call-to-action">
   <h3>{{ flagship.conversion.title }}</h3>
   <p>{{ flagship.conversion.body }}</p>

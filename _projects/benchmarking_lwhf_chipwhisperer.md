@@ -33,19 +33,21 @@ Our work targets developers, researchers, and system architects seeking <strong>
 - Microcontroller: AVR ATxmega128  
 - Measurement Tool: ChipWhisperer Lite (CW308 UFO Board)  
 - Programming Language: C (compiled with AVR-GCC)  
-- Triggering: GPIO-based measurement trigger for synchronous power analysis  
+- Triggering: GPIO-based measurement trigger for synchronous power analysis
 
-<strong>Evaluated Algorithms</strong>  
-- NIST LWC Finalists (e.g., Ascon-Hash, PHOTON-Beetle, Xoodyak)  
-- ISO/IEC 29192-5 Standards (SPONGENT, PHOTON)  
-- Additional lightweight hash functions (Lesamnta-LW, BLAKE2s, BLAKE3)  
+<strong>Evaluated Algorithms</strong>
 
-<strong>Metrics</strong>  
-- Execution Time (ms)  
-- Cycles per Byte  
-- RAM / ROM Usage (bytes)  
-- Energy Consumption (mJ)  
-- Composite E-RANK Metric  
+- NIST LWC Finalists (e.g., Ascon-Hash, PHOTON-Beetle, Xoodyak)
+- ISO/IEC 29192-5 Standards (SPONGENT, PHOTON)
+- Additional lightweight hash functions (Lesamnta-LW, BLAKE2s, BLAKE3)
+
+<strong>Metrics</strong>
+
+- Execution Time (ms)
+- Cycles per Byte
+- RAM / ROM Usage (bytes)
+- Energy Consumption (mJ)
+- Composite E-RANK Metric
 </div>
 
 ---
@@ -53,6 +55,7 @@ Our work targets developers, researchers, and system architects seeking <strong>
 ## 3. System Architecture
 
 {% include figure.liquid path="assets/img/projects/benchmarking_lwhf_chipwhisperer/benchmarking_architecture.png" title="Benchmarking Architecture" class="img-fluid rounded z-depth-1" %}
+
 <div class="caption">
 System workflow: Compilation → Flashing to ATxmega128 → Triggered Execution → Data Capture (ChipWhisperer) → Performance Analysis.
 </div>
@@ -62,6 +65,7 @@ System workflow: Compilation → Flashing to ATxmega128 → Triggered Execution 
 ## 4. Experimental Setup
 
 {% include figure.liquid path="assets/img/projects/benchmarking_lwhf_chipwhisperer/chipwhisperer_setup.png" title="ChipWhisperer Measurement Setup" class="img-fluid rounded z-depth-1" %}
+
 <div class="caption">
 ChipWhisperer Lite with ATxmega128 target microcontroller for synchronized power measurement and benchmarking.
 </div>

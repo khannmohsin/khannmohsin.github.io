@@ -18,33 +18,33 @@ The objective was to identify weaknesses in existing practices and recommend **p
 
 ## Scope of Evaluation
 
-- Data and information security practices  
-- Compliance with **HIPAA Security Rule** requirements  
-- Internal and external risk identification  
-- Assessment of whether risks required immediate remediation  
+- Data and information security practices
+- Compliance with **HIPAA Security Rule** requirements
+- Internal and external risk identification
+- Assessment of whether risks required immediate remediation
 
 ---
 
 ## Methodology
 
-- Reviewed organizational documentation, policies, and workflows  
-- Mapped existing practices against HIPAA requirements  
-- Identified risks impacting confidentiality, integrity, and availability  
-- Analyzed consequences of security gaps on patient data and operations  
+- Reviewed organizational documentation, policies, and workflows
+- Mapped existing practices against HIPAA requirements
+- Identified risks impacting confidentiality, integrity, and availability
+- Analyzed consequences of security gaps on patient data and operations
 
 ---
 
 ## Security Controls & Recommendations
 
-- Designed a **backup and recovery strategy** for sensitive health data  
-- Recommended **encryption practices** for data at rest and in transit  
-- Evaluated access controls and data handling procedures  
-- Identified gaps in policy enforcement and operational safeguards  
+- Designed a **backup and recovery strategy** for sensitive health data
+- Recommended **encryption practices** for data at rest and in transit
+- Evaluated access controls and data handling procedures
+- Identified gaps in policy enforcement and operational safeguards
 
 ---
 
 ## Outcomes & Industry Relevance
 
-- Produced a structured **risk and compliance assessment** suitable for audits  
-- Demonstrated applied **GRC and healthcare security** skills  
+- Produced a structured **risk and compliance assessment** suitable for audits
+- Demonstrated applied **GRC and healthcare security** skills
 - Directly relevant to roles in **GRC, IT audit, compliance, and healthcare cybersecurity**

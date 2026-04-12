@@ -14,11 +14,13 @@ This project implements a <strong>comprehensive benchmarking framework</strong> 
 The work is documented across two publications — in <em>MDPI Future Internet</em> and <em>Springer SciSec</em> — which share the same experimental methodology and platform but explore complementary analysis and presentation.
 
 The project addresses a critical IoT security challenge: <strong>how to choose cryptographic primitives that balance security strength with minimal performance and energy overhead</strong> in devices with limited CPU, RAM, and power budgets.
+
 </div>
 
 ---
 
 ## Objectives
+
 - **Develop** a flexible and lightweight benchmarking tool that supports both block and stream cipher implementations.
 - **Measure** multiple performance metrics: throughput, cycles per byte (CpB), memory footprint, ROM usage, and energy consumption.
 - **Introduce** the E-Rank metric — a combined measure of efficiency that integrates performance, memory, and energy.
@@ -27,16 +29,18 @@ The project addresses a critical IoT security challenge: <strong>how to choose c
 ---
 
 ## Methodology
+
 - **Hardware**: Raspberry Pi Zero W with single-core ARM1176JZF-S CPU (512 MB RAM).
 - **Energy Measurement**: Arduino UNO + INA219 power sensor to isolate cipher execution power usage from background processes.
 - **Software**:
   - Core cryptographic operations implemented in **C** for speed.
   - Orchestration, measurement, and data logging in **Python** using `ctypes` to interface with compiled cipher code.
 - **Cipher Set**:
-  - *Lightweight Block Ciphers*: PRESENT, XTEA, CLEFIA, SIMON, SPECK, AES (baseline).
-  - *Lightweight Stream Ciphers*: Grain-v1, Grain-128a (optimized), Trivium, Mickey, Salsa, Sosemanuk.
+  - _Lightweight Block Ciphers_: PRESENT, XTEA, CLEFIA, SIMON, SPECK, AES (baseline).
+  - _Lightweight Stream Ciphers_: Grain-v1, Grain-128a (optimized), Trivium, Mickey, Salsa, Sosemanuk.
 
 {% include figure.liquid path="assets/img/projects/benchmarking_rp_Arduino/lwcc-arm-setup.png" title="Hardware setup with Raspberry Pi Zero W and Arduino UNO for benchmarking" class="img-fluid rounded z-depth-1" %}
+
 <div class="caption">
 Custom benchmarking setup with GPIO-triggered power measurement to ensure precise per-cipher energy readings.
 </div>
@@ -44,6 +48,7 @@ Custom benchmarking setup with GPIO-triggered power measurement to ensure precis
 ---
 
 ## Evaluation Metrics
+
 1. **Throughput (Kbps)** – Speed of encryption/decryption.
 2. **Cycles per Byte (CpB)** – CPU cycles required per byte processed.
 3. **Memory Footprint (bytes)** – RAM usage during cipher execution.
@@ -55,6 +60,7 @@ Custom benchmarking setup with GPIO-triggered power measurement to ensure precis
 ---
 
 ## Key Findings
+
 - **Best LWBC (Block Cipher)**: **XTEA** – Highest throughput, lowest CpB, lowest energy, but highest RAM usage.
 - **Best LWSC (Stream Cipher)**: **Salsa** – Highest E-Rank due to exceptional throughput and efficient resource use.
 - **Trade-offs**:
@@ -69,6 +75,7 @@ Performance comparison showing throughput, CpB, energy, and E-Rank for all evalu
 ---
 
 ## Impact & Applications
+
 - **IoT Security Design**: Offers a decision-making framework for selecting ciphers based on device constraints.
 - **Benchmarking Methodology**: Can be reused for future cipher candidates or different microcontroller platforms.
 - **Academic Contribution**: Demonstrates how multi-metric evaluation changes cipher rankings compared to throughput-only analysis.
@@ -76,5 +83,6 @@ Performance comparison showing throughput, CpB, energy, and E-Rank for all evalu
 ---
 
 ## Publications
-1. M. Khan, D. Johansen, H. Dagenborg, *Performance Evaluation of Lightweight Cryptographic Ciphers on ARM Processor for IoT Deployments*, SciSec 2024 (LNCS 15441).
-2. M. Khan et al., *Comprehensive Benchmarking of Lightweight Cryptographic Primitives for IoT Devices*, *Future Internet*, MDPI, 2025.
+
+1. M. Khan, D. Johansen, H. Dagenborg, _Performance Evaluation of Lightweight Cryptographic Ciphers on ARM Processor for IoT Deployments_, SciSec 2024 (LNCS 15441).
+2. M. Khan et al., _Comprehensive Benchmarking of Lightweight Cryptographic Primitives for IoT Devices_, _Future Internet_, MDPI, 2025.

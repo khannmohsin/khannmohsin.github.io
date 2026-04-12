@@ -3,10 +3,8 @@
   {% for content in work %}
     <li class="list-group-item">
       <div class="row">
-
         <!-- DATE + ICON COLUMN -->
         <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
-
           {% if content.startDate %}
             {% assign startDate = content.startDate | split: '-' | slice: 0, 2 | join: '.' %}
             {% assign endDate = content.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
@@ -17,12 +15,13 @@
 
           <table class="table-cv">
             <tbody>
-
               <!-- DATE -->
               <tr>
                 <td>
-                  <span class="badge cvf-year-badge font-weight-bold text-uppercase align-middle"
-                        style="min-width: 75px">
+                  <span
+                    class="badge cvf-year-badge font-weight-bold text-uppercase align-middle"
+                    style="min-width: 75px"
+                  >
                     {{ date }}
                   </span>
                 </td>
@@ -30,34 +29,34 @@
 
               <!-- LOGO UNDER DATE -->
               {% if content.icon %}
-              <tr>
-                <td style="padding-top: 6px;">
-                  <img src="{{ content.icon }}"
-                       alt="{{ content.name }} logo"
-                       style="max-height: 50px; width: auto;">
-                </td>
-              </tr>
+                <tr>
+                  <td style="padding-top: 6px;">
+                    <img
+                      src="{{ content.icon }}"
+                      alt="{{ content.name }} logo"
+                      style="max-height: 50px; width: auto;"
+                    >
+                  </td>
+                </tr>
               {% endif %}
 
               <!-- LOCATION -->
               {% if content.location %}
-              <tr>
-                <td>
-                  <p class="location">
-                    <i class="fa-solid fa-location-dot iconlocation"></i>
-                    {{ content.location }}
-                  </p>
-                </td>
-              </tr>
+                <tr>
+                  <td>
+                    <p class="location">
+                      <i class="fa-solid fa-location-dot iconlocation"></i>
+                      {{ content.location }}
+                    </p>
+                  </td>
+                </tr>
               {% endif %}
-
             </tbody>
           </table>
         </div>
 
         <!-- CONTENT COLUMN -->
         <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
-
           <!-- POSITION (NON-CLICKABLE) -->
           <h6 class="title font-weight-bold ml-1 ml-md-4">
             <span style="cursor: default;">
@@ -71,20 +70,22 @@
           </h6>
 
           <!-- SUMMARY -->
-          <h6 class="ml-1 ml-md-4"
-              style="font-size: 0.95rem; font-style: italic">
+          <h6
+            class="ml-1 ml-md-4"
+            style="font-size: 0.95rem; font-style: italic"
+          >
             {{ content.summary }}
           </h6>
 
           <!-- HIGHLIGHTS -->
           <ul class="items">
             {% for item in content.highlights %}
-              <li><span class="item">{{ item }}</span></li>
+              <li>
+                <span class="item">{{ item }}</span>
+              </li>
             {% endfor %}
           </ul>
-
         </div>
-
       </div>
     </li>
   {% endfor %}

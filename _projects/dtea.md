@@ -5,15 +5,7 @@ category: Research Projects
 img: assets/img/projects/dtea/cover.png
 description: "A blockchain-backed capability-based authorization system for enforcing fine-grained, auditable access control in resource-constrained IoT environments."
 importance: 2
-tags:
-  [
-    "blockchain security",
-    "capability-based access control",
-    "IoT",
-    "smart contracts",
-    "QBFT",
-    "STRIDE",
-  ]
+tags: ["blockchain security", "capability-based access control", "IoT", "smart contracts", "QBFT", "STRIDE"]
 related_publications: true
 math: true
 ---
@@ -68,6 +60,7 @@ BlockCap encodes authorization as <strong>capability tokens</strong> that specif
 </ul>
 
 Capabilities are:
+
 <ul>
   <li><strong>Issued and revoked on-chain</strong> via smart contracts</li>
   <li><strong>Checked off-chain</strong> by gateways before request forwarding</li>
@@ -110,6 +103,7 @@ The system is analyzed using the <strong>STRIDE threat model</strong>, covering:
 </ul>
 
 BlockCap mitigates these threats through cryptographic identities, immutable logging, validator-governed policy changes, and strict capability validation at enforcement points.
+
 </div>
 
 ---
@@ -125,6 +119,7 @@ BlockCap is evaluated on a heterogeneous testbed comprising:
 </ul>
 
 Measured metrics include:
+
 <ul>
   <li>Capability issuance and validation latency</li>
   <li>CPU and memory overhead on gateways</li>
@@ -133,16 +128,17 @@ Measured metrics include:
 </ul>
 
 Results demonstrate that BlockCap introduces <strong>minimal runtime overhead</strong> while providing strong security guarantees and full authorization traceability.
+
 </div>
 
 ---
 
 ## Key Contributions
 
-- **Blockchain-backed capability authorization** tailored for IoT constraints  
-- **Decoupled enforcement and governance** via role separation  
-- **Fine-grained, bidirectional access control**  
-- **Formal STRIDE-based security analysis**  
+- **Blockchain-backed capability authorization** tailored for IoT constraints
+- **Decoupled enforcement and governance** via role separation
+- **Fine-grained, bidirectional access control**
+- **Formal STRIDE-based security analysis**
 - **Practical deployment and evaluation on real hardware**
 
 ---
@@ -150,7 +146,7 @@ Results demonstrate that BlockCap introduces <strong>minimal runtime overhead</s
 <!-- ## Publication
 
 <div class="justify-text">
-<strong>Khan, M.</strong>, Dagenborg, H., Ferraris, D., Kozyri, E., & Johansen, D.  
-<em>BlockCap: Capability Tokens for Blockchain-Based Authorization in Resource-Constrained IoT Environments.</em>  
+<strong>Khan, M.</strong>, Dagenborg, H., Ferraris, D., Kozyri, E., & Johansen, D.
+<em>BlockCap: Capability Tokens for Blockchain-Based Authorization in Resource-Constrained IoT Environments.</em>
 <strong>IEEE Access</strong>, 2025.
 </div> -->

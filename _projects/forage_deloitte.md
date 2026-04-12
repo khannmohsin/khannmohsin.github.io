@@ -18,19 +18,19 @@ The simulation focused on **detecting suspicious behavior**, supporting a client
 
 ## Key Activities
 
-- Analyzed **web and activity logs** to identify anomalous and suspicious user behavior  
-- Supported a simulated client during a **cybersecurity breach investigation**  
-- Answered investigative questions to determine indicators of compromise (IoCs)  
-- Applied structured reasoning to distinguish benign activity from potential threats  
+- Analyzed **web and activity logs** to identify anomalous and suspicious user behavior
+- Supported a simulated client during a **cybersecurity breach investigation**
+- Answered investigative questions to determine indicators of compromise (IoCs)
+- Applied structured reasoning to distinguish benign activity from potential threats
 
 ---
 
 ## Skills Applied
 
-- Log analysis and event correlation  
-- Incident detection and initial triage  
-- Adversarial reasoning and hypothesis testing  
-- Clear communication of security findings  
+- Log analysis and event correlation
+- Incident detection and initial triage
+- Adversarial reasoning and hypothesis testing
+- Clear communication of security findings
 
 ---
 
@@ -38,8 +38,8 @@ The simulation focused on **detecting suspicious behavior**, supporting a client
 
 This project strengthened practical skills directly applicable to:
 
-- **SOC Analyst (Level 1 / 2)** roles  
-- **Blue Team** and **Detection & Response** positions  
-- **Cybersecurity consulting** and incident support engagements  
+- **SOC Analyst (Level 1 / 2)** roles
+- **Blue Team** and **Detection & Response** positions
+- **Cybersecurity consulting** and incident support engagements
 
 It complements my academic background by reinforcing how detection and investigation are performed in **operational security environments**, under time pressure and incomplete information.

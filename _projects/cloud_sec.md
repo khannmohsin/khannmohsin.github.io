@@ -16,15 +16,15 @@ This project assessed the **security implications of migrating organizational sy
 
 ## Scope & Analysis
 
-- Evaluated cloud deployment models (IaaS, PaaS, SaaS)  
-- Identified risks to data, applications, and infrastructure  
-- Applied cloud security best practices and frameworks  
-- Recommended controls aligned with the **shared responsibility model**  
+- Evaluated cloud deployment models (IaaS, PaaS, SaaS)
+- Identified risks to data, applications, and infrastructure
+- Applied cloud security best practices and frameworks
+- Recommended controls aligned with the **shared responsibility model**
 
 ---
 
 ## Outcomes & Skills
 
-- Strengthened understanding of **cloud security architecture**  
-- Applied risk-based thinking to cloud environments  
+- Strengthened understanding of **cloud security architecture**
+- Applied risk-based thinking to cloud environments
 - Built practical skills relevant to **cloud security and security architect roles**

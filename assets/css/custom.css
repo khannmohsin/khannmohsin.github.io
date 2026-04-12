@@ -3,30 +3,30 @@
    ========================= */
 
 /* Grid container for repo cards */
-.repo-grid{
+.repo-grid {
   display: flex;
   justify-content: left;
   gap: 16px;
-  width:100%;
+  width: 100%;
   flex-wrap: wrap;
 }
 
 /* Responsive breakpoints */
-@media (max-width: 980px){
-  .repo-grid{
+@media (max-width: 980px) {
+  .repo-grid {
     grid-template-columns: 1fr; /* single column */
   }
 }
 
 /* Each include renders: <div class="repo"> ... </div> */
-.repo-grid .repo{
+.repo-grid .repo {
   width: 100% !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
 /* Card */
-.ghpinned-card{
+.ghpinned-card {
   border: 1px solid #e1e4e8;
   border-radius: 12px;
   padding: 14px 16px;
@@ -38,33 +38,33 @@
   justify-content: center;
 }
 
-.ghpinned-card:hover{
+.ghpinned-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(54,133,243,0.35);
+  border-color: rgba(54, 133, 243, 0.35);
 }
 
 /* Top row */
-.ghpinned-top{
+.ghpinned-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
 }
 
-.ghpinned-title{
+.ghpinned-title {
   display: flex;
   align-items: center;
   min-width: 0;
 }
 
 /* Repo name link (only clickable part) */
-.ghpinned-name{
+.ghpinned-name {
   font-weight: 600;
   font-size: 14px;
   line-height: 1;
 
-  color: #3685f3;         /* requested color */
-  text-decoration: none;  /* no underline by default */
+  color: #3685f3; /* requested color */
+  text-decoration: none; /* no underline by default */
 
   white-space: nowrap;
   overflow: hidden;
@@ -73,20 +73,20 @@
   cursor: pointer;
 }
 
-.ghpinned-name:hover{
+.ghpinned-name:hover {
   text-decoration: underline; /* underline only on hover */
 }
 
-.ghpinned-name:focus-visible{
+.ghpinned-name:focus-visible {
   outline: 2px solid #3685f3;
   outline-offset: 2px;
   border-radius: 4px;
 }
 
 /* Description: clamp to exactly 2 lines so all cards match */
-.ghpinned-desc{
+.ghpinned-desc {
   margin: 8px 0 12px;
-  color: rgba(0,0,0,0.65);
+  color: rgba(0, 0, 0, 0.65);
   font-size: 12px;
   line-height: 1.35;
 
@@ -100,20 +100,20 @@
 }
 
 /* Meta row: stable, single line (prevents height variation) */
-.ghpinned-meta{
+.ghpinned-meta {
   display: flex;
   align-items: center;
   gap: 12px;
 
-  flex-wrap: nowrap;      /* prevents wrapping */
+  flex-wrap: nowrap; /* prevents wrapping */
   white-space: nowrap;
 
   font-size: 12px;
-  color: rgba(0,0,0,0.65);
+  color: rgba(0, 0, 0, 0.65);
 }
 
 /* Language block */
-.ghpinned-lang{
+.ghpinned-lang {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -124,7 +124,7 @@
   text-overflow: ellipsis;
 }
 
-.ghpinned-lang-dot{
+.ghpinned-lang-dot {
   width: 10px;
   height: 10px;
   border-radius: 999px;
@@ -133,7 +133,7 @@
   flex: 0 0 auto;
 }
 
-.ghpinned-lang-name{
+.ghpinned-lang-name {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -141,7 +141,7 @@
 
 /* Stars / forks */
 .ghpinned-stars,
-.ghpinned-forks{
+.ghpinned-forks {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -150,7 +150,7 @@
 
 /* Make counts look consistent even when empty */
 .ghpinned-stars-count:empty::before,
-.ghpinned-forks-count:empty::before{
+.ghpinned-forks-count:empty::before {
   content: "0";
 }
 
@@ -158,34 +158,34 @@
    Dark Mode (if your theme uses data-theme="dark")
    ========================= */
 [data-theme="dark"] .ghpinned-card,
-.only-dark .ghpinned-card{
-  background: rgba(18,18,18,0.6);
-  border-color: rgba(255,255,255,0.14);
+.only-dark .ghpinned-card {
+  background: rgba(18, 18, 18, 0.6);
+  border-color: rgba(255, 255, 255, 0.14);
 }
 
 [data-theme="dark"] .ghpinned-card:hover,
-.only-dark .ghpinned-card:hover{
-  border-color: rgba(255,255,255,0.22);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+.only-dark .ghpinned-card:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
 }
 
 [data-theme="dark"] .ghpinned-desc,
-.only-dark .ghpinned-desc{
-  color: rgba(255,255,255,0.70);
+.only-dark .ghpinned-desc {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 [data-theme="dark"] .ghpinned-meta,
-.only-dark .ghpinned-meta{
-  color: rgba(255,255,255,0.70);
+.only-dark .ghpinned-meta {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* Keep your link color as requested in dark mode too */
 [data-theme="dark"] .ghpinned-name,
-.only-dark .ghpinned-name{
+.only-dark .ghpinned-name {
   color: #3685f3;
 }
 
-.ghpinned-langs{
+.ghpinned-langs {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -193,12 +193,11 @@
   overflow: hidden;
 }
 
-.ghpinned-langchip{
+.ghpinned-langchip {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   font-size: 12px;
-  color: rgba(0,0,0,0.65);
+  color: rgba(0, 0, 0, 0.65);
   white-space: nowrap;
 }
-

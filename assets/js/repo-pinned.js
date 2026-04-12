@@ -1,7 +1,7 @@
 (function () {
-  const CONCURRENCY = 6;          // 4–8 recommended
-  const TTL_MS = 24 * 60 * 60e3;  // 24 hours
-  const ENABLE_LANGUAGES = true;  // show top languages like your old script
+  const CONCURRENCY = 6; // 4–8 recommended
+  const TTL_MS = 24 * 60 * 60e3; // 24 hours
+  const ENABLE_LANGUAGES = true; // show top languages like your old script
 
   const langColor = {
     JavaScript: "#f1e05a",
@@ -18,16 +18,22 @@
     Solidity: "#AA6746",
   };
 
-  function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+  function sleep(ms) {
+    return new Promise((r) => setTimeout(r, ms));
+  }
   const now = () => Date.now();
 
   function loadCache() {
-    try { return JSON.parse(localStorage.getItem("repoPinnedCache_v2") || "{}"); }
-    catch { return {}; }
+    try {
+      return JSON.parse(localStorage.getItem("repoPinnedCache_v2") || "{}");
+    } catch {
+      return {};
+    }
   }
   function saveCache(cache) {
-    try { localStorage.setItem("repoPinnedCache_v2", JSON.stringify(cache)); }
-    catch {}
+    try {
+      localStorage.setItem("repoPinnedCache_v2", JSON.stringify(cache));
+    } catch {}
   }
   function getCached(cache, key) {
     const item = cache[key];
@@ -162,7 +168,10 @@
         const top = topLanguages(langsObj, 3);
         const usedMulti = renderMultiLanguages(card, top);
         if (top.length) {
-          searchText = `${searchText} ${top.map(([name]) => name).join(" ").toLowerCase()}`.trim();
+          searchText = `${searchText} ${top
+            .map(([name]) => name)
+            .join(" ")
+            .toLowerCase()}`.trim();
         }
         if (!usedMulti) renderSingleLanguage(card, repo.language);
       } else {

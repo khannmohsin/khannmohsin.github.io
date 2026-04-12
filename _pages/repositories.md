@@ -26,19 +26,20 @@ nav_order: 4
     </div>
   </section>
 
-  {% if repo_count > 2 %}
-    <section class="repo-featured-block" id="repo-featured-block" aria-label="Featured repositories">
-      <div class="repo-section-head">
-        <h2 class="repo-section-title">Featured Repositories</h2>
-        <p class="repo-section-caption">High-signal repositories for fastest technical review.</p>
-      </div>
-      <div class="repo-featured-grid">
-        {% for repo in site.data.repositories.github_repos limit: 2 %}
-          {% include repository/repo.liquid repository=repo variant="featured" %}
-        {% endfor %}
-      </div>
-    </section>
-  {% endif %}
+{% if repo_count > 2 %}
+
+<section class="repo-featured-block" id="repo-featured-block" aria-label="Featured repositories">
+<div class="repo-section-head">
+<h2 class="repo-section-title">Featured Repositories</h2>
+<p class="repo-section-caption">High-signal repositories for fastest technical review.</p>
+</div>
+<div class="repo-featured-grid">
+{% for repo in site.data.repositories.github_repos limit: 2 %}
+{% include repository/repo.liquid repository=repo variant="featured" %}
+{% endfor %}
+</div>
+</section>
+{% endif %}
 
   <section class="repo-catalog-block" aria-label="Repository catalog">
     <div class="repo-section-head">
@@ -57,6 +58,7 @@ nav_order: 4
         {% endfor %}
       {% endif %}
     </div>
+
   </section>
 </div>
 

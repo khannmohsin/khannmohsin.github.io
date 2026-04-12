@@ -14,19 +14,19 @@ layout: default
 {% endif %}
 
 <style>
-/* =========================================================
+  /* =========================================================
    POST — Description (Medium-compatible subtitle)
    ========================================================= */
 
-.post-description{
-  margin: 6px 0 14px;
-  font-size: 1.05rem;
-  line-height: 1.55;
-  color: rgba(11,18,32,0.65);
-}
-[data-theme="dark"] .post-description{
-  color: rgba(255,255,255,0.70);
-}
+  .post-description {
+    margin: 6px 0 14px;
+    font-size: 1.05rem;
+    line-height: 1.55;
+    color: rgba(11, 18, 32, 0.65);
+  }
+  [data-theme='dark'] .post-description {
+    color: rgba(255, 255, 255, 0.7);
+  }
 </style>
 
 <div class="post">
@@ -48,9 +48,7 @@ layout: default
 
     <p class="post-tags">
       {% if url_beginning == '/blog/' %}
-        <a href="{{ year | prepend: '/blog/' | relative_url }}">
-          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
-        </a>
+        <a href="{{ year | prepend: '/blog/' | relative_url }}"> <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
       {% else %}
         <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
       {% endif %}
@@ -59,9 +57,7 @@ layout: default
         &nbsp; &middot; &nbsp;
         {% for tag in page.tags %}
           {% if url_beginning == '/blog/' %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
-            </a>
+            <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }} </a>
           {% else %}
             <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
           {% endif %}
@@ -73,9 +69,7 @@ layout: default
         &nbsp; &middot; &nbsp;
         {% for category in page.categories %}
           {% if url_beginning == '/blog/' %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
-            </a>
+            <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}"> <i class="fa-solid fa-tag fa-sm"></i> {{ category }} </a>
           {% else %}
             <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
           {% endif %}

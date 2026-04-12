@@ -30,12 +30,14 @@ By completing this project, I demonstrated the ability to:
 ## What I Did
 
 ### SOC team design and role assignment
-- Reviewed SOC requirements for multiple organizational contexts  
-- Matched applicant capabilities to common SOC functions (triage, monitoring, escalation, and response support)  
+
+- Reviewed SOC requirements for multiple organizational contexts
+- Matched applicant capabilities to common SOC functions (triage, monitoring, escalation, and response support)
 - Mapped tasks to roles to ensure coverage across monitoring and operational needs
 
 ### Security monitoring and reconnaissance
-- Performed reconnaissance by scanning networks to identify exposed services and visibility gaps  
+
+- Performed reconnaissance by scanning networks to identify exposed services and visibility gaps
 - Connected scanning output to monitoring objectives (asset discovery and detection readiness)
 
 ---
@@ -44,7 +46,7 @@ By completing this project, I demonstrated the ability to:
 
 This capstone included two assessments:
 
-1. A project-based assessment requiring an **80% score** to pass (with retries available)  
+1. A project-based assessment requiring an **80% score** to pass (with retries available)
 2. A 10-question assessment requiring an **80% score** to pass (with retries available)
 
 ---

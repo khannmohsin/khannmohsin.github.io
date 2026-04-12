@@ -62,11 +62,13 @@ Technologies & Platforms:
 - IoT Hardware (proposed): Raspberry Pi integration for real-world deployment.
 
 **Core Algorithms:**
+
 1. **Safe Distance Maintenance** – Continuous monitoring and adjustment to avoid phantom jams.
 2. **Controlled Overtaking** – Decision-making based on available space and traffic in adjacent lanes.
 3. **Lane Shift Protocol** – Permission-based lane change execution to minimize disruptions.
 
 **Performance Testing:**
+
 - Simulated with increasing complexity of road layouts.
 - Evaluated on response time, congestion reduction, and safety event prevention.
 </div>
@@ -76,12 +78,15 @@ Technologies & Platforms:
 ## 3. System Architecture
 
 {% include figure.liquid path="assets/img/projects/cav-vanet-architecture.png" title="CAV-VANET Communication and Decision System" class="img-fluid rounded z-depth-1" avoid_scaling=true %}
+
 <div class="caption">
 Vehicles exchange local telemetry via VANET; MATLAB algorithms process inputs to issue cooperative maneuver permissions.
 </div>
 
 ---
+
 {% comment %}
+
 ## 4. Simulation Snapshots
 
 <div class="row">

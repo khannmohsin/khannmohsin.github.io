@@ -77,6 +77,7 @@ toc: false
         <span class="teach-tag">Research to classroom</span>
       </div>
     </section>
+
   </div>
 
   <section class="teach-card">
@@ -148,6 +149,7 @@ toc: false
         <span class="teach-tag">Security decision framing</span>
       </div>
     </section>
+
   </div>
 
 </div>

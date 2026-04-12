@@ -17,15 +17,15 @@ This implementation models the three core PAXOS roles — <em>Proposers</em>, <e
 
 The algorithm is executed in three phases:
 <br>
+
 1. <strong>Prepare Phase</strong> — Proposers generate unique proposal numbers (tuple of sequence number and process ID) and send them to all acceptors. Acceptors promise not to accept lower-numbered proposals.
-<br>
+   <br>
 2. <strong>Accept Phase</strong> — Upon receiving majority promises, proposers send their proposed value to acceptors, which accept and store it if conditions are met.
-<br>
+   <br>
 3. <strong>Commit Phase</strong> — Accepted values are propagated to learners, which confirm majority agreement and commit the decision.
 <br>
 The program includes fault simulation, where acceptor processes can be intentionally crashed to test PAXOS’s resilience. Performance is evaluated over multiple iterations with and without crashes, recording the time required for each proposer and learner to reach consensus.
 </div>
-
 
 ---
 
@@ -37,6 +37,7 @@ Flowchart representation of the PAXOS consensus process, illustrating the intera
 --- -->
 
 ## Experimentation Results
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/projects/paxos/paxos_result_1.png" title="Consensus Time – No Acceptor Crashes" class="img-fluid rounded z-depth-1" %}
@@ -53,6 +54,7 @@ Right: Time taken when 2 acceptors are crashed (3 acceptors and 5 learners).
 ---
 
 ## Key Insights
+
 - **Initialization Overhead** — Proposer 1 takes longer due to acceptor/learner initialization, while Proposer 2 benefits from already-running components.
 - **Crash Tolerance** — Crashing 2 acceptors slightly increases consensus time for Proposer 1 but has negligible effect for Proposer 2.
 - **Scalability Observations** — Increasing acceptors and learners generally increases consensus time, consistent with PAXOS’s majority-based guarantees.
@@ -60,6 +62,7 @@ Right: Time taken when 2 acceptors are crashed (3 acceptors and 5 learners).
 ---
 
 ## Technologies Used
+
 - **Python multiprocessing** for role-based process isolation.
 - **Shared memory objects** for inter-process communication.
 - **Matplotlib** for visualizing consensus performance metrics.
