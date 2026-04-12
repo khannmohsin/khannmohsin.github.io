@@ -75,13 +75,13 @@ Technologies & Platforms:
 
 ## 3. System Architecture
 
-{% include figure.liquid path="assets/img/projects/cav-vanet-architecture.png" title="CAV-VANET Communication and Decision System" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/projects/cav-vanet-architecture.png" title="CAV-VANET Communication and Decision System" class="img-fluid rounded z-depth-1" avoid_scaling=true %}
 <div class="caption">
 Vehicles exchange local telemetry via VANET; MATLAB algorithms process inputs to issue cooperative maneuver permissions.
 </div>
 
 ---
-<!-- 
+{% comment %}
 ## 4. Simulation Snapshots
 
 <div class="row">
@@ -91,7 +91,8 @@ Vehicles exchange local telemetry via VANET; MATLAB algorithms process inputs to
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/projects/CAV_VANET/GUI_CAV.png" title="Controlled Overtaking Logic" class="img-fluid rounded z-depth-1" %}
   </div>
-</div> -->
+</div>
+{% endcomment %}
 
 <div class="caption">
 Left: Simulated roadway applying safe-distance, overtaking, and lane-shift rules.  
