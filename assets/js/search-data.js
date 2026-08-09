@@ -11,49 +11,49 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "Projects",
-          description: "Selected research, industry, and cybersecurity projects organized for fast technical review.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-my-story",
-          title: "My Story",
-          description: "Timeline across systems thinking, cybersecurity research, and industry execution.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/story/";
-          },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Peer-reviewed output across IoT/OT security, distributed trust, lightweight cryptography, and applied system defense. Search by title, author, venue, year, or keyword.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-repositories",
           title: "Repositories",
-          description: "A collection of my open-source projects, research code, and collaborative development work hosted on GitHub.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "Academic and industry-focused experience, research, and credentials in system security and cybersecurity.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "Applied cybersecurity teaching and supervision across networking, computer security, distributed systems, and privacy-preserving computing.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-my-story",
+          title: "My Story",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/story/";
+          },
         },{id: "nav-blog",
           title: "Blog",
-          description: "Technical writing across system security, cybersecurity research, and implementation-oriented lessons from projects.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
