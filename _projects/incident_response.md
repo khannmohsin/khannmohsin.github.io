@@ -3,7 +3,7 @@ layout: page
 title: Investigate an Incident Through Digital Forensics
 description: Capstone project applying incident response frameworks and practical digital forensics tasks, including USB imaging and evidence analysis.
 img: assets/img/projects/IBM/incident_response.png
-category: Capstone Industry Projects
+category: IBM Capstone Projects
 importance: 1
 tags: ["Incident Response", "Digital Forensics", "Evidence Collection", "Investigation"]
 ---

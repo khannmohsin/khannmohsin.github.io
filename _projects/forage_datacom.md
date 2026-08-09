@@ -3,7 +3,7 @@ layout: page
 title: Datacom Cyber Security Operations Job Simulation (Forage)
 description: Cybersecurity operations simulation involving ransomware investigation, breach impact analysis, and enterprise risk assessment using real-world scenarios.
 img: assets/img/projects/forage/datacom_cyber_ops.webp
-category: Cybersecurity Job Simulations
+category: Cybersecurity Hands-On Labs
 importance: 3
 tags: ["Ransomware", "Incident Response", "Risk", "OSINT", "GRC"]
 related_publications: false

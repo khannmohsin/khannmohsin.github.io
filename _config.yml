@@ -18,7 +18,7 @@ icon: "MK"
 
 url: "https://khannmohsin.github.io"
 # baseurl: ""
-last_updated: true
+last_updated: false
 back_to_top: true
 
 # -----------------------------------------------------------------------------
@@ -83,7 +83,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Technical and Research Notes # blog_name will be displayed in your blog page
+blog_name: Industry and Research Blogs # blog_name will be displayed in your blog page
 # blog_description: Cryptography, blockchain, and post-quantum security for trustworthy embedded and distributed systems.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts

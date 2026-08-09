@@ -2,9 +2,8 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Peer-reviewed output across IoT/OT security, distributed trust, lightweight cryptography, and applied system defense. Search by title, author, venue, year, or keyword.
 nav: true
-nav_order: 3
+nav_order: 2
 toc: false
 ---
 
@@ -13,9 +12,9 @@ toc: false
   <div class="aux-publications-intro" aria-label="Publication search context">
     <div class="aux-chip-row" aria-label="Research domains">
       <span class="aux-chip">IoT/OT Security</span>
-      <span class="aux-chip">Distributed Trust</span>
       <span class="aux-chip">Lightweight Cryptography</span>
-      <span class="aux-chip">Applied Cyber Defense</span>
+      <span class="aux-chip">Security Engineering</span>
+      <span class="aux-chip">Distributed Trust</span>
     </div>
   </div>
 

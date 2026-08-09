@@ -2,154 +2,94 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Applied cybersecurity teaching and supervision across networking, computer security, distributed systems, and privacy-preserving computing.
 nav: true
-nav_order: 6
+nav_order: 4
 toc: false
 ---
 
 <div class="aux-flagship aux-teaching">
-  <section class="teach-flow" aria-label="Instruction model">
-    <div class="teach-principles">
-      <article class="teach-principle">
-        <p class="teach-principle-line">
-          <strong>Explain</strong>
-          <span>Reduce complex mechanisms into clear, testable concepts.</span>
-        </p>
-      </article>
-      <article class="teach-principle">
-        <p class="teach-principle-line">
-          <strong>Demonstrate</strong>
-          <span>Show secure and insecure patterns in live labs and walkthroughs.</span>
-        </p>
-      </article>
-      <article class="teach-principle">
-        <p class="teach-principle-line">
-          <strong>Guide</strong>
-          <span>Coach iterative debugging and threat-oriented reasoning.</span>
-        </p>
-      </article>
-      <article class="teach-principle">
-        <p class="teach-principle-line">
-          <strong>Validate</strong>
-          <span>Assess outcomes with structured feedback and clear criteria.</span>
-        </p>
-      </article>
-    </div>
-  </section>
+  <p>I have been a <strong>teaching assistant</strong>, <strong>supervisor</strong>, <strong>assessor</strong>, and <strong>lecturer</strong> for 4 classes at The Arctic University of Norway.</p>
 
-  <div class="aux-actions teach-actions" aria-label="Teaching actions">
+  <p class="teach-banner-caption">I love teaching students new concepts related to Computer Security and Comm, Distributed Systems, and Privacy Preservation</p>
+
+  <div class="teach-banner">
+    {% include figure.liquid loading="eager" path="assets/img/teaching/uit_campus.png" sizes="(min-width: 992px) 900px, 94vw" class="teach-banner-img" alt="UiT - The Arctic University of Norway campus" %}
+  </div>
+
+  <div class="aux-actions teach-actions teach-actions--center" aria-label="Teaching actions">
     <a
-      class="aux-btn aux-btn--primary"
+      class="aux-btn aux-btn--primary teach-actions-btn"
       href="{{ '/assets/pdf/My_Teaching_Portfolio.pdf' | relative_url }}"
       target="_blank"
       rel="noopener noreferrer"
     >
       Open Teaching Portfolio
     </a>
-    <a class="aux-btn" href="mailto:khann.mohsin@icloud.com">Contact for Collaboration</a>
   </div>
 
-  <div class="teach-grid teach-grid--intro">
-    <section class="teach-card">
-      <h3 class="teach-title">Focus on Student Learning</h3>
-      <p class="teach-muted">
-        Across the courses I support, students have diverse backgrounds, from experienced programmers to beginners.
-        I adapt explanation depth using short explain-demonstrate-guide cycles and ask students to restate ideas before implementation.
+
+  <section class="teach-courses" aria-label="Course experience summary">
+    <article class="teach-course">
+      <h4 class="teach-course-title">
+        <a class="teach-course-code" href="https://uit.no/utdanning/emner/emne/923466/inf-2300?ar=2026&semester=H" target="_blank" rel="noopener noreferrer">INF-2300</a>
+        <span class="teach-course-name">Computer Communication</span>
+      </h4>
+      <p class="teach-course-meta">BACHELOR (10 ECTS), FALL 2022, 2023, 2024</p>
+      <p class="teach-course-desc">Exercise groups/labs, networking labs (HTTP, DNS, sockets), feedback on mandatory assignments, support for grading.</p>
+    </article>
+
+    <hr>
+
+    <article class="teach-course">
+      <h4 class="teach-course-title">
+        <a class="teach-course-code" href="http://uit.no/utdanning/aktivt/emne/INF-2310" target="_blank" rel="noopener noreferrer">INF-2310</a>
+        <span class="teach-course-name">Computer Security</span>
+      </h4>
+      <p class="teach-course-meta">BACHELOR (10 ECTS), SPRING 2022, SPRING 2023</p>
+      <p class="teach-course-desc">Weekly exercise groups, assignment support/evaluation, student attack presentations (XSS/DDoS), technical plus human-factor framing.</p>
+    </article>
+
+    <hr>
+
+    <article class="teach-course">
+      <h4 class="teach-course-title">
+        <a class="teach-course-code" href="https://en.uit.no/utdanning/aktivt/emne/INF-3203" target="_blank" rel="noopener noreferrer">INF-3203</a>
+        <span class="teach-course-name">Advanced Distributed Systems</span>
+      </h4>
+      <p class="teach-course-meta">MASTER, SPRING 2024, SPRING 2025</p>
+      <p class="teach-course-desc">Paper discussions, presentation coaching, assignment supervision, consistency/fault-tolerance/performance reasoning.</p>
+    </article>
+
+    <hr>
+
+    <article class="teach-course">
+      <h4 class="teach-course-title">
+        <a class="teach-course-code" href="https://uit.no/utdanning/emner/emne/923475/inf-3315?ar=2026&semester=H" target="_blank" rel="noopener noreferrer">INF-3315</a>
+        <span class="teach-course-name">Privacy-Preserving Computing</span>
+      </h4>
+      <p class="teach-course-meta">MASTER, FALL 2025</p>
+      <p class="teach-course-desc">Lecture/group support, assignment supervision (GDPR, OT, differential privacy), legal-to-technical translation.</p>
+    </article>
+
+    <hr>
+
+    <article class="teach-course">
+      <h4 class="teach-course-title">
+        <span class="teach-course-name teach-course-name--accent">Master's Thesis Assessor</span>
+      </h4>
+      <p class="teach-course-desc">
+        <strong>Henrik Monsen</strong> — Spring 2024<br>
+        <em>Bootstrapping the Integrity of Sensor Data Labels at the Microcontroller Level Using Physically Unclonable Functions</em>
       </p>
-      <div class="teach-tags">
-        <span class="teach-tag">Explain-demonstrate-guide</span>
-        <span class="teach-tag">Inclusive instruction</span>
-        <span class="teach-tag">Foundations and challenge</span>
-      </div>
-    </section>
-
-    <section class="teach-card">
-      <h3 class="teach-title">Enquiry-Based Instruction</h3>
-      <p class="teach-muted">
-        A strong influence is Feynman-style clarity: simplify complex mechanisms into intuitive components,
-        then ask students to explain back clearly. In security, I use adversarial prompts such as:
-        <em>If you had these attacker capabilities, how would you break this protocol?</em>
+      <p class="teach-course-desc">
+        <strong>Hauk Storjord</strong> — Spring 2025<br>
+        <em>A Simple Linear Homomorphic Signature Protocol for the IoT</em>
       </p>
-      <div class="teach-tags">
-        <span class="teach-tag">Feynman technique</span>
-        <span class="teach-tag">Threat-model mindset</span>
-        <span class="teach-tag">Research to classroom</span>
-      </div>
-    </section>
-
-  </div>
-
-  <section class="teach-card">
-      <h3 class="teach-title">Course Experience Summary</h3>
-      <div class="teach-table-wrap" aria-label="Scrollable course table">
-        <table class="teach-table">
-          <thead>
-            <tr>
-            <th>Course</th>
-            <th>Level</th>
-            <th>Terms</th>
-            <th>Typical responsibilities</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>INF-2300</strong> Computer Communication</td>
-            <td>Bachelor (10 ECTS)</td>
-            <td>Fall 2022, 2023, 2024</td>
-            <td>Exercise groups/labs, networking labs (HTTP, DNS, sockets), feedback on mandatory assignments, support for grading.</td>
-          </tr>
-          <tr>
-            <td><strong>INF-2310</strong> Computer Security</td>
-            <td>Bachelor (10 ECTS)</td>
-            <td>Spring 2022, Spring 2023</td>
-            <td>Weekly exercise groups, assignment support/evaluation, student attack presentations (XSS/DDoS), technical plus human-factor framing.</td>
-          </tr>
-          <tr>
-            <td><strong>INF-3203</strong> Advanced Distributed Systems</td>
-            <td>Master</td>
-            <td>Spring 2024, Spring 2025</td>
-            <td>Paper discussions, presentation coaching, assignment supervision, consistency/fault-tolerance/performance reasoning.</td>
-          </tr>
-          <tr>
-            <td><strong>INF-3315</strong> Privacy-Preserving Computing</td>
-            <td>Master</td>
-            <td>Fall 2025</td>
-            <td>Lecture/group support, assignment supervision (GDPR, OT, differential privacy), legal-to-technical translation.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="teach-muted">
-      Breadth across networking, security foundations, distributed systems, and privacy, with emphasis on applied system reasoning.
-    </p>
+      <p class="teach-course-desc">
+        <strong>Jørgen Kristensen</strong> — Spring 2025<br>
+        <em>Implementation and Evaluation of Post-Quantum Hybrid Digital Signature Schemes</em>
+      </p>
+    </article>
   </section>
-
-  <div class="teach-grid">
-    <section class="teach-card">
-      <h3 class="teach-title">Assessment and Teaching Quality</h3>
-      <p class="teach-muted">
-        I align grading with learning outcomes, calibrate lab-group consistency with coordinators, and refine assignment material through teaching-team feedback.
-      </p>
-      <ul class="teach-list">
-        <li><strong>Henrik Monsen</strong> — Spring 2024</li>
-        <li><strong>Hauk Storjord</strong> — Spring 2025</li>
-        <li><strong>Jørgen Kristensen</strong> — Spring 2025</li>
-      </ul>
-    </section>
-
-    <section class="teach-card">
-      <h3 class="teach-title">Supervision and Mentoring</h3>
-      <p class="teach-muted">
-        My supervision model centers on methodological rigor, reproducibility, and decision-quality communication across labs, projects, and research coursework.
-      </p>
-      <div class="teach-tags">
-        <span class="teach-tag">Method rigor</span>
-        <span class="teach-tag">Reproducible workflow</span>
-        <span class="teach-tag">Security decision framing</span>
-      </div>
-    </section>
-
-  </div>
 
 </div>

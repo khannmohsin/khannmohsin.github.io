@@ -2,7 +2,6 @@
 layout: default
 permalink: /blog/
 title: Blog
-description: Technical writing across system security, cybersecurity research, and implementation-oriented lessons from projects.
 nav: true
 nav_order: 7
 pagination:
@@ -19,11 +18,9 @@ pagination:
 
 <div class="post aux-flagship aux-blog">
   <section class="blog-intro" aria-label="Blog overview">
-    <h1 class="blog-page-title page-title-uniform">Technical and Research Notes</h1>
+    <h1 class="blog-page-title page-title-uniform">Industry and Research Blogs</h1>
     {% if site.blog_description and site.blog_description != '' %}
       <p class="blog-page-subtitle">{{ site.blog_description }}</p>
-    {% else %}
-      <p class="blog-page-subtitle">Technical writing across system security, cybersecurity research, and implementation-oriented lessons from projects.</p>
     {% endif %}
   </section>
 
@@ -86,7 +83,6 @@ pagination:
 {% endif %}
 {% endif %}
 
-  <h2 class="blog-section-title">Latest posts</h2>
   <ul class="blog-posts">
     {% for post in postlist %}
       {% if suppress_featured_in_latest and post.featured %}

@@ -176,13 +176,14 @@
 }
 
 .aux-chip {
-  border: 1px solid var(--aux-border);
+  border: 1px solid color-mix(in srgb, var(--aux-accent) 35%, var(--aux-border));
   border-radius: 999px;
   background: var(--aux-accent-soft);
   color: var(--aux-text);
-  padding: 0.2rem 0.52rem;
-  font-size: 0.72rem;
-  line-height: 1.18;
+  font-weight: 600;
+  padding: 0.32rem 0.75rem;
+  font-size: 0.82rem;
+  line-height: 1.2;
 }
 
 /* Publications */
@@ -245,6 +246,16 @@
 
   .aux-publications #bibsearch-button {
     width: 100%;
+  }
+
+  .aux-publications .aux-publications-intro .aux-chip-row {
+    justify-content: center;
+  }
+
+  .aux-publications ol.bibliography li .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -498,184 +509,11 @@
   margin-top: 0.56rem;
 }
 
-.aux-repositories .repo-featured-block,
-.aux-repositories .repo-catalog-block {
-  margin-top: 0.88rem;
-}
-
-.aux-repositories .repo-section-head {
-  margin-bottom: 0.55rem;
-}
-
-.aux-repositories .repo-section-title {
-  margin: 0;
-  color: var(--aux-text);
-  font-size: 1.04rem;
-  letter-spacing: -0.01em;
-}
-
-.aux-repositories .repo-section-caption {
-  margin: 0.26rem 0 0;
-  color: var(--aux-muted);
-  font-size: 0.83rem;
-}
-
-.aux-repositories .repo-featured-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.76rem;
-  align-items: stretch;
-}
-
-.aux-repositories .repo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
-  gap: 0.76rem;
-  width: 100%;
-  align-items: stretch;
-}
-
-.aux-repositories .repo-grid .repo,
-.aux-repositories .repo-featured-grid .repo {
-  width: 100% !important;
-  max-width: none !important;
-  min-width: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: block;
-}
-
-.aux-repositories .ghpinned-card {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid var(--aux-border);
-  border-radius: var(--aux-radius-md);
-  background: linear-gradient(155deg, var(--aux-surface), color-mix(in srgb, var(--aux-surface-soft) 72%, transparent));
-  box-shadow: var(--aux-shadow);
-  padding: 0.84rem 0.9rem;
-  min-height: 188px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.52rem;
-  transition:
-    transform 130ms ease,
-    border-color 130ms ease,
-    box-shadow 130ms ease;
-}
-
-.aux-repositories .ghpinned-card::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto auto 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(to right, color-mix(in srgb, var(--aux-accent) 72%, transparent), transparent 88%);
-}
-
-.aux-repositories .ghpinned-card:hover {
-  transform: translateY(-2px);
-  border-color: color-mix(in srgb, var(--aux-accent) 38%, var(--aux-border));
-  box-shadow: 0 16px 34px rgba(14, 28, 55, 0.13);
-}
-
-.aux-repositories .ghpinned-featured {
-  min-height: 214px;
-  padding: 0.95rem 0.98rem;
-}
-
-.aux-repositories .ghpinned-top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 0.58rem;
-}
-
-.aux-repositories .ghpinned-title {
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.18rem;
-}
-
-.aux-repositories .ghpinned-kicker {
-  margin: 0;
-  color: var(--aux-muted);
-  font-size: 0.64rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.aux-repositories .ghpinned-name {
-  color: var(--aux-accent);
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 650;
-  line-height: 1.25;
-  overflow-wrap: anywhere;
-}
-
-.aux-repositories .ghpinned-featured .ghpinned-name {
-  font-size: 1.01rem;
-}
-
-.aux-repositories .ghpinned-name:hover {
-  text-decoration: underline;
-}
-
-.aux-repositories .ghpinned-open {
-  flex: 0 0 auto;
-  border: 1px solid var(--aux-border);
-  border-radius: 999px;
-  padding: 0.19rem 0.54rem;
-  background: color-mix(in srgb, var(--aux-surface-soft) 90%, transparent);
-  color: var(--aux-text);
-  text-decoration: none;
-  font-size: 0.7rem;
-  line-height: 1.1;
-  font-weight: 600;
-}
-
-.aux-repositories .ghpinned-open:hover {
-  border-color: var(--aux-accent);
-  color: var(--aux-accent);
-}
-
-.aux-repositories .ghpinned-desc {
-  margin: 0;
-  color: var(--aux-muted);
-  font-size: 0.82rem;
-  line-height: 1.42;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  min-height: calc(1.42em * 3);
-}
-
-.aux-repositories .ghpinned-featured .ghpinned-desc {
-  -webkit-line-clamp: 4;
-  min-height: calc(1.42em * 4);
-}
-
-.aux-repositories .ghpinned-meta {
-  margin-top: auto;
-  padding-top: 0.48rem;
-  border-top: 1px dashed color-mix(in srgb, var(--aux-border) 78%, transparent);
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  color: var(--aux-muted);
-  font-size: 0.75rem;
-}
-
 .aux-repositories .ghpinned-langs {
   display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 0.32rem;
-  min-width: 0;
 }
 
 .aux-repositories .ghpinned-langchip {
@@ -710,12 +548,6 @@
   display: none !important;
 }
 
-@media (min-width: 960px) {
-  .aux-repositories .repo-featured-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media (max-width: 740px) {
   .aux-repositories .repo-toolbar {
     grid-template-columns: 1fr;
@@ -731,20 +563,43 @@
 }
 
 /* Teaching */
-.aux-teaching .teach-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.76rem;
+.aux-teaching .teach-actions--center {
+  justify-content: center;
 }
 
-.aux-teaching .teach-grid--intro {
-  margin-bottom: 1.08rem;
+.aux-teaching .teach-actions-btn {
+  font-size: 0.95rem;
+  padding: 0.72rem 1.6rem;
 }
 
-@media (min-width: 980px) {
-  .aux-teaching .teach-grid {
-    grid-template-columns: 1fr 1fr;
+.aux-teaching .teach-banner-caption {
+  margin: 0.76rem 0 0.3rem;
+  color: var(--aux-text);
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 680px) {
+  .aux-teaching .teach-banner-caption {
+    white-space: normal;
+    text-align: center;
   }
+
+  .aux-teaching > p:first-child {
+    text-align: center;
+  }
+}
+
+.aux-teaching .teach-banner {
+  margin: 0 0 0.76rem;
+  border-radius: var(--aux-radius-md);
+  overflow: hidden;
+}
+
+.aux-teaching .teach-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .aux-teaching .teach-kpis {
@@ -782,233 +637,63 @@
   line-height: 1.28;
 }
 
-.aux-teaching .teach-card {
-  border: 1px solid var(--aux-border);
-  border-radius: var(--aux-radius-md);
-  background: var(--aux-surface);
-  box-shadow: var(--aux-shadow);
-  padding: 0.9rem;
-  margin: 0 0 0.76rem;
-}
-
-.aux-teaching .teach-grid .teach-card {
-  margin: 0;
-}
-
-.aux-teaching .teach-card--flat {
-  background: linear-gradient(154deg, var(--aux-surface), color-mix(in srgb, var(--aux-surface-soft) 76%, transparent));
-}
-
-.aux-teaching .teach-title {
-  margin: 0;
-  color: var(--aux-text);
-  font-size: 1.02rem;
-  line-height: 1.3;
-}
-
-.aux-teaching .teach-muted {
-  color: var(--aux-muted);
-}
-
-.aux-teaching .teach-list {
-  margin: 0.52rem 0 0;
-  color: var(--aux-muted);
-}
-
-.aux-teaching .teach-flow {
-  margin: 0 0 0.76rem;
-}
-
 .aux-teaching .teach-actions {
   margin: 0 0 0.9rem;
-}
-
-.aux-teaching .teach-principles {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
-}
-
-.aux-teaching .teach-principle {
-  --teach-flow-shape: polygon(0 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 0 100%, 14px 50%);
-  position: relative;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: 0 8px 18px color-mix(in srgb, var(--aux-accent) 10%, transparent);
-  padding: 0.78rem 1.08rem 0.78rem 1.2rem;
-  clip-path: var(--teach-flow-shape);
-  min-height: 114px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  isolation: isolate;
-}
-
-.aux-teaching .teach-principle::after {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  clip-path: var(--teach-flow-shape);
-  background: linear-gradient(
-    145deg,
-    color-mix(in srgb, var(--aux-surface-soft) 90%, transparent),
-    color-mix(in srgb, var(--aux-surface) 96%, transparent)
-  );
-  pointer-events: none;
-  z-index: 1;
-}
-
-.aux-teaching .teach-principle::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  clip-path: var(--teach-flow-shape);
-  background: color-mix(in srgb, var(--aux-accent) 34%, var(--aux-border));
-  pointer-events: none;
-  z-index: 0;
-}
-
-.aux-teaching .teach-principle > * {
-  position: relative;
-  z-index: 2;
-}
-
-.aux-teaching .teach-principle:first-child {
-  --teach-flow-shape: polygon(0 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 0 100%);
-  clip-path: var(--teach-flow-shape);
-  padding-left: 1.04rem;
-}
-
-.aux-teaching .teach-principle-line {
-  margin: 0;
-  display: block;
-  color: var(--aux-muted);
-  font-size: 0.78rem;
-  line-height: 1.33;
-}
-
-.aux-teaching .teach-principle-line strong {
-  display: block;
-  color: var(--aux-text);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  margin-bottom: 0.14rem;
-}
-
-.aux-teaching .teach-principle-line span:last-child {
-  display: block;
-}
-
-@media (min-width: 980px) {
-  .aux-teaching .teach-principles {
-    grid-template-columns: repeat(4, minmax(160px, 1fr));
-    gap: 8px;
-    align-items: start;
-  }
-
-  .aux-teaching .teach-principle {
-    min-height: 120px;
-  }
-
-  .aux-teaching .teach-principle-line {
-    min-height: 66px;
-  }
 }
 
 @media (max-width: 760px) {
   .aux-teaching .teach-actions .aux-btn {
     width: 100%;
   }
-
-  .aux-teaching .teach-principles {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-
-  .aux-teaching .teach-principle {
-    min-height: 0;
-    padding: 0.72rem 0.92rem 1.14rem;
-    --teach-flow-shape: polygon(0 0, 100% 0, 100% calc(100% - 16px), 50% 100%, 0 calc(100% - 16px));
-    clip-path: var(--teach-flow-shape);
-  }
-
-  .aux-teaching .teach-principle:first-child {
-    --teach-flow-shape: polygon(0 0, 100% 0, 100% calc(100% - 16px), 50% 100%, 0 calc(100% - 16px));
-    clip-path: var(--teach-flow-shape);
-    padding-left: 0.92rem;
-  }
-
-  .aux-teaching .teach-principle-line {
-    min-height: 0;
-  }
 }
 
-.aux-teaching .teach-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.36rem;
-  margin-top: 0.62rem;
+.aux-teaching .teach-courses {
+  margin: 0 0 0.76rem;
+  text-align: center;
 }
 
-.aux-teaching .teach-tag,
-.aux-teaching .teach-link-chip {
-  border: 1px solid var(--aux-border);
-  border-radius: 999px;
-  background: var(--aux-accent-soft);
+.aux-teaching .teach-courses hr {
+  margin: 1.4rem 0;
+}
+
+.aux-teaching .teach-course {
+  margin-top: 1.4rem;
+}
+
+.aux-teaching .teach-course-title {
+  margin: 0;
   color: var(--aux-text);
-  padding: 0.2rem 0.52rem;
-  font-size: 0.72rem;
-  line-height: 1.16;
+  font-size: 0.98rem;
+  font-weight: 700;
 }
 
-.aux-teaching .teach-link-chip {
-  display: inline-flex;
+.aux-teaching .teach-course-name {
+  display: block;
+  margin-top: 0.15rem;
+  font-weight: 500;
+}
+
+.aux-teaching .teach-course-code,
+.aux-teaching .teach-course-code:hover {
+  display: inline-block;
+  color: var(--global-theme-color);
   text-decoration: none;
 }
 
-.aux-teaching .teach-link-chip:hover {
-  border-color: var(--aux-accent);
-  color: var(--aux-accent);
+.aux-teaching .teach-course-name--accent {
+  color: var(--global-theme-color);
 }
 
-.aux-teaching .teach-table-wrap {
-  width: 100%;
-  overflow-x: auto;
-  border: 1px solid var(--aux-border);
-  border-radius: 12px;
-}
-
-.aux-teaching .teach-table {
-  width: 100%;
-  min-width: 860px;
-  border-collapse: collapse;
-}
-
-.aux-teaching .teach-table th,
-.aux-teaching .teach-table td {
-  border-bottom: 1px solid var(--aux-border);
-  padding: 0.55rem 0.62rem;
-  text-align: left;
-  vertical-align: top;
-}
-
-.aux-teaching .teach-table th {
-  color: var(--aux-text);
-  background: color-mix(in srgb, var(--aux-surface-soft) 92%, transparent);
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-.aux-teaching .teach-table td {
+.aux-teaching .teach-course-meta {
+  margin: 0.4rem 0 0;
   color: var(--aux-muted);
+  font-size: 0.74rem;
+  letter-spacing: 0.03em;
 }
 
-.aux-teaching .teach-table tbody tr:nth-child(even) td {
-  background: color-mix(in srgb, var(--aux-surface-soft) 42%, transparent);
+.aux-teaching .teach-course-desc {
+  margin: 0.7rem 0 0;
+  color: var(--aux-muted);
 }
 
 /* Blog */
@@ -1155,8 +840,10 @@
 
 @media (max-width: 899px) {
   .aux-blog .blog-card-thumb {
+    order: -1;
     border-left: 0;
-    border-top: 1px solid var(--aux-border);
+    border-top: 0;
+    border-bottom: 1px solid var(--aux-border);
     min-height: 200px;
   }
 }
@@ -1224,7 +911,8 @@
 
 .cv-flagship .cvf-card .card-title {
   color: var(--aux-text);
-  font-size: 1.06rem;
+  font-size: 1.32rem;
+  font-weight: 700;
   margin-bottom: 0.65rem;
 }
 
@@ -1233,6 +921,10 @@
 .cv-flagship .cvf-card td,
 .cv-flagship .cvf-card th {
   color: var(--aux-muted);
+}
+
+.cv-flagship .cvf-card td.list-group-category {
+  color: var(--global-theme-color);
 }
 
 .cv-flagship .cvf-card strong,
@@ -1301,6 +993,17 @@
   margin-top: 0.62rem;
 }
 
+@media (max-width: 680px) {
+  .aux-job .aux-job-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .aux-job .aux-job-actions .aux-btn {
+    text-align: center;
+  }
+}
+
 @media (max-width: 720px) {
   .aux-hero,
   .aux-card {
@@ -1313,12 +1016,3 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .aux-repositories .ghpinned-card {
-    transition: none;
-  }
-
-  .aux-repositories .ghpinned-card:hover {
-    transform: none;
-  }
-}

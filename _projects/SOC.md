@@ -3,7 +3,7 @@ layout: page
 title: Assemble a SOC Team and Perform Security Monitoring Tasks
 description: Capstone project focused on SOC role assignment, security operations models, and hands-on network reconnaissance.
 img: assets/img/projects/IBM/SOC.png
-category: Capstone Industry Projects
+category: IBM Capstone Projects
 importance: 1
 tags: ["Security Operations", "SOC", "Security Monitoring", "Reconnaissance", "Network Scanning"]
 ---

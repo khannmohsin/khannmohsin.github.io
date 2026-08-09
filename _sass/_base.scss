@@ -531,13 +531,37 @@ footer.fixed-bottom {
 }
 
 footer.sticky-bottom {
-  border-top: 1px solid var(--global-divider-color);
+  background-color: var(--global-footer-bg-color);
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 0.9rem;
 
   .container {
+    color: var(--global-footer-text-color);
     text-align: center;
+  }
+
+  a {
+    color: var(--global-footer-link-color);
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+
+  .social {
+    .contact-icons a i::before {
+      color: var(--global-footer-link-color);
+    }
+
+    .contact-icons a:hover i::before {
+      color: var(--global-theme-color);
+    }
+
+    .contact-note {
+      color: var(--global-footer-text-color);
+    }
   }
 }
 
@@ -773,10 +797,28 @@ footer.sticky-bottom {
       margin-bottom: 1rem;
 
       .preview {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
 
       .abbr {
         margin-bottom: 0.5rem;
+
+        figure {
+          margin: 0;
+          height: 140px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+        }
+
+        figure picture {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
 
         abbr {
           display: inline-block;
@@ -801,6 +843,7 @@ footer.sticky-bottom {
 
       .title {
         font-weight: bolder;
+        font-size: 1.15rem;
       }
 
       .author {
@@ -1135,6 +1178,11 @@ nav[data-toggle="toc"] {
 
 /* small screens */
 @media (max-width: 576px) {
+  /* hide from first paint, independent of the JS that tags data-toggle="toc" later */
+  #toc-sidebar {
+    display: none;
+  }
+
   /* override stickyness so that the navigation does not follow scrolling */
   nav[data-toggle="toc"] {
     visibility: hidden;

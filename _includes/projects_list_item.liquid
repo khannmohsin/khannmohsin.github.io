@@ -1,0 +1,58 @@
+{% if project.redirect %}
+  {% assign project_url = project.redirect %}
+{% else %}
+  {% assign project_url = project.url | relative_url %}
+{% endif %}
+
+{% assign focus_label = null %}
+{% if project.tags and project.tags.size > 0 %}
+  {% assign focus_label = project.tags | first %}
+{% endif %}
+
+{% capture searchable_text %}
+  {{ project.title }} {{ project.description }} {{ project.category }}
+  {% if project.tags %}
+    {% for tag in project.tags %}
+      {{ tag }}
+    {% endfor %}
+  {% endif %}
+{% endcapture %}
+
+<li data-project-card data-search="{{ searchable_text | strip_html | strip_newlines | downcase | escape }}">
+  <div class="row">
+    {% if project.img %}
+      <div class="col col-sm-3 abbr">
+        {%
+          include figure.liquid
+          loading="lazy"
+          path=project.img
+          sizes="260px"
+          class="preview z-depth-1 rounded"
+          zoomable=true
+          avoid_scaling=true
+          alt=project.title
+          cache_bust=true
+        %}
+      </div>
+    {% endif %}
+
+    <div class="{% if project.img %}col-sm-9{% else %}col-sm-12{% endif %}">
+      <div class="title"><a href="{{ project_url }}">{{ project.title }}</a></div>
+      {% if focus_label %}
+        <div class="periodical"><strong>{{ focus_label }}</strong></div>
+      {% endif %}
+      {% if project.description %}
+        <div class="periodical">{{ project.description }}</div>
+      {% endif %}
+      {% if project.github or project.external %}
+        <div class="links">
+          {% if project.github %}
+            <a href="{{ project.github }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">Source</a>
+          {% elsif project.external %}
+            <a href="{{ project.external }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">External</a>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</li>

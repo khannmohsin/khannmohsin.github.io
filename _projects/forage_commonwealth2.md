@@ -3,7 +3,7 @@ layout: page
 title: Commonwealth Bank Tech Explorer Job Simulation (Forage)
 description: Cross-functional simulation covering iOS widget design, requirements gathering (BDD user stories), IAM permissions modelling, and data-driven demographic targeting for a new savings feature.
 img: assets/img/projects/forage/commbank.webp
-category: Cybersecurity Job Simulations
+category: Cybersecurity Hands-On Labs
 importance: 3
 tags: ["iOS", "Product Design", "IAM", "Access Control", "RBAC"]
 related_publications: false

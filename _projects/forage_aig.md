@@ -3,7 +3,7 @@ layout: page
 title: "AIG Shields Up: Cybersecurity Job Simulation"
 description: Zero-day advisory writing (Log4Shell), stakeholder communication, and a Python-based ZIP ransomware decryption brute-forcer using a wordlist.
 img: assets/img/projects/forage/aig_shields_up.webp
-category: Cybersecurity Job Simulations
+category: Cybersecurity Hands-On Labs
 importance: 2
 tags: ["Vulnerability Management", "Log4Shell", "Incident Response", "Ransomware"]
 related_publications: false

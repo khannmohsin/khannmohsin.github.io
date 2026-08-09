@@ -1,0 +1,28 @@
+---
+---
+{% assign entry_title = entry.title | strip_html %}
+{% if entry.html contains '://' %}
+  {% assign entry_url = entry.html %}
+{% elsif entry.html %}
+  {% assign entry_url = entry.html | prepend: '/assets/html/' | relative_url %}
+{% elsif entry.pdf contains '://' %}
+  {% assign entry_url = entry.pdf %}
+{% elsif entry.pdf %}
+  {% assign entry_url = entry.pdf | prepend: '/assets/pdf/' | relative_url %}
+{% else %}
+  {% assign entry_url = '/publications/' | relative_url %}
+{% endif %}
+
+<a class="flag-featured-item" href="{{ entry_url }}" target="_blank" rel="noopener noreferrer">
+  {% if entry.preview %}
+    <div class="flag-featured-thumb">
+      {% if entry.preview contains '://' %}
+        <img class="flag-featured-img" src="{{ entry.preview }}" alt="{{ entry_title }}">
+      {% else %}
+        {% assign entry_preview_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
+        {% include figure.liquid loading="lazy" path=entry_preview_path sizes="(min-width: 768px) 260px, 90vw" class="flag-featured-img" alt=entry_title cache_bust=true %}
+      {% endif %}
+    </div>
+  {% endif %}
+  <span class="flag-featured-title">{{ entry_title }}</span>
+</a>

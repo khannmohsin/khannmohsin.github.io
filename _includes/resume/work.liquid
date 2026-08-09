@@ -34,7 +34,7 @@
                     <img
                       src="{{ content.icon }}"
                       alt="{{ content.name }} logo"
-                      style="max-height: 50px; width: auto;"
+                      style="max-height: {{ content.iconHeight | default: 65 }}px; width: auto;"
                     >
                   </td>
                 </tr>

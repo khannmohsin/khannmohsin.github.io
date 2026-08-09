@@ -2,10 +2,10 @@
 layout: page
 title: "BlockCap: Blockchain-Based Capability Authorization for IoT"
 category: Research Projects
-img: assets/img/projects/dtea/cover.png
+img: assets/img/projects/dtea/hardware_setup.jpg
 description: "A blockchain-backed capability-based authorization system for enforcing fine-grained, auditable access control in resource-constrained IoT environments."
 importance: 2
-tags: ["blockchain security", "capability-based access control", "IoT", "smart contracts", "QBFT", "STRIDE"]
+tags: ["IAM . Safety-critical IoT . Blockchain Security", "capability-based access control", "IoT", "smart contracts", "QBFT", "STRIDE"]
 related_publications: true
 math: true
 ---

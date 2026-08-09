@@ -2,7 +2,7 @@
 layout: page
 title: CAV- and VANET-Enabled Traffic Congestion Reduction and Accident Circumvention
 description: Integrating Connected Autonomous Vehicles and VANETs for safe-distance maintenance, overtaking, and lane-shifting to reduce congestion and accidents.
-img: assets/img/projects/CAV_VANET/cover.png
+img: assets/img/projects/CAV_VANET/matlab_simulation.png
 importance: 3
 category: Research Projects
 tags: [Connected Autonomous Vehicles, VANET, Traffic Flow Optimization, Safety-Critical Systems, MATLAB-Based Simulation]

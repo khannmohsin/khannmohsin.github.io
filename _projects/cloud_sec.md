@@ -3,7 +3,7 @@ layout: page
 title: Cloud Security Architecture & Migration Risk Analysis
 description: Security-focused evaluation of cloud migration strategies and protection mechanisms for organizational infrastructure.
 img: assets/img/projects/IBM/cloud_sec.png
-category: Capstone Industry Projects
+category: IBM Capstone Projects
 importance: 1
 tags: ["Cloud Security", "Risk Management", "Infrastructure Security"]
 ---

@@ -3,8 +3,8 @@ layout: page
 title: TryHackMe — SOC Level 1 Learning Path
 description: Hands-on SOC training covering SIEM/EDR/SOAR concepts, phishing analysis, traffic analysis with Wireshark, and detection frameworks (MITRE, Kill Chain, Pyramid of Pain).
 img: assets/img/projects/tryhackme/SOCL1.svg
-importance: 3
-category: Training Projects
+importance: 0
+category: Cybersecurity Hands-On Labs
 related_publications: false
 tags: ["TryHackMe", "SOC", "Blue Team", "SIEM", "EDR", "SOAR", "Phishing", "Wireshark", "MITRE ATT&CK", "Incident Response"]
 ---

@@ -3,109 +3,13 @@
 <section class="flagship-home" aria-label="Flagship portfolio overview">
   <div class="flag-top">
     <div class="flag-hero">
+      <h1 class="post-title">Hi, I am <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.last_name }}</h1>
       <p class="flag-kicker">{{ flagship.hero.kicker }}</p>
-      <h1>{{ flagship.hero.headline }}</h1>
-      <p class="flag-subheadline">{{ flagship.hero.subheadline }}</p>
+      <div class="flag-subheadline">{{ flagship.hero.subheadline }}</div>
 
-      <div class="flag-cta-row flag-hero-actions">
-        {% for cta in flagship.hero.ctas %}
-          {% assign cta_url = cta.url %}
-          {% unless cta.url contains '://' or cta.url contains 'mailto:' %}
-            {% assign cta_url = cta.url | relative_url %}
-          {% endunless %}
-          <a
-            class="flag-btn {% if cta.style == 'primary' %}flag-btn--primary{% endif %}"
-            href="{{ cta_url }}"
-            {% if cta.url contains 'mailto:' or cta.url contains '.pdf' %}
-              target="_blank" rel="noopener noreferrer"
-            {% endif %}
-          >
-            {{ cta.label }}
-          </a>
-        {% endfor %}
-      </div>
-    </div>
-
-    {% if flagship.hero.portrait and flagship.hero.portrait.path %}
-      <aside class="flag-portrait-wrap" aria-label="Profile portrait">
-        {% include figure.liquid loading="eager" path=flagship.hero.portrait.path sizes="(min-width: 1200px) 420px, (min-width: 992px) 34vw, (min-width: 768px) 42vw, 88vw" width="3009" height="2765" class="flag-portrait" alt=flagship.hero.portrait.alt cache_bust=true %}
-      </aside>
-    {% endif %}
-  </div>
-
-  <section class="flag-proof" aria-label="Proof metrics and trust signals">
-    <div class="flag-metrics">
-      {% for metric in flagship.metrics %}
-        <article class="flag-metric">
-          {% if metric.url %}
-            {% assign metric_url = metric.url %}
-            {% unless metric.url contains '://' or metric.url contains 'mailto:' %}
-              {% assign metric_url = metric.url | relative_url %}
-            {% endunless %}
-            <a
-              class="flag-metric-link"
-              href="{{ metric_url }}"
-              {% if metric.url contains '://' %}
-                target="_blank" rel="noopener noreferrer"
-              {% endif %}
-            >
-              <p class="flag-metric-value">{{ metric.value }}</p>
-              <p class="flag-metric-label">{{ metric.label }}</p>
-              {% if metric.source %}
-                <p class="flag-metric-source">{{ metric.source }}</p>
-              {% endif %}
-            </a>
-          {% else %}
-            <p class="flag-metric-value">{{ metric.value }}</p>
-            <p class="flag-metric-label">{{ metric.label }}</p>
-          {% endif %}
-        </article>
-      {% endfor %}
-    </div>
-
-    <section class="flag-strip">
-      <p class="flag-strip-headline">{{ flagship.trust_strip.title }}</p>
-      {% if flagship.trust_strip.last_reviewed %}
-        <p class="flag-metric-label">Last reviewed: {{ flagship.trust_strip.last_reviewed }}</p>
-      {% endif %}
-      <div class="flag-strip-items">
-        {% for item in flagship.trust_strip.items %}
-          <span class="flag-chip">{{ item }}</span>
-        {% endfor %}
-      </div>
-    </section>
-  </section>
-
-  {% if flagship.cv_snapshot %}
-    <section class="flag-cv-mini" aria-label="Concise curriculum vitae snapshot">
-      <h3>{{ flagship.cv_snapshot.title }}</h3>
-      {% if flagship.cv_snapshot.subtitle %}
-        <p class="flag-cv-sub">{{ flagship.cv_snapshot.subtitle }}</p>
-      {% endif %}
-
-      <div class="flag-cv-cols">
-        <article class="flag-cv-col">
-          <p class="flag-cv-head">{{ flagship.cv_snapshot.left.heading }}</p>
-          <ul>
-            {% for item in flagship.cv_snapshot.left.items %}
-              <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
-        </article>
-
-        <article class="flag-cv-col">
-          <p class="flag-cv-head">{{ flagship.cv_snapshot.right.heading }}</p>
-          <ul>
-            {% for item in flagship.cv_snapshot.right.items %}
-              <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
-        </article>
-      </div>
-
-      {% if flagship.cv_snapshot.ctas %}
-        <div class="flag-cta-row">
-          {% for cta in flagship.cv_snapshot.ctas %}
+      <div class="flag-hero-footer">
+        <div class="flag-cta-row flag-hero-actions">
+          {% for cta in flagship.hero.ctas %}
             {% assign cta_url = cta.url %}
             {% unless cta.url contains '://' or cta.url contains 'mailto:' %}
               {% assign cta_url = cta.url | relative_url %}
@@ -113,7 +17,7 @@
             <a
               class="flag-btn {% if cta.style == 'primary' %}flag-btn--primary{% endif %}"
               href="{{ cta_url }}"
-              {% if cta.url contains '.pdf' %}
+              {% if cta.url contains 'mailto:' or cta.url contains '.pdf' %}
                 target="_blank" rel="noopener noreferrer"
               {% endif %}
             >
@@ -121,30 +25,17 @@
             </a>
           {% endfor %}
         </div>
-      {% endif %}
-    </section>
-  {% endif %}
 
-  <section aria-label="Flagship case studies">
-    <div class="flag-grid">
-      {% for case in flagship.cases %}
-        <article class="flag-case">
-          <p class="flag-case-topline">{{ case.category }}</p>
-          <h3>
-            <a href="{{ case.url | relative_url }}">{{ case.title }}</a>
-          </h3>
-          <p><strong>Challenge:</strong> {{ case.challenge }}</p>
-          <p><strong>Approach:</strong> {{ case.approach }}</p>
-          <p class="flag-outcome"><strong>Outcome:</strong> {{ case.outcome }}</p>
-          <div class="flag-case-metrics">
-            {% for item in case.metrics %}
-              <span class="flag-case-metric">{{ item }}</span>
-            {% endfor %}
-          </div>
-        </article>
-      {% endfor %}
+        <div class="flag-hero-social">{% include social.liquid %}</div>
+      </div>
     </div>
-  </section>
+
+    {% if flagship.hero.portrait and flagship.hero.portrait.path %}
+      <aside class="flag-portrait-wrap" aria-label="Profile portrait">
+        {% include figure.liquid loading="eager" path=flagship.hero.portrait.path sizes="(min-width: 1200px) 420px, (min-width: 992px) 34vw, (min-width: 768px) 42vw, 88vw" width="3413" height="4035" class="flag-portrait" alt=flagship.hero.portrait.alt cache_bust=true %}
+      </aside>
+    {% endif %}
+  </div>
 
   {% comment %}
     <section class="flag-map" aria-label="Attack path to controls map">

@@ -2,9 +2,8 @@
 layout: page
 permalink: /story/
 title: My Story
-description: Timeline across systems thinking, cybersecurity research, and industry execution.
 nav: true
-nav_order: 2
+nav_order: 6
 toc: false
 ---
 
@@ -46,7 +45,7 @@ toc: false
       </div>
 
       <section class="st-panel" aria-labelledby="phase-bachelor-title">
-        <p class="st-kicker">Bachelor's</p>
+        <p class="st-kicker">Bachelors</p>
         <h2 id="phase-bachelor-title">Information Technology and Telecommunication Engineering</h2>
         <p>
           During my bachelor's, mentorship and research-oriented coursework strengthened analytical rigor.
@@ -75,8 +74,8 @@ toc: false
       </div>
 
       <section class="st-panel" aria-labelledby="phase-masters-title">
-        <p class="st-kicker">Master's + MBA</p>
-        <h2 id="phase-masters-title">Graduate Research and Management Perspective</h2>
+        <p class="st-kicker">Masters</p>
+        <h2 id="phase-masters-title">Computer Science and Engineering | MBA</h2>
         <p>
           After a short web-development role, I completed a master's focused on research depth and systems reasoning.
           I published two papers, presented work publicly, and defended my thesis in October 2020.
@@ -132,7 +131,7 @@ toc: false
 
       <section class="st-panel" aria-labelledby="phase-phd-title">
         <p class="st-kicker">PhD</p>
-        <h2 id="phase-phd-title">Research Fellow at UiT, Norway</h2>
+        <h2 id="phase-phd-title">Cybersecurity Research Fellow at UiT, Norway</h2>
         <p>
           At UiT, I focused on distributed trust, blockchain-backed authorization, and lightweight cryptographic evaluation
           for constrained and heterogeneous systems.
@@ -145,10 +144,7 @@ toc: false
           <span>Benchmarking and validation</span>
           <span>International collaboration</span>
         </div>
-        <div class="st-media st-media-3">
-          <div class="st-media-item">
-            {% include figure.liquid loading="lazy" path="assets/img/story/UiT_campus.jpg" sizes="(min-width: 1100px) 135px, 94vw" alt="UiT campus" class="st-media-img" %}
-          </div>
+        <div class="st-media st-media-2">
           <div class="st-media-item">
             {% include figure.liquid loading="lazy" path="assets/img/story/testbed.jpeg" sizes="(min-width: 1100px) 135px, 94vw" alt="Research testbed" class="st-media-img" %}
           </div>
@@ -169,21 +165,27 @@ toc: false
         <p class="st-kicker">Beyond Work</p>
         <h2 id="phase-beyond-title">Travel and Cultural Exploration</h2>
         <p>
-          I regularly travel across Europe to understand local cultures and communication styles.
-          This improves how I collaborate in international technical environments.
+          I like to travel across Europe to understand local cultures and communication styles.
+          This improves how I collaborate in international environments.
         </p>
         <div class="st-tags">
-          <span>Finland</span>
-          <span>Denmark</span>
-          <span>Netherlands</span>
-          <span>Spain</span>
-          <span>France</span>
-          <span>Italy</span>
+          <span>🇦🇹 Austria</span>
+          <span>🇨🇿 Czechia</span>
+          <span>🇩🇰 Denmark</span>
+          <span>🇪🇪 Estonia</span>
+          <span>🇫🇮 Finland</span>
+          <span>🇫🇷 France</span>
+          <span>🇭🇺 Hungary</span>
+          <span>🇮🇸 Iceland</span>
+          <span>🇮🇹 Italy</span>
+          <span>🇱🇻 Latvia</span>
+          <span>🇳🇱 Netherlands</span>
+          <span>🇳🇴 Norway</span>
+          <span>🇵🇱 Poland</span>
+          <span>🇪🇸 Spain</span>
+          <span>🇸🇪 Sweden</span>
         </div>
-        <div class="st-media st-media-3">
-          <div class="st-media-item">
-            {% include figure.liquid loading="lazy" path="assets/img/story/travel_1.jpeg" sizes="(min-width: 1100px) 135px, 94vw" alt="Travel moments" class="st-media-img" %}
-          </div>
+        <div class="st-media st-media-2">
           <div class="st-media-item">
             {% include figure.liquid loading="lazy" path="assets/img/story/travel_2.jpeg" sizes="(min-width: 1100px) 135px, 94vw" alt="City exploration" class="st-media-img" %}
           </div>
@@ -195,17 +197,4 @@ toc: false
     </article>
 
   </div>
-
-  <section class="st-outro" id="story-now-next" aria-label="Now and next">
-    <h3>Now and Next</h3>
-    <p>
-      I am focused on turning research-grade security models into production-ready architectures for distributed and constrained systems.
-      Next, I am prioritizing collaborations where research rigor and delivery execution meet.
-    </p>
-    <div class="st-outro-actions">
-      <a class="st-link st-link-primary" href="{{ '/projects/' | relative_url }}">Review Projects</a>
-      <a class="st-link" href="{{ '/publications/' | relative_url }}">Read Publications</a>
-      <a class="st-link" href="mailto:khann.mohsin@icloud.com">Email</a>
-    </div>
-  </section>
 </div>

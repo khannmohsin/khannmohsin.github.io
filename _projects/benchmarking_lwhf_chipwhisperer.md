@@ -2,10 +2,10 @@
 layout: page
 title: Performance Benchmarking of Lightweight Hash Functions for Embedded IoT
 description: Systematic evaluation of NIST-submitted, ISO-standardized, and other lightweight hash functions on AVR ATxmega128 microcontrollers using ChipWhisperer.
-img: assets/img/projects/benchmarking_lwhf_chipwhisperer/cover.png
+img: assets/img/projects/benchmarking_lwhf_chipwhisperer/chipwhisperer_setup.jpg
 importance: 3
 category: Research Projects
-tags: [IoT, Lightweight Crypto, Embedded Security, Performance Benchmarking, Cryptographic Engineering]
+tags: ["IoT . Lightweight Hash Functions", Lightweight Crypto, Embedded Security, Performance Benchmarking, Cryptographic Engineering]
 related_publications: true
 ---
 

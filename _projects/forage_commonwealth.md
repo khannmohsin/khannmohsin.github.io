@@ -3,7 +3,7 @@ layout: page
 title: Commonwealth Bank Introduction to Cybersecurity Job Simulation
 description: Fraud analytics in Splunk, incident response handling, security awareness design, and entry-level web pentesting in a banking context.
 img: assets/img/projects/forage/commbank.webp
-category: Cybersecurity Job Simulations
+category: Cybersecurity Hands-On Labs
 importance: 1
 tags: ["Splunk", "Fraud Detection", "Phishing", "Ransomware", "Pentesting"]
 ---

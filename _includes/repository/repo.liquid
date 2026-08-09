@@ -1,50 +1,19 @@
 {% assign repo_url = include.repository | split: '/' %}
 
-{% if site.data.repositories.repo_description_lines_max %}
-  {% assign max_lines = site.data.repositories.repo_description_lines_max %}
-{% else %}
-  {% assign max_lines = 2 %}
-{% endif %}
-
-<div class="repo {% if include.variant %}repo-{{ include.variant }}{% endif %}" data-repo-item>
-  <div
-    class="ghpinned-card {% if include.variant %}ghpinned-{{ include.variant }}{% endif %}"
-    data-repo="{{ include.repository }}"
-    data-repo-search="{{ include.repository | downcase }}"
-    data-repo-stars="0"
-    data-repo-language=""
-  >
-    <div class="ghpinned-top">
-      <div class="ghpinned-title">
-        <p class="ghpinned-kicker">Repository</p>
-        <a
-          class="ghpinned-name"
-          href="https://github.com/{{ include.repository }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Open {{ include.repository }} on GitHub"
-        >
-          {{ repo_url[1] }}
-        </a>
-      </div>
-      <a
-        class="ghpinned-open"
-        href="https://github.com/{{ include.repository }}"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Open {{ include.repository }} repository"
-      >
-        Open
+<li data-repo-item>
+  <div class="ghpinned-card" data-repo="{{ include.repository }}" data-repo-search="{{ include.repository | downcase }}" data-repo-stars="0" data-repo-language="">
+    <div class="title">
+      <a href="https://github.com/{{ include.repository }}" target="_blank" rel="noopener noreferrer" aria-label="Open {{ include.repository }} on GitHub">
+        {{ repo_url[1] }}
       </a>
     </div>
 
-    <p class="ghpinned-desc">Loading description…</p>
+    <p class="periodical ghpinned-desc">Loading description…</p>
 
-    <div class="ghpinned-meta">
+    <div class="periodical ghpinned-meta">
       <span class="ghpinned-langs" aria-label="Repository languages"></span>
-
       <span class="ghpinned-stars">⭐ <span class="ghpinned-stars-count"></span></span>
       <span class="ghpinned-forks">🍴 <span class="ghpinned-forks-count"></span></span>
     </div>
   </div>
-</div>
+</li>

@@ -5,7 +5,7 @@ description: An IoT-enabled home automation and security system integrating Ardu
 img: assets/img/projects/smart_home/cover.png
 importance: 4
 category: Research Projects
-tags: [IoT, Arduino, RFID, Sensor Networks, MQTT, Cloud Monitoring]
+tags: ["Smart Home IoT", Arduino, RFID, Sensor Networks, MQTT, Cloud Monitoring]
 related_publications: false
 ---
 

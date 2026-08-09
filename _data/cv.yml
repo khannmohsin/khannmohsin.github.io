@@ -125,11 +125,11 @@
 - title: Publications
   type: time_table
   contents:
-    - title: A Comparative Analysis of Lightweight Hash Functions Using AVR ATXMega128 and ChipWhisperer
+    - title: A Comparative Software Benchmark of Lightweight Hash Functions on 8-Bit AVR Using ChipWhisperer
       institution: NordSec
       year: 2025-12
       description:
-        - https://arxiv.org/abs/2508.07840
+        - https://link.springer.com/chapter/10.1007/978-3-032-14782-0_4
 
     - title: Survey of Lightweight Hardware-Based Hash Functions for Security in Constrained IoT Devices
       institution: IEEE Access

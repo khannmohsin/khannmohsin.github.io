@@ -3,7 +3,7 @@ layout: page
 title: Secure Network Architecture & System Hardening
 description: Design of a secure network and system architecture emphasizing defense-in-depth and secure configuration.
 img: assets/img/projects/IBM/sys_net_sec.png
-category: Capstone Industry Projects
+category: IBM Capstone Projects
 importance: 1
 tags: ["Network Security", "System Hardening", "Security Architecture"]
 ---

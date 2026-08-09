@@ -1,11 +1,10 @@
 {
   "basics": {
     "name": "Mohsin Khan",
-    "label": "PhD Cybersecurity | Aspiring Security Professional (Blue & Red Team)",
+    "label": "PhD Cybersecurity | MBA | Security Engineer & Consultant | IoT, Critical Infrastructure, Lightweight Cryptography | Norway",
     "email": "khann.mohsin@icloud.com",
     "url": "https://khannmohsin.github.io",
-    "img": "assets/images/profile.jpg",
-    "summary": "PhD in cybersecurity with strong systems-level expertise in IoT/OT security, distributed trust, and applied cryptography. My background combines academic rigor—evaluating 130+ cryptographic primitives and designing secure distributed architectures, with hands-on industry skills in vulnerability management, detection fundamentals, cloud security, and governance. I am actively transitioning into blue-team, red-team, or security engineering roles.",
+    "summary": "PhD in cybersecurity with systems-level expertise in IoT/OT security, distributed trust, and applied cryptography. My background combines academic rigor, evaluating 130+ cryptographic primitives and designing secure distributed architectures, with hands-on industry skills in vulnerability management, detection fundamentals, cloud security, and governance.",
     "location": {
       "city": "Tromsø",
       "region": "Troms og Finnmark",
@@ -32,6 +31,18 @@
 "work": [
   {
     "name": "UiT – The Arctic University of Norway",
+    "position": "Lecturer in Cybersecurity",
+    "icon": "/assets/img/icons/uit.png",
+    "startDate": "2026-01-01",
+    "summary": "Teaching cybersecurity courses and supervising applied security research at UiT.",
+    "highlights": [
+      "Teaching Computer Security and Privacy-Preserving Computation.",
+      "Establishing a hands-on cybersecurity lab.",
+      "Supervising MSc students on applied cryptography and security topics."
+    ]
+  },
+  {
+    "name": "UiT – The Arctic University of Norway",
     "position": "PhD Research Fellow in Cybersecurity",
     "icon": "/assets/img/icons/uit.png",
     "startDate": "2021-11-01",
@@ -47,6 +58,7 @@
     "name": "Blackbuck Insight",
     "position": "Data Engineer (Security-Aware Systems)",
     "icon": "/assets/img/icons/bbi.png",
+    "iconHeight": 50,
     "startDate": "2021-01-01",
     "endDate": "2021-11-01",
     "url" : "https://www.blackbuck.com/insight/",
@@ -103,6 +115,10 @@
 ],
 
   "certificates": [
+    {
+      "name": "Penetration Testing",
+      "issuer": "TryHackMe"
+    },
     {
       "name": "AWS Certified Developer – Associate",
       "issuer": "Amazon Web Services (AWS)",

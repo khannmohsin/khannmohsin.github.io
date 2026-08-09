@@ -3,7 +3,7 @@ layout: page
 title: Mastercard Cybersecurity Virtual Experience Program
 description: Security awareness, phishing simulation design, and risk-based training analysis in a global enterprise context.
 img: assets/img/projects/forage/mastercard.webp
-category: Cybersecurity Job Simulations
+category: Cybersecurity Hands-On Labs
 importance: 1
 tags: ["Security Awareness", "Phishing", "Blue Team", "GRC", "Cyber Risk"]
 ---

@@ -3,7 +3,7 @@ layout: page
 title: Healthcare Data Security & HIPAA Risk Assessment
 description: Practical evaluation of a healthcare provider’s data security posture with respect to HIPAA requirements, risks, and control gaps.
 img: assets/img/projects/IBM/gov_vuln.png
-category: Capstone Industry Projects
+category: IBM Capstone Projects
 importance: 1
 tags: ["GRC", "HIPAA", "Healthcare Security", "Risk Assessment", "Data Protection"]
 ---

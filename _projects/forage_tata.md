@@ -3,7 +3,7 @@ layout: page
 title: Tata Cybersecurity – IAM Developer Job Simulation (Forage)
 description: IAM consulting simulation covering IAM fundamentals, enterprise readiness assessment, solution design, and IAM platform implementation planning for a global organization.
 img: assets/img/projects/forage/Tata-Logo.png
-category: Cybersecurity Job Simulations
+category: Cybersecurity Hands-On Labs
 importance: 3
 tags: ["IAM", "RBAC", "SSO", "MFA", "Access Governance", "Compliance", "Solution Architecture"]
 related_publications: false

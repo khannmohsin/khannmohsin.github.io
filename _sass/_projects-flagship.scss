@@ -117,9 +117,44 @@
   outline: none;
 }
 
+.projects-flagship #prj-search {
+  height: 2.25rem;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--prj-surface-soft) 90%, transparent);
+  padding: 0.55rem 0.72rem;
+  font-size: 1rem;
+}
+
+.projects-flagship #prj-search:focus {
+  border-color: color-mix(in srgb, var(--prj-accent) 62%, var(--prj-border));
+  background: color-mix(in srgb, var(--prj-surface) 94%, var(--prj-surface-soft));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--prj-accent) 14%, transparent);
+}
+
 .projects-flagship .prj-search-btn {
   min-height: 34px;
   padding: 0.43rem 0.8rem;
+}
+
+.projects-flagship .prj-search-btn.prj-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-height: 2.25rem;
+  height: 2.25rem;
+  padding: 0 0.86rem;
+  font-size: 0.78rem;
+  line-height: 1;
+  white-space: nowrap;
+  border-color: var(--flag-accent);
+  background: color-mix(in srgb, var(--flag-accent) 90%, #ffffff 10%);
+}
+
+.projects-flagship .prj-search-btn.prj-btn-primary:hover {
+  color: #fff;
+  border-color: var(--flag-accent);
+  filter: none;
 }
 
 .projects-flagship .prj-results {

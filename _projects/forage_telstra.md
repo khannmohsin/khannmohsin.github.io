@@ -3,7 +3,7 @@ layout: page
 title: Telstra Cybersecurity Job Simulation
 description: End-to-end incident response to a malware attack, including SOC triage, network analysis, mitigation, and post-incident review.
 img: assets/img/projects/forage/telstra.webp
-category: Cybersecurity Job Simulations
+category: Cybersecurity Hands-On Labs
 importance: 1
 tags: ["SOC", "Incident Response", "Malware Analysis"]
 ---
