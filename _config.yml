@@ -168,6 +168,7 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
+  - jobApp/
   - jobApp/node_modules
   - jobApp/src
   - assets/jupyter/
