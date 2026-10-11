@@ -32,7 +32,27 @@
 
     {% if flagship.hero.portrait and flagship.hero.portrait.path %}
       <aside class="flag-portrait-wrap" aria-label="Profile portrait">
-        {% include figure.liquid loading="eager" path=flagship.hero.portrait.path sizes="(min-width: 1200px) 420px, (min-width: 992px) 34vw, (min-width: 768px) 42vw, 88vw" width="3413" height="4035" class="flag-portrait" alt=flagship.hero.portrait.alt cache_bust=true %}
+        <figure>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="{{ '/assets/img/mohsin_khan-480.webp' | relative_url | bust_file_cache }} 480w,
+                      {{ '/assets/img/mohsin_khan-800.webp' | relative_url | bust_file_cache }} 800w,
+                      {{ '/assets/img/mohsin_khan-1400.webp' | relative_url | bust_file_cache }} 1400w"
+              sizes="(min-width: 1200px) 420px, (min-width: 992px) 34vw, (min-width: 768px) 42vw, 88vw"
+            >
+            <img
+              src="{{ flagship.hero.portrait.path | relative_url | bust_file_cache }}"
+              class="flag-portrait"
+              alt="{{ flagship.hero.portrait.alt }}"
+              width="3413"
+              height="4035"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            >
+          </picture>
+        </figure>
       </aside>
     {% endif %}
   </div>
