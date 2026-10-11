@@ -23,7 +23,24 @@ selected_papers: false
       <a class="flag-featured-item" href="{{ project_url }}">
         {% if project.img %}
           <div class="flag-featured-thumb">
-            {% include figure.liquid loading="lazy" path=project.img sizes="(min-width: 768px) 260px, 90vw" class="flag-featured-img" alt=project.title cache_bust=true %}
+            <figure>
+              <picture>
+                {% if project.img_webp %}
+                  <source
+                    type="image/webp"
+                    srcset="{% for source in project.img_webp %}{{ source.path | relative_url | bust_file_cache }} {{ source.width }}w{% unless forloop.last %}, {% endunless %}{% endfor %}"
+                    sizes="(min-width: 768px) 260px, 90vw"
+                  >
+                {% endif %}
+                <img
+                  src="{{ project.img | relative_url | bust_file_cache }}"
+                  class="flag-featured-img"
+                  alt="{{ project.title }}"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
+            </figure>
           </div>
         {% endif %}
         <span class="flag-featured-title">{{ project.title }}</span>

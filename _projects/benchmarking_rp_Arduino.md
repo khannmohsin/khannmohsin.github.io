@@ -3,6 +3,13 @@ layout: page
 title: "ARM-Based Benchmarking of Lightweight Cryptographic Ciphers for IoT"
 category: Research Projects
 img: assets/img/projects/benchmarking_rp_Arduino/lwcc-arm-setup_2.jpg
+img_webp:
+  - path: assets/img/projects/benchmarking_rp_Arduino/lwcc-arm-setup_2-480.webp
+    width: 480
+  - path: assets/img/projects/benchmarking_rp_Arduino/lwcc-arm-setup_2-800.webp
+    width: 800
+  - path: assets/img/projects/benchmarking_rp_Arduino/lwcc-arm-setup_2-1200.webp
+    width: 1200
 description: "Unified benchmarking framework for evaluating lightweight block and stream ciphers on ARM IoT devices with performance, energy, and resource metrics."
 importance: 2
 tags: ["IoT . Lightweight Block and Stream Ciphers", "Lightweight cryptography", "Benchmarking", "ARM", "Performance", "Energy"]
