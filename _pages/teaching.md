@@ -13,7 +13,22 @@ toc: false
   <p class="teach-banner-caption">I love teaching students new concepts related to Computer Security and Comm, Distributed Systems, and Privacy Preservation</p>
 
   <div class="teach-banner">
-    {% include figure.liquid loading="eager" path="assets/img/teaching/uit_campus.png" sizes="(min-width: 992px) 900px, 94vw" class="teach-banner-img" alt="UiT - The Arctic University of Norway campus" %}
+    <picture>
+      <source
+        type="image/webp"
+        srcset="{{ '/assets/img/teaching/uit_campus-600.webp' | relative_url }} 600w, {{ '/assets/img/teaching/uit_campus-1000.webp' | relative_url }} 1000w, {{ '/assets/img/teaching/uit_campus-1800.webp' | relative_url }} 1800w"
+        sizes="(min-width: 992px) 900px, 94vw"
+      >
+      <img
+        src="{{ '/assets/img/teaching/uit_campus.jpg' | relative_url }}"
+        class="teach-banner-img"
+        alt="UiT - The Arctic University of Norway campus"
+        width="2700"
+        height="900"
+        fetchpriority="high"
+        decoding="async"
+      >
+    </picture>
   </div>
 
   <div class="aux-actions teach-actions teach-actions--center" aria-label="Teaching actions">
